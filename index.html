@@ -27,12 +27,12 @@
 			function scrollFunction() {
 			  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
 			    document.getElementById("header").style.fontSize = "5px";
-			    document.getElementById("header").style.opacity= ".5";
+			    document.getElementById("header1").style.opacity= ".5";
 			    document.getElementById("button-header").style.opacity= ".5";
 
 			  } else {
 			    document.getElementById("header").style.fontSize = "64px";
-			    document.getElementById("header").style.opacity= "1";
+			    document.getElementById("header1").style.opacity= "1";
 			    document.getElementById("button-header").style.opacity= "1";
 
 			  }
@@ -669,7 +669,7 @@ left: 50%;z-index:5;">
 </div>
 
 <div class="container-fluid zoom"  id ="top" >
-	<div style="position: absolute;top:20%;left: 35%">
+	<div style="position: absolute;top:20%;left: 35%" id="header1">
 	<css-doodle>
     --cycle: @r(2s, 10s, .1);
 
