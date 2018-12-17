@@ -9,10 +9,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.11/css-doodle.min.js"></script>
 	<script src="https://unpkg.com/css-doodle@0.4.11/css-doodle.min.js"></script>
-
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
 
 	<script type="text/javascript">
-		
+
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
 			$(".zoom").css({
@@ -22,25 +22,26 @@
 			});
 	</script>
 	<script type="text/javascript">
-		
+
 		window.onscroll = function() {scrollFunction()};
 
 			function scrollFunction() {
 			  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-			    document.getElementById("header").style.fontSize = "30px";
+			    document.getElementById("header").style.fontSize = "5px";
 			    document.getElementById("header").style.opacity= ".5";
 			    document.getElementById("button-header").style.opacity= ".5";
-			    
+
 			  } else {
 			    document.getElementById("header").style.fontSize = "64px";
 			    document.getElementById("header").style.opacity= "1";
 			    document.getElementById("button-header").style.opacity= "1";
-			    
+
 			  }
 			}
 
-			
+
 	</script>
+
 	<script>
       $(document).ready(function(){
     $("a").on('click', function(event) {
@@ -61,10 +62,10 @@
 	<script type="text/javascript">
 			(function ($) {
 	  $(document).ready(function(){
-	    
+
 		// hide .navbar first
 		$(".navbar").hide();
-		
+
 		// fade in .navbar
 		$(function () {
 			$(window).scroll(function () {
@@ -76,7 +77,7 @@
 				}
 			});
 
-		
+
 		});
 
 	});
@@ -107,7 +108,7 @@
 			{
 			        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 			        var z=document.form.email1.value;
-			        if (reg.test(z)==false) 
+			        if (reg.test(z)==false)
 			        {
 			            alert('Invalid Email Address');
 			            document.form.email1.focus();
@@ -119,11 +120,11 @@
 
 			function checkvalue(val)
 			{
-				
+
 			    if(val==="Others")
 			       document.getElementById('otheroption').style.display='block';
 			    else
-			       document.getElementById('otheroption').style.display='none'; 
+			       document.getElementById('otheroption').style.display='none';
 			}
 
         </script>
@@ -132,20 +133,20 @@
 
 		.container-fluid
 		{
-			
-			
+
+
 
 		}
-		
+
 		.imageoverlay
 		{
-		  position: absolute; 
+		  position: absolute;
 		  top:0;
 		  background: rgb(0, 0, 0);
 		  background: rgba(0, 0, 0, 0.3); /* Black see-through */
-		  color: #f1f1f1; 
+		  color: #f1f1f1;
 		  width: 100%;
-	      height: 400px;
+	      height: 500px;
 		  transition: .5s ease;
 		  opacity: 0;
 		  color: white;
@@ -177,12 +178,12 @@
 			padding: 0;
 		}
 		body{
-			
+
 			padding: 0;
-			margin-left: -15px; 
-			margin-right: -15px; 
+			margin-left: -15px;
+			margin-right: -15px;
 			overflow-x: hidden;
-			
+
 		}
 		.overlay-container{
 			overflow: hidden;
@@ -199,7 +200,7 @@
 			margin: 0;
 			padding: 0;
 		}
-		
+
 		.zoom{
 			overflow: hidden;
 			padding-bottom: 55%;
@@ -220,11 +221,11 @@
 		#header {
 		  color: #fff;
 		  text-align: center; /* Centered text */
-		  font-size: 64px; 
-		  transition: 0.5s; 
+		  font-size: 64px;
+		  transition: 0.5s;
 		  text-align: center;
 		  width: 100%;
-		  
+
 		  		}
 
 		 #button-header
@@ -234,7 +235,7 @@
 		 	left: 46%;
 		 	transition: 0.5s;
 		 	text-align: center;
-		 } 	
+		 }
 
 		   	.affix {
   			      top: 0px;
@@ -296,7 +297,7 @@
       padding: 20px;
       background-color: #191919 opacity 1 ;
       text-align: center;
-      
+
     }
     .boxreg select
     {
@@ -325,7 +326,7 @@
       width: 200px;
       outline: none;
       color: white;
-      
+
       transition: .25s;
     }
     .boxreg input[type="text"]:focus,.boxreg input[type="password"]:focus,.boxreg select:focus
@@ -354,14 +355,14 @@
       outline: none;
 
     }
-    
-    
-    
+
+
+
     .boxreg input[type="submit"]:hover
     {
       background:#2ecc71;
     }
-    
+
     .containerreg
     {
       position: absolute;
@@ -384,7 +385,7 @@
       width: 400px;
       outline: none;
       color: white;
-      
+
     }
       .containerreg
     {
@@ -428,7 +429,7 @@
       width: 175px;
       outline: none;
       color: white;
-      
+
 
     }
     .boxreg input[type="text"]:focus,.boxreg input[type="password"]:focus,.boxreg select:focus
@@ -448,14 +449,14 @@
       width: 150px;
       outline: none;
       color: white;
-      
+
       transition: .6s;
       cursor: pointer;
       overflow: hidden;
-      
+
     }
 
-      
+
     }
     @media only screen and (max-width: 1390px)
     {
@@ -464,65 +465,31 @@
         width: 250px;
         height: 600px;
       }
-      
+
       .containerreg
     {
       position: absolute;
       top: 50%;
       left: 50%;
     }
-	    
+
 	    #top{
-		    
+
 		    width:100%;
 	    }
-/*...........NAVBAR..........*/
+
+}
+h3{
+	color: #fff;
+}
 
 
-    
-		
 	</style>
 </head>
 <body>
 
 
 <div class="container-fluid zoom"  id ="top" >
-		<css-doodle style="position: absolute;top: 30%;left: 42.5%;">
-  :doodle {
-    @grid: 500x1/ 40vmin;
-    perspective: 10vmin;
-  }
-  
-  @place-cell: center;
-  @size: 40% 1px;
-  
-  will-change: transform, opacity;
-  transform-style: preserve-3d;
-  
-  background: linear-gradient(to left,
-    @multi(@p([2-4]), @p(#00b8a9, #f8f3d4, #f6416c, #ffde7d)),
-    transparent @r(50%)
-  );
-
-  animation: move @r(1s, 2s, .1) linear infinite;
-  animation-delay: -@r(.1s, 2s);
-
-  --trans:
-    translateX(50%)
-    rotateX(@r(-180deg, 180deg))
-    rotateY(@r(-180deg, 180deg))
-    rotateZ(@r(-180deg, 180deg));
-
-  transform-origin: 0 center;
-  transform: var(--trans) scale(2);
-  opacity: 0;
-
-  @keyframes move {
-    20% { opacity: 1; }
-    100% { transform: var(--trans) scale(0); }
-  }
-</css-doodle>
-
 	<div id="header" style="position: absolute;top: 45%;">NOESIS</div>
 	<button class="btn" id="button-header">Know More!</button>
 </div>
@@ -532,7 +499,7 @@
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>                        
+		        <span class="icon-bar"></span>
 		      </button>
 		      <a class="navbar-brand" style="text-align: center;" href="#"><img src="v.png" width="80px" height=""></a>
 		    </div>
@@ -541,6 +508,7 @@
 		        <li class="active"><a href="index.html">HOME</a></li>
 		        <li><a href="#eventsid">EVENTS</a></li>
 		        <li><a href="#regid">REGISTRATION</a></li>
+		        <li><a href="#regid" onclick="overlay()">OVERLAY</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#contactid"> Contact</a></li>
@@ -556,14 +524,14 @@
 	<div class="row">
 		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">
 			<div class="overlay-container" >
-				<a href="event1.html"><img src="1.jpg" style="">
-				<div class="imageoverlay"><h1>Event1</h1></div></a>
+				<a href="event1.html"><img src="111.jpg" style="width: 900px">
+				<div class="imageoverlay"><h1>Event 1</h1></div></a>
 			</div>
 		</div>
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">	
+		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">
 			<div class="overlay-container">
-				<img src="2.jpg" style="" >
-				<div class="imageoverlay"><h1>Event1</h1></div>
+				<img src="112.jpg" style="width: 900px">
+				<div class="imageoverlay"><h1>Event 2</h1></div>
 			</div>
 		</div>
 	</div>
@@ -571,69 +539,99 @@
 	<div class="row">
 		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">
 			<div class="overlay-container">
-				<img src="3.jpg" style="">
-				<div class="imageoverlay"><h1>Event1</h1></div>
+				<img src="113.jpg" style="width: 900px">
+				<div class="imageoverlay"><h1>Event 3</h1></div>
 			</div>
 		</div>
 		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">
 			<div class="overlay-container">
-				<img src="4.jpg" style="">
-				<div class="imageoverlay"><h1>Event1</h1></div>
+				<img src="114.jpg" style="width: 900px">
+				<div class="imageoverlay"><h1>Event 4</h1></div>
 			</div>
 		</div>
 	</div>
 
-	<div class="container-fluid footer" id="regid" >
-		<div class="row" id="formcontainer" >
-			<div class="col-lg-12 col-xs-12 col-md-12 col-sm-12" style="text-align: center;position: absolute;">
-				<div class="formdiv" style="">
-					<form name="form" class="boxreg" action="index.html" method="post" onsubmit="return Validation() && validateEmail()">
-	                <h1 >Register</h1>
-	                <input type="text" name="fname" placeholder="Full Name" required>
-	                <select name="College" onchange='checkvalue(this.value)'>
-	                	<option selected="selected" style="color:gray" required><span>College</span></option>
-					  <option value="MANIT" style="color:gray"><span>MANIT</span></option>
-					  <option value="IIITB" style="color:gray"><span>IIIT-B</span></option>
-					  <option value="LNCT" style="color:gray"><span>LNCT</span></option>
-					  <option value="Others" style="color:gray;text-align-last:  center;"><span>Others</span></option>
-					  <input type="text" name="otheroption" id="otheroption" style='display:none' placeholder="Enter College name" />
-					</select>
-					<select name="Branch" required>
-	                	<option selected="selected" style="color:gray"><span>Branch</span></option>
-					  <option value="volvo" style="color:gray"><span>CSE</span></option>
-					  <option value="saab" style="color:gray"><span>ECE</span></option>
-					  <option value="fiat" style="color:gray"><span>Electrical</span></option>
-					   <option value="audi" style="color:gray"><span>Mechanical</span></option>
-					  <option value="audi" style="color:gray"><span>Civil</span></option>
-					  <option value="audi" style="color:gray"><span>Chemical</span></option>
-					  <option value="audi" style="color:gray"><span>MSME</span></option>
-					  <option value="audi" style="color:gray"><span>Architecture</span></option>
-					  <option value="audi" style="color:gray"><span>B.Plan</span></option>
-					  
 
-					</select>
-	                
-	                <input type="text" name="phone" placeholder="Mobile Number" required>
-	                <input type="text" name="email1" placeholder="e-mail" required>
-	                <input type="submit" name="Proceed">
-	              	</form>
-          		</div>
-			</div>
-		</div>
-	</div>
 
-	<div class="container-fluid" id="contactid" style="height: 50px;">
+	<div class="container-fluid" id="contactid" style="height:400px;background-image: url(contact.jpg);">
 		<div class="row">
-			<div class="col-lg-1 col-md-12 col-sm-12" style="text-align: left"><i class="fab fa-youtube"></i></div>
-			<div class="col-lg-1 col-md-12 col-sm-12" style="text-align: left"><i class="fab fa-facebook-f"></i></div>
-			<div class="col-lg-1 col-md-12 col-sm-12" style="text-align: left"><i class="fab fa-facebook-f"></i></div>
-			<div class="col-lg-6 col-md-12 col-sm-12" style="text-align: center;font-size: 24px">VISION|NOESIS|MANIT</div>
-			<div class="col-lg-3 col-md-12 col-sm-12" style="text-align: right;"><span><img src="v.png" width="80px"></span></div>
+			<div class="col-lg-6" style="padding:50px;">
+				<svg id="get-in-touch" class="child" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 100.85 99.84">
+            <g id="headset">
+                <path class="cls-1" d="M31.69,77.64,22.81,80a6.64,6.64,0,0,1-6.65-6.64V60.88a6.64,6.64,0,0,1,6.65-6.64l8.88,2.34Z" transform="translate(-0.06 -0.08)"/>
+                <path class="cls-1" d="M69.39,77.64,78.27,80a6.64,6.64,0,0,0,6.65-6.64V60.88a6.64,6.64,0,0,0-6.65-6.64l-8.88,2.34Z" transform="translate(-0.06 -0.08)"/>
+                <rect class="cls-1" x="37.84" y="89.19" width="19.25" height="9.4" rx="3.83" ry="3.83"/>
+                <path class="cls-1" d="M74.8,43.23H69.88a3.71,3.71,0,0,1-3-1.58,20.1,20.1,0,0,0-32.78,0,3.67,3.67,0,0,1-3,1.57H26.16" transform="translate(-0.06 -0.08)"/>
+                <path class="cls-1" d="M76.28,78.08v-27a25.8,25.8,0,0,0-25.79-25.8h0a25.8,25.8,0,0,0-25.8,25.8v30A12.89,12.89,0,0,0,37.57,94h0" transform="translate(-0.06 -0.08)"/>
+            </g>
+            <g id="lines">
+                <line id="line1-1" class="cls-1" x1="6.06" y1="58.8" x2="9.6" y2="58.18"/>
+                <circle id="line1-2" class="cls-2" cx="1.31" cy="59.64" r="1.31"/>
+                <line id="line2-1" class="cls-1" x1="12.53" y1="44.3" x2="15.35" y2="44.8"/>
+                <line id="line2-2" class="cls-1" x1="1.38" y1="42.33" x2="7.02" y2="43.33"/>
+                <line id="line3-1" class="cls-1" x1="11.37" y1="28.43" x2="19.65" y2="33.21"/>
+                <circle id="line3-2" class="cls-2" cx="7.23" cy="26.04" r="1.31"/>
+                <line id="line4" class="cls-1" x1="18.37" y1="12.78" x2="27.58" y2="23.76"/>
+                <line id="line5-1" class="cls-1" x1="35" y1="8.61" x2="38.27" y2="17.58"/>
+                <circle id="line5-2" class="cls-2" cx="33.37" cy="4.12" r="1.31"/>
+                <line id="line6-1" class="cls-1" x1="50.42" y1="12.58" x2="50.42" y2="15.44"/>
+                <line id="line6-2" class="cls-1" x1="50.42" y1="1.25" x2="50.42" y2="6.98"/>
+                <line id="line7-1" class="cls-1" x1="62.58" y1="17.58" x2="65.84" y2="8.61"/>
+                <circle id="line7-2" class="cls-2" cx="67.48" cy="4.12" r="1.31"/>
+                <line id="line8" class="cls-1" x1="73.27" y1="23.76" x2="82.48" y2="12.78"/>
+                <line id="line9-1" class="cls-1" x1="81.2" y1="33.21" x2="89.51" y2="28.42"/>
+                <circle id="line9-2" class="cls-2" cx="93.61" cy="26.04" r="1.31"/>
+                <line id="line10-1" class="cls-1" x1="88.31" y1="44.3" x2="85.49" y2="44.8"/>
+                <line id="line10-2" class="cls-1" x1="99.47" y1="42.33" x2="93.82" y2="43.33"/>
+                <line id="line11-1" class="cls-1" x1="91.14" y1="58.16" x2="94.79" y2="58.8"/>
+                <circle id="line11-2" class="cls-2" cx="99.54" cy="59.64" r="1.31"/>
+            </g>
+        </svg>
+			</div>
+			<div class="col-lg-6" style="padding:50px;">
+				<div class="row">
+					<h3><i class="fa fa-map-marker"></i> Address: </h5><Address style="color: #fff">Vision Room NTB,Maulana Azad
+                                National Institute of technology</Address>
+					
+				</div>
+				<div class="row">
+					<h3><i class="fa fa-envelope"></i> Email: </h5><address><a href="mailto:info@visionmanit.org"
+                                    style="color:#DC7633;">info@visionmanit.org</a></address>
+					
+				</div>
+				<div class="row">
+					<h3><i class="fa fa-phone"></i> Contact: </h5><address><a href="tel:+919455525935" style="color:aqua">+91-9455525935</a>,<a
+                                    href="tel:+918989859127" style="color:aqua">+91-8989859127</a></address>
+					
+				</div>
+
+			</div>	
+				
+
+			
 		</div>
 	</div>
-	
 
+
+<div class="container-fluid" style="height: 300px;text-align: center;">
+	<div class="row" style="padding-top: 100px;">
+		<img src="v.png" alt="" height="30" width="90">
+	</div>
+	<div class="row" style="padding-top: 25px;padding-bottom: 5px">
+                        
+                            <a style="padding: 10px" href="https://www.facebook.com/visionmanit/"><i class="fab fa-facebook"></i></a>
+                            <a style="padding: 10px" href="https://www.youtube.com/channel/UCM1dBAT20ulLHkofolWr3uA"><i class="fab fa-youtube"></i></a>
+                            
+	</div>
+	<div class="row">
+		<div class="copyright">
+                        <p style="font-size: 10px;line-height: 15px">VISION &copy; All RIGHTS RESERVED 2018</p>
+                    </div>
+	</div>
 
 </div>
+
+
+
 </body>
 </html>
