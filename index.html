@@ -230,7 +230,8 @@
 			transform: translateX(-50%);
 			}
 		.zoom{
-			background-image:url(bg.jpg);
+			background-image:url();
+			background-color: #000;
 			width: 100%;
 			height:100%;
 			background-position: center center;
@@ -505,7 +506,7 @@ h3{
     border-color: #000;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #777;
+    color: #fff;
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
@@ -668,8 +669,43 @@ left: 50%;z-index:5;">
 </div>
 
 <div class="container-fluid zoom"  id ="top" >
-	<div id="header" style="position: absolute;top: 45%;">NOESIS</div>
-	<button class="btn" id="button-header">Know More!</button>
+	<div style="position: absolute;top:20%;left: 35%">
+	<css-doodle>
+    --cycle: @r(2s, 10s, .1);
+
+    :doodle {
+      @grid: 1x8 / 425px;
+    }
+			  
+    @place-cell: center;
+    @size: calc(@i() * 20%);
+
+    border-radius: 50%;
+    border-style: @pick( dashed double);
+    border-width: calc(@i() * .3em);
+    border-color: #3AE2CE;
+    box-shadow: inset 0 0 10px #3AE2CE,
+    0 0 20px #3AE2CE;
+    transform: rotate(@r(360deg));
+
+    animation: rotation var(--cycle) linear infinite ;
+
+    @keyframes rotation {
+      0 { transform: rotate(0deg); }
+      25% {  }
+      50% {
+        transform: rotate(359deg);
+        
+      }
+      75% { }
+      100% {
+        transform: rotate(0deg);
+       
+      }
+    }
+
+</css-doodle>
+</div>
 </div>
 <nav class="navbar navbar-default "  data-spy="affix"   id="navbar" style="padding: 0;margin-top: 0;margin-bottom: 0;margin-left: 15px;">
 		  <div class="container-fluid">
@@ -686,7 +722,7 @@ left: 50%;z-index:5;">
 		        <li class="active"><a href="index.html">HOME</a></li>
 		        <li><div class="overlay-trigger"><button>EVENTS</button></div></li>
 		        
-		        <li><a href="#abcd" onclick="overlay()">OVERLAY</a></li>
+		        <li><a href="#abcd" ">REGISTRATION</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#contactid"> Contact</a></li>
