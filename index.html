@@ -232,7 +232,7 @@
 			transform: translateX(-50%);
 			}
 		.zoom{
-			background-image:url();
+			background-image:url(bg.jpg);
 			background-color: #000;
 			width: 100%;
 			height:100%;
@@ -672,48 +672,7 @@ left: 50%;z-index:5;">
 
 <div class="container-fluid zoom"  id ="top" >
 	<div class="row">
-		<div class="col-lg-8" >
-			<div style="position: absolute;top: 140px;left:50%;padding: 0;margin: 0;" id="header1">
-			<css-doodle >
-    --cycle: @r(2s, 10s, .1);
-
-    :doodle {
-      @grid: 1x8 / 425px;
-    }
-			  
-    @place-cell: center;
-    @size: calc(@i() * 20%);
-
-    border-radius: 50%;
-    border-style: @pick( dashed double);
-    border-width: calc(@i() * .3em);
-    border-color: #3AE2CE;
-    box-shadow: inset 0 0 10px #3AE2CE,
-    0 0 20px #3AE2CE;
-    transform: rotate(@r(360deg));
-
-    animation: rotation var(--cycle) linear infinite ;
-
-    @keyframes rotation {
-      0 { transform: rotate(0deg); }
-      25% {  }
-      50% {
-        transform: rotate(359deg);
-        
-      }
-      75% { }
-      100% {
-        transform: rotate(0deg);
-       
-      }
-    }
-
-</css-doodle>
-</div>
-			
-	
-
-		</div>
+		<h1 id="header">NOESIS</h1>
 		
 	</div>
 	
