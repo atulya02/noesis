@@ -10,6 +10,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.11/css-doodle.min.js"></script>
 	<script src="https://unpkg.com/css-doodle@0.4.11/css-doodle.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<script src="https://unpkg.com/scrollreveal"></script>
+  	<script src="https://unpkg.com/scrollreveal@4"></script>
 		<script type="text/javascript">
 
 		$(window).scroll(function() {
@@ -706,36 +708,34 @@ left: 50%;z-index:5;">
 
 <div class="container-fluid" id="eventsid" style="" >
 	<div class="row">
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">
-			<div class="overlay-container" >
-				<a href="event1.html"><img src="111.jpg" style="width: 900px">
+		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"  id="eventdetails">
+			<div class="overlay-container" id="showcase1">
+				<a href="event1.html"><img src="111.jpg" id="showcase1" style="width: 900px">
 				<div class="imageoverlay"><h1>Event 1</h1></div></a>
 			</div>
 		</div>
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">
-			<div class="overlay-container">
-				<img src="112.jpg" style="width: 900px">
+		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"   id="eventdetails">
+			<div class="overlay-container" id="showcase2">
+				<img src="112.jpg"  style="width: 900px">
 				<div class="imageoverlay"><h1>Event 2</h1></div>
 			</div>
 		</div>
 	</div>
 
 	<div class="row">
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">
-			<div class="overlay-container">
+		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"  id="eventdetails">
+			<div class="overlay-container" id="showcase1">
 				<img src="113.jpg" style="width: 900px">
 				<div class="imageoverlay"><h1>Event 3</h1></div>
 			</div>
 		</div>
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails">
-			<div class="overlay-container">
+		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails" >
+			<div class="overlay-container" id="showcase2">
 				<img src="114.jpg" style="width: 900px">
 				<div class="imageoverlay"><h1>Event 4</h1></div>
 			</div>
 		</div>
 	</div>
-
-
 
 	<div class="container-fluid" id="contactid" style="height:400px;background-image: url(contact.jpg);">
 		<div class="row">
@@ -815,7 +815,21 @@ left: 50%;z-index:5;">
 
 </div>
 
-
+<script type="text/javascript">
+    window.sr=ScrollReveal();
+    
+    sr.reveal('#showcase1',{
+      duration:2000,
+      origin:'left',
+      distance:'300px'
+    });
+    sr.reveal('#showcase2',{
+      duration:2000,
+      origin:'right',
+      distance:'300px'
+    });
+    
+  </script>
 
 </body>
 </html>
