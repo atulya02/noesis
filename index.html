@@ -1,51 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>NOESIS</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.11/css-doodle.min.js"></script>
-	<script src="https://unpkg.com/css-doodle@0.4.11/css-doodle.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/contact.css">
-	<script src="https://unpkg.com/scrollreveal"></script>
-  	<script src="https://unpkg.com/scrollreveal@4"></script>
-		<script type="text/javascript">
+  <title>NOESIS</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.11/css-doodle.min.js"></script>
+  <script src="https://unpkg.com/css-doodle@0.4.11/css-doodle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/contact.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4"></script>
+    <script type="text/javascript" src="/js/bgmain.js"></script>
+    <script type="text/javascript">
 
-		$(window).scroll(function() {
-			var scroll = $(window).scrollTop();
-			$(".zoom").css({
-			backgroundSize: (100 + scroll/3)  + "%",
-			top: -(scroll/10)  + "%",
-			    });
-			});
-	</script>
-	<script type="text/javascript">
+    $(window).scroll(function() {
+      var scroll = $(window).scrollTop();
+      $(".zoom").css({
+      backgroundSize: (100 + scroll/3)  + "%",
+      top: -(scroll/10)  + "%",
+          });
+      });
+  </script>
+  <script type="text/javascript">
 
-		window.onscroll = function() {scrollFunction()};
+    window.onscroll = function() {scrollFunction()};
 
-			function scrollFunction() {
-			  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-			    document.getElementById("header1").style.width = "300px";
-			    document.getElementById("header1").style.height = "300px";
-			    document.getElementById("header1").style.opacity= ".5";
-			    document.getElementById("button-header").style.opacity= ".5";
+      function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("header1").style.width = "300px";
+          document.getElementById("header1").style.height = "300px";
+          document.getElementById("header1").style.opacity= ".5";
+          document.getElementById("button-header").style.opacity= ".5";
 
-			  } else {
-			    document.getElementById("header1").style.width = "600px";
-			    document.getElementById("header1").style.height = "600px";
-			    document.getElementById("header1").style.opacity= "1";
-			    document.getElementById("button-header").style.opacity= "1";
+        } else {
+          document.getElementById("header1").style.width = "600px";
+          document.getElementById("header1").style.height = "600px";
+          document.getElementById("header1").style.opacity= "1";
+          document.getElementById("button-header").style.opacity= "1";
 
-			  }
-			}
+        }
+      }
 
 
-	</script>
-	<script type="text/javascript">
-		$(function() {
+  </script>
+  <script type="text/javascript">
+    $(function() {
   var $overlay = $('.overlay'),
       $overlayTrigger = $('.overlay-trigger button'),
       $overlayClose = $('.overlay-close'),
@@ -61,9 +62,9 @@
     $overlay.removeClass(openClass);
   });
 });
-	</script>
+  </script>
 
-	<script>
+  <script>
       $(document).ready(function(){
     $("a").on('click', function(event) {
 
@@ -80,218 +81,220 @@
   });
   </script>
 
-	<script type="text/javascript">
-			(function ($) {
-	  $(document).ready(function(){
+  <script type="text/javascript">
+      (function ($) {
+    $(document).ready(function(){
 
-		// hide .navbar first
-		$(".navbar").hide();
+    // hide .navbar first
+    $(".navbar").hide();
 
-		// fade in .navbar
-		$(function () {
-			$(window).scroll(function () {
-	            // set distance user needs to scroll before we fadeIn navbar
-				if ($(this).scrollTop() > 800) {
-					$('.navbar').fadeIn();
-				} else {
-					$('.navbar').fadeOut();
-				}
-			});
-
-
-		});
-
-	});
-	  }(jQuery));
-		</script>
+    // fade in .navbar
+    $(function () {
+      $(window).scroll(function () {
+              // set distance user needs to scroll before we fadeIn navbar
+        if ($(this).scrollTop() > 800) {
+          $('.navbar').fadeIn();
+        } else {
+          $('.navbar').fadeOut();
+        }
+      });
 
 
-		<script type="text/javascript">
-        	function Validation()
-			{
-					var a = document.form.phone.value;
-					if(isNaN(a))
-					{
-					alert("Enter a valid Mobile Number");
-					document.form.phone.focus();
-					return false;
-					}
-					if(a.length!=10)
-					{
-					alert("Enter a valid Mobile Number");
-					document.form.phone.select();
-					return false;
-					}
-					return true;
-			}
+    });
 
-			function validateEmail()
-			{
-			        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-			        var z=document.form.email1.value;
-			        if (reg.test(z)==false)
-			        {
-			            alert('Invalid Email Address');
-			            document.form.email1.focus();
-			            return false;
-			        }
+  });
+    }(jQuery));
+    </script>
+    
 
-			        return true;
-			}
 
-			function checkvalue(val)
-			{
 
-			    if(val==="Others")
-			       document.getElementById('otheroption').style.display='block';
-			    else
-			       document.getElementById('otheroption').style.display='none';
-			}
+    <script type="text/javascript">
+          function Validation()
+      {
+          var a = document.form.phone.value;
+          if(isNaN(a))
+          {
+          alert("Enter a valid Mobile Number");
+          document.form.phone.focus();
+          return false;
+          }
+          if(a.length!=10)
+          {
+          alert("Enter a valid Mobile Number");
+          document.form.phone.select();
+          return false;
+          }
+          return true;
+      }
+
+      function validateEmail()
+      {
+              var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+              var z=document.form.email1.value;
+              if (reg.test(z)==false)
+              {
+                  alert('Invalid Email Address');
+                  document.form.email1.focus();
+                  return false;
+              }
+
+              return true;
+      }
+
+      function checkvalue(val)
+      {
+
+          if(val==="Others")
+             document.getElementById('otheroption').style.display='block';
+          else
+             document.getElementById('otheroption').style.display='none';
+      }
 
         </script>
 
-	<style type="text/css">
+  <style type="text/css">
 
-		.container-fluid
-		{
+    .container-fluid
+    {
 
 
 
-		}
+    }
 
-		.imageoverlay
-		{
-		  position: absolute;
-		  top:0;
-		  background: rgb(0, 0, 0);
-		  background: rgba(0, 0, 0, 0.3); /* Black see-through */
-		  color: #f1f1f1;
-		  width: 100%;
-	      height: 500px;
-		  transition: .5s ease;
-		  opacity: 0;
-		  color: white;
-		  font-size: 20px;
-		  padding: 20px;
-		  text-align: center;
-		  overflow: hidden;
+    .imageoverlay
+    {
+      position: absolute;
+      top:0;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 0, 0.3); /* Black see-through */
+      color: #f1f1f1;
+      width: 100%;
+        height: 500px;
+      transition: .5s ease;
+      opacity: 0;
+      color: white;
+      font-size: 20px;
+      padding: 20px;
+      text-align: center;
+      overflow: hidden;
 
-		}
-		.row
-		{
-			margin: 0;
-			padding: 0;
-		}
-		#eventdetails :hover .imageoverlay{
-			opacity:1;
-			cursor: pointer;
-		}
+    }
+    .row
+    {
+      margin: 0;
+      padding: 0;
+    }
+    #eventdetails :hover .imageoverlay{
+      opacity:1;
+      cursor: pointer;
+    }
 
-		#eventdetails :hover img{
-			transform: scale(1.15);
-			overflow: hidden;
-		}
-		.overlay-container img
-		{
-			overflow: hidden;
-			transition: 5s ease;
-			margin: 0;
-			padding: 0;
-		}
-		body{
+    #eventdetails :hover img{
+      transform: scale(1.15);
+      overflow: hidden;
+    }
+    .overlay-container img
+    {
+      overflow: hidden;
+      transition: 5s ease;
+      margin: 0;
+      padding: 0;
+    }
+    body{
 
-			padding: 0;
-			margin-left: -15px;
-			margin-right: -15px;
-			overflow-x: hidden;
+      padding: 0;
+      margin-left: -15px;
+      margin-right: -15px;
+      overflow-x: hidden;
 
-		}
-		.overlay-container{
-			overflow: hidden;
-			width: 100%;
-			height: 100%;
+    }
+    .overlay-container{
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
 
-		}
-		.overlay-container h1{
-			position: absolute;
-			top: 50%;
-			font-size: 64px;
-		}
-		#eventdetails{
-			margin: 0;
-			padding: 0;
-		}
+    }
+    .overlay-container h1{
+      position: absolute;
+      top: 50%;
+      font-size: 64px;
+    }
+    #eventdetails{
+      margin: 0;
+      padding: 0;
+    }
 
-		.zoom{
-			overflow: hidden;
-			padding-bottom: 55%;
-			background-attachment: fixed;
-			}
-		.zoom img{
-			position: fixed;
-			top: 0%;
-			left: 50%;
-			transform: translateX(-50%);
-			}
-		.zoom{
-			background-image:url(bg.jpg);
-			background-color: #000;
-			width: 100%;
-			height:100%;
-			background-position: center center;
-		}
-		#header {
-		  color: #fff;
-		  text-align: center; /* Centered text */
-		  font-size: 64px;
-		  transition: 0.5s;
-		  text-align: center;
-		  width: 100%;
+    .zoom{
+      overflow: hidden;
+      padding-bottom: 55%;
+      background-attachment: fixed;
+      }
+    .zoom img{
+      position: fixed;
+      top: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      }
+    .zoom{
+      background-image:url(bg.jpg);
+      background-color: #000;
+      width: 100%;
+      height:100%;
+      background-position: center center;
+    }
+    #header {
+      color: #fff;
+      text-align: center; /* Centered text */
+      font-size: 64px;
+      transition: 0.5s;
+      text-align: center;
+      width: 100%;
 
-		  		}
+          }
 
-		 #button-header
-		 {
-		 	position: absolute;
-		 	top: 60%;
-		 	left: 46%;
-		 	transition: 0.5s;
-		 	text-align: center;
-		 }
+     #button-header
+     {
+      position: absolute;
+      top: 60%;
+      left: 46%;
+      transition: 0.5s;
+      text-align: center;
+     }
 
-		   	.affix {
-  			      top: 0px;
-  			      width: 100%;
-  			      transition: .5s;
-  			      z-index: 9999 ;
-    				}
+        .affix {
+              top: 0px;
+              width: 100%;
+              transition: .5s;
+              z-index: 9999 ;
+            }
 
     .affix + .container
-    	{
+      {
           padding:0px;
-    	}
-		#navbar{
-			transition: .5s ease in;
-		}
+      }
+    #navbar{
+      transition: .5s ease in;
+    }
 
-		.footer{
-			overflow: hidden;
-			padding-bottom: 55%;
-			}
-		.footer img{
-			position: fixed;
-			top: 0%;
-			left: 50%;
-			transform: translateX(-50%);
-			}
-		.footer{
-			background-color: #000;
-			background-attachment: fixed;
-			width: 100%;
-			height: 100%;
-			background-position: center center;
-		}
-		::-webkit-scrollbar {
+    .footer{
+      overflow: hidden;
+      padding-bottom: 55%;
+      }
+    .footer img{
+      position: fixed;
+      top: 0%;
+      left: 50%;
+      transform: translateX(-50%);
+      }
+    .footer{
+      background-color: #000;
+      background-attachment: fixed;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+    }
+    ::-webkit-scrollbar {
             width: 5px;
         }
 
@@ -311,7 +314,7 @@
         /*.................Form............*/
         #formcontainer
         {
-        	position: absolute;left: 25%;padding: 150px;
+          position: absolute;left: 25%;padding: 150px;
         }
         .boxreg
     {
@@ -323,11 +326,11 @@
     }
     .boxreg select
     {
-    	background-color: #000 ;
-    	color: #fff;
-    	width: 275px;
-    	height: 50px;
-    	text-align: center;
+      background-color: #000 ;
+      color: #fff;
+      width: 275px;
+      height: 50px;
+      text-align: center;
     }
     .boxreg h1
     {
@@ -418,15 +421,15 @@
     }
     @media only screen and (max-width: 640px)
     {
-    	.navimgid{
-    		display: none;
-    	}
-    	#formcontainer
+      .navimgid{
+        display: none;
+      }
+      #formcontainer
         {
-        	position: absolute;padding-top: 80px;
-        	padding-left: 25px;
-        	padding-right: 40px;
-        	padding-bottom: 25px;
+          position: absolute;padding-top: 80px;
+          padding-left: 25px;
+          padding-right: 40px;
+          padding-bottom: 25px;
         }
       .boxreg
       {
@@ -495,14 +498,14 @@
       left: 50%;
     }
 
-	    #top{
+      #top{
 
-		    width:100%;
-	    }
+        width:100%;
+      }
 
 }
 h3{
-	color: #fff;
+  color: #fff;
 }
 
 .navbar-default {
@@ -649,8 +652,57 @@ h1 {
 .overlay10.is-open div::after {
   transform: rotateX(0);
 }
+/*bg*video*/
 
-	</style>
+
+#container_video {
+
+  width: 100%;
+  height: 725px;
+  background: #edeae8;
+ 
+}
+
+video {
+  position: absolute;
+  
+  /* Horizontally center*/
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Could do vertial centering too, depending upon your requirements:
+  top: 50%;
+  transform: translate(-50%, -50%);
+  
+  But in practise I noticed just `top: 0;` fulfills our expectations pretty well (obviously will vary from video to video)
+  */
+  top: 0;
+}
+
+#overlay_video {
+  position: absolute;
+  top: 0; right: 0; left: 0; bottom: 0;
+  
+  background: rgba(0,0,0,0.5);
+}
+#overlay_video h1{
+	position: absolute;
+	top: 15%;
+	left: 39%;
+	font-size: 100px;
+	color: black;
+}
+#video_cover {
+  position: absolute;
+ 
+  width: 100%; height: 100%;
+ 
+  background: url('video_cover.jpeg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+  </style>
+
 </head>
 <body>
 <button class="overlay-close">Close Overlay</button>
@@ -658,12 +710,12 @@ h1 {
 
 <div class="overlay overlay10" >
   <div>
-  	<a href="#eventsid" class="button" style="position: absolute;top: 50%;
+    <a href="#eventsid" class="button" style="position: absolute;top: 50%;
 left: 50%;z-index: 3;">CSE</a><br>
   <a href="#eventsid" class="button">CSE</a>
 </div>
 <div style="position: absolute;top: 30%;left: 50%;z-index: 4;">
-  	
+    
 </div>
 <div style="position: absolute;top: 70%;
 left: 50%;z-index:5;">
@@ -672,75 +724,81 @@ left: 50%;z-index:5;">
   
 </div>
 
-<div class="container-fluid zoom"  id ="top" >
-	<div class="row">
-		<h1 id="header">NOESIS</h1>
-		
-	</div>
-	
+<div class="container-fluid"  >
+  <div class="row" >
+    <div id="container_video" >
+  <video autoplay muted loop id="background_video">
+    <source src="abc.MKV" type="video/mp4">
+  </video>
+  <div id="overlay_video"><h1>NOESIS</h1></div>
+  <div id="video_cover"></div>
+</div>
+    
+  </div>
+  
 </div>
 <nav class="navbar navbar-default "  data-spy="affix"   id="navbar" style="padding: 0;margin-top: 0;margin-bottom: 0;margin-left: 15px;">
-		  <div class="container-fluid">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" style="text-align: center;" href="#top"><img src="v.png" width="80px" height=""></a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="myNavbar">
-		      <ul class="nav navbar-nav">
-		        <li class="active"><a href="index.html">HOME</a></li>
-		        <li><div class="overlay-trigger"><button>EVENTS</button></div></li>
-		        
-		        <li><a href="#abcd" ">REGISTRATION</a></li>
-		      </ul>
-		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="#contactid"> Contact</a></li>
-		      </ul>
-		      <ul class="nav navbar-nav navbar-center" style="position: absolute;left: 45%;">
-		        <li><a  href="#"><span class="navimgid"><img src="image.png" width="124px"></span></a></li>
-		       </ul>
-		    </div>
-		  </div>
-		</nav>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" style="text-align: center;" href="#top"><img src="v.png" width="80px" height=""></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><div class="overlay-trigger"><button>EVENTS</button></div></li>
+            
+            <li><a href="#abcd" ">REGISTRATION</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#contactid"> Contact</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-center" style="position: absolute;left: 45%;">
+            <li><a  href="#"><span class="navimgid"><img src="image.png" width="124px"></span></a></li>
+           </ul>
+        </div>
+      </div>
+    </nav>
 
 <div class="container-fluid" id="eventsid" style="" >
-	<div class="row">
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"  id="eventdetails">
-			<div class="overlay-container" id="showcase1">
-				<a href="event1.html"><img src="111.jpg"  style="width: 900px">
-				<div class="imageoverlay"><h1>Event 1</h1></div></a>
-			</div>
-		</div>
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"   id="eventdetails">
-			<div class="overlay-container" id="showcase2">
-				<img src="112.jpg"  style="width: 900px">
-				<div class="imageoverlay"><h1>Event 2</h1></div>
-			</div>
-		</div>
-	</div>
+  <div class="row">
+    <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"  id="eventdetails">
+      <div class="overlay-container" id="showcase1">
+        <a href="event1.html"><img src="111.jpg"  style="width: 900px">
+        <div class="imageoverlay"><h1>Event 1</h1></div></a>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"   id="eventdetails">
+      <div class="overlay-container" id="showcase2">
+        <img src="112.jpg"  style="width: 900px">
+        <div class="imageoverlay"><h1>Event 2</h1></div>
+      </div>
+    </div>
+  </div>
 
-	<div class="row">
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"  id="eventdetails">
-			<div class="overlay-container" id="showcase3">
-				<img src="113.jpg" style="width: 900px">
-				<div class="imageoverlay"><h1>Event 3</h1></div>
-			</div>
-		</div>
-		<div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails" >
-			<div class="overlay-container" id="showcase4">
-				<img src="114.jpg" style="width: 900px">
-				<div class="imageoverlay"><h1>Event 4</h1></div>
-			</div>
-		</div>
-	</div>
+  <div class="row">
+    <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"  id="eventdetails">
+      <div class="overlay-container" id="showcase3">
+        <img src="113.jpg" style="width: 900px">
+        <div class="imageoverlay"><h1>Event 3</h1></div>
+      </div>
+    </div>
+    <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails" >
+      <div class="overlay-container" id="showcase4">
+        <img src="114.jpg" style="width: 900px">
+        <div class="imageoverlay"><h1>Event 4</h1></div>
+      </div>
+    </div>
+  </div>
 
-	<div class="container-fluid" id="contactid" style="height:400px;background-image: url(contact.jpg);">
-		<div class="row">
-			<div class="col-lg-6" style="padding:50px;">
-				<svg id="get-in-touch" class="child" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 100.85 99.84">
+  <div class="container-fluid" id="contactid" style="height:400px;background-image: url(contact.jpg);">
+    <div class="row">
+      <div class="col-lg-6" style="padding:50px;">
+        <svg id="get-in-touch" class="child" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 100.85 99.84">
             <g id="headset">
                 <path class="cls-1" d="M31.69,77.64,22.81,80a6.64,6.64,0,0,1-6.65-6.64V60.88a6.64,6.64,0,0,1,6.65-6.64l8.88,2.34Z" transform="translate(-0.06 -0.08)"/>
                 <path class="cls-1" d="M69.39,77.64,78.27,80a6.64,6.64,0,0,0,6.65-6.64V60.88a6.64,6.64,0,0,0-6.65-6.64l-8.88,2.34Z" transform="translate(-0.06 -0.08)"/>
@@ -771,47 +829,47 @@ left: 50%;z-index:5;">
                 <circle id="line11-2" class="cls-2" cx="99.54" cy="59.64" r="1.31"/>
             </g>
         </svg>
-			</div>
-			<div class="col-lg-6" style="padding:50px;">
-				<div class="row">
-					<h3><i class="fa fa-map-marker"></i> Address: </h5><Address style="color: #fff">Vision Room NTB,Maulana Azad
+      </div>
+      <div class="col-lg-6" style="padding:50px;">
+        <div class="row">
+          <h3><i class="fa fa-map-marker"></i> Address: </h5><Address style="color: #fff">Vision Room NTB,Maulana Azad
                                 National Institute of technology</Address>
-					
-				</div>
-				<div class="row">
-					<h3><i class="fa fa-envelope"></i> Email: </h5><address><a href="mailto:info@visionmanit.org"
+          
+        </div>
+        <div class="row">
+          <h3><i class="fa fa-envelope"></i> Email: </h5><address><a href="mailto:info@visionmanit.org"
                                     style="color:#DC7633;">info@visionmanit.org</a></address>
-					
-				</div>
-				<div class="row">
-					<h3><i class="fa fa-phone"></i> Contact: </h5><address><a href="tel:+919455525935" style="color:aqua">+91-9455525935</a>,<a
+          
+        </div>
+        <div class="row">
+          <h3><i class="fa fa-phone"></i> Contact: </h5><address><a href="tel:+919455525935" style="color:aqua">+91-9455525935</a>,<a
                                     href="tel:+918989859127" style="color:aqua">+91-8989859127</a></address>
-					
-				</div>
+          
+        </div>
 
-			</div>	
-				
+      </div>  
+        
 
-			
-		</div>
-	</div>
+      
+    </div>
+  </div>
 
 
 <div class="container-fluid" style="height: 300px;text-align: center;">
-	<div class="row" style="padding-top: 100px;">
-		<img src="v.png" alt="" height="30" width="90">
-	</div>
-	<div class="row" style="padding-top: 25px;padding-bottom: 5px">
+  <div class="row" style="padding-top: 100px;">
+    <img src="v.png" alt="" height="30" width="90">
+  </div>
+  <div class="row" style="padding-top: 25px;padding-bottom: 5px">
                         
                             <a style="padding: 10px" href="https://www.facebook.com/visionmanit/"><i class="fab fa-facebook"></i></a>
                             <a style="padding: 10px" href="https://www.youtube.com/channel/UCM1dBAT20ulLHkofolWr3uA"><i class="fab fa-youtube"></i></a>
                             
-	</div>
-	<div class="row">
-		<div class="copyright">
+  </div>
+  <div class="row">
+    <div class="copyright">
                         <p style="font-size: 10px;line-height: 15px">VISION &copy; All RIGHTS RESERVED 2018</p>
                     </div>
-	</div>
+  </div>
 
 </div>
 
@@ -820,7 +878,7 @@ left: 50%;z-index:5;">
     
     sr.reveal('#showcase1',{
       duration:2000,
-      origin:'left',
+      origin:'top',
       distance:'300px'
     });
     sr.reveal('#showcase2',{
@@ -840,6 +898,60 @@ sr.reveal('#showcase4',{
     });
     
   </script>
+<script type="text/javascript">
+	var video = document.querySelector('video')
+  , container = document.querySelector('#container_video');
 
+var setVideoDimensions = function () {
+  // Video's intrinsic dimensions
+  var w = video.videoWidth
+    , h = video.videoHeight;
+  
+  // Intrinsic Ratio
+  // Will be more than 1 if W > H and less if W < H
+  var videoRatio = (w / h).toFixed(2);
+  
+  // Get the container's computed styles
+  //
+  // Also calculate the min dimensions required (this will be
+  // the container dimentions)
+  var containerStyles = window.getComputedStyle(container)
+    , minW = parseInt( containerStyles.getPropertyValue('width') )
+    , minH = parseInt( containerStyles.getPropertyValue('height') );
+  
+  // What's the min:intrinsic dimensions
+  //
+  // The idea is to get which of the container dimension
+  // has a higher value when compared with the equivalents
+  // of the video. Imagine a 1200x700 container and
+  // 1000x500 video. Then in order to find the right balance
+  // and do minimum scaling, we have to find the dimension
+  // with higher ratio.
+  //
+  // Ex: 1200/1000 = 1.2 and 700/500 = 1.4 - So it is best to
+  // scale 500 to 700 and then calculate what should be the
+  // right width. If we scale 1000 to 1200 then the height
+  // will become 600 proportionately.
+  var widthRatio = minW / w
+    , heightRatio = minH / h;
+  
+  // Whichever ratio is more, the scaling
+  // has to be done over that dimension
+  if (widthRatio > heightRatio) {
+    var newWidth = minW;
+    var newHeight = Math.ceil( newWidth / videoRatio );
+  }
+  else {
+    var newHeight = minH;
+    var newWidth = Math.ceil( newHeight * videoRatio );
+  }
+  
+  video.style.width = newWidth + 'px';
+  video.style.height = newHeight + 'px';
+};
+
+video.addEventListener('loadedmetadata', setVideoDimensions, false);
+window.addEventListener('resize', setVideoDimensions, false);
+</script>
 </body>
 </html>
