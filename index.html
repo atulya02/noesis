@@ -677,11 +677,17 @@ video{
 	width: 1575px;
 }
 
+#imgevent{
 
+	width: 900px;
+}
+#contactsid{
+	height:400px;
+}
 @media only screen and (max-width: 640px)
 {
 	video{
-		width: 450px;
+		width: 500px;
 	}
 	#overlay_video h1
 	{
@@ -691,7 +697,18 @@ video{
 	{
 		display: none;
 	}
+	#imgevent
+	{
+		height:300px;
+		width: 100%;
+	}
+	#contactsid{
+		height:300px;
+		
+	}
+
 }
+
 
   </style>
 
@@ -767,13 +784,13 @@ left: 50%;z-index:5;">
   <div class="row">
     <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase1">
-        <a href="event1.html"><img src="111.jpg"  style="width: 900px">
+        <a href="event1.html"><img src="111.jpg"  id="imgevent" >
         <div class="imageoverlay"><h1>Event 1</h1></div></a>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"   id="eventdetails">
       <div class="overlay-container" id="showcase2">
-        <img src="112.jpg"  style="width: 900px">
+        <img src="112.jpg"  id="imgevent" >
         <div class="imageoverlay"><h1>Event 2</h1></div>
       </div>
     </div>
@@ -782,19 +799,19 @@ left: 50%;z-index:5;">
   <div class="row">
     <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase3">
-        <img src="113.jpg" style="width: 900px">
+        <img src="113.jpg" id="imgevent" >
         <div class="imageoverlay"><h1>Event 3</h1></div>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-6 col-sm-12" id="eventdetails" >
       <div class="overlay-container" id="showcase4">
-        <img src="114.jpg" style="width: 900px">
+        <img src="114.jpg" id="imgevent" >
         <div class="imageoverlay"><h1>Event 4</h1></div>
       </div>
     </div>
   </div>
 
-  <div class="container-fluid" id="contactid" style="height:400px;background-image: url(contact.jpg);">
+  <div class="container-fluid" id="contactid" style="background-image: url('contact.jpg');">
     <div class="row">
       <div class="col-lg-6 col-md-12 col-sm-12" style="padding:50px;">
         <svg id="get-in-touch" class="child" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"  id="svg_contact" width="250" height="250" viewBox="0 0 100.85 99.84">
