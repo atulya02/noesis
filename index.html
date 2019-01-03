@@ -653,54 +653,25 @@ h1 {
   transform: rotateX(0);
 }
 /*bg*video*/
-
-
-#container_video {
-
-
-  height: 810px;
-  background: #edeae8;
- 
-}
-
-video {
-  position: absolute;
-  
-  /* Horizontally center*/
-  left: 50%;
-  transform: translateX(-50%);
-  
-  /* Could do vertial centering too, depending upon your requirements:
-  top: 50%;
-  transform: translate(-50%, -50%);
-  
-  But in practise I noticed just `top: 0;` fulfills our expectations pretty well (obviously will vary from video to video)
-  */
-  top: 0;
-}
-
-#overlay_video {
-  position: absolute;
-  top: 0; right: 0; left: 0; bottom: 0;
-  
-  background: rgba(0,0,0,0.5);
+#overlay_video
+{
+	background:rgba(0,0,0,0.5);
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
 }
 #overlay_video h1{
-	position: absolute;
-	top: 15%;
-	left: 39%;
 	font-size: 100px;
-	color: black;
+	position: absolute;
+	top: 13.5%;
+	left: 37.5%;
+	color: #fff;
 }
-#video_cover {
-  position: absolute;
- 
 
- 
-  background: url('video_cover.jpg') no-repeat;
-  background-size: cover;
-  background-position: center;
-}
   </style>
 
 </head>
@@ -725,15 +696,21 @@ left: 50%;z-index:5;">
 </div>
 <div class="container-fluid">
 	<div class="row">
+		<div class="col-lg-12"  style="padding: 0;margin:0">
+			<div id="container" >
+      <video autoplay muted loop
+        width="1575" poster="video_cover.jpg" style="position: top:0;left: 0">
+        <source id='mp4' src="code.MKV" type='video/mp4'/>
+        
+        
+      </video>
+      
+    </div> <!-- End Container -->
 
-    <div id="container_video" >
-  <video autoplay muted loop>
-    <source src="code.MKV" type="video/mp4">
-  </video>
-  <div id="overlay_video"><h1>NOESIS</h1></div>
-  
+    <div id="overlay_video"><h1>NOESIS</h1></div>
+		</div>
+
     
-  </div>
 </div>
 </div>
   
@@ -899,60 +876,6 @@ sr.reveal('#showcase4',{
     });
     
   </script>
-<script type="text/javascript">
-	var video = document.querySelector('video')
-  , container = document.querySelector('#container_video');
 
-var setVideoDimensions = function () {
-  // Video's intrinsic dimensions
-  var w = video.videoWidth
-    , h = video.videoHeight;
-  
-  // Intrinsic Ratio
-  // Will be more than 1 if W > H and less if W < H
-  var videoRatio = (w / h).toFixed(2);
-  
-  // Get the container's computed styles
-  //
-  // Also calculate the min dimensions required (this will be
-  // the container dimentions)
-  var containerStyles = window.getComputedStyle(container)
-    , minW = parseInt( containerStyles.getPropertyValue('width') )
-    , minH = parseInt( containerStyles.getPropertyValue('height') );
-  
-  // What's the min:intrinsic dimensions
-  //
-  // The idea is to get which of the container dimension
-  // has a higher value when compared with the equivalents
-  // of the video. Imagine a 1200x700 container and
-  // 1000x500 video. Then in order to find the right balance
-  // and do minimum scaling, we have to find the dimension
-  // with higher ratio.
-  //
-  // Ex: 1200/1000 = 1.2 and 700/500 = 1.4 - So it is best to
-  // scale 500 to 700 and then calculate what should be the
-  // right width. If we scale 1000 to 1200 then the height
-  // will become 600 proportionately.
-  var widthRatio = minW / w
-    , heightRatio = minH / h;
-  
-  // Whichever ratio is more, the scaling
-  // has to be done over that dimension
-  if (widthRatio > heightRatio) {
-    var newWidth = minW;
-    var newHeight = Math.ceil( newWidth / videoRatio );
-  }
-  else {
-    var newHeight = minH;
-    var newWidth = Math.ceil( newHeight * videoRatio );
-  }
-  
-  video.style.width = newWidth + 'px';
-  video.style.height = newHeight + 'px';
-};
-
-video.addEventListener('loadedmetadata', setVideoDimensions, false);
-window.addEventListener('resize', setVideoDimensions, false);
-</script>
 </body>
 </html>
