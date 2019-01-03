@@ -11,8 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.11/css-doodle.min.js"></script>
   <script src="https://unpkg.com/css-doodle@0.4.11/css-doodle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/contact.css">
-  <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/scrollreveal@4"></script>
+  
     <script type="text/javascript" src=""></script>
     <script type="text/javascript">
 
@@ -167,11 +166,15 @@
     {
       position: absolute;
       top:0;
+      bottom: 0;
+      padding: 0;
+      margin: 0;
       background: rgb(0, 0, 0);
       background: rgba(0, 0, 0, 0.3); /* Black see-through */
       color: #f1f1f1;
       width: 100%;
-        height: 500px;
+      height: 100%;
+        
       transition: .5s ease;
       opacity: 0;
       color: white;
@@ -218,7 +221,8 @@
     }
     .overlay-container h1{
       position: absolute;
-      top: 50%;
+      top: 22.4%;
+      left: 34%;
       font-size: 64px;
     }
     #eventdetails{
@@ -424,6 +428,8 @@
     {
       .navimgid{
         display: none;
+        position: absolute;
+        left: 1000%;
       }
       #formcontainer
         {
@@ -656,7 +662,8 @@ h1 {
 /*bg*video*/
 #overlay_video
 {
-	background:rgba(0,0,0,0.5);
+	background-image: linear-gradient(to bottom right,#00C9FF,#BE5869);
+	opacity: .5;
 	width: 100%;
 	height: 100%;
 	position: absolute;
@@ -670,17 +677,13 @@ h1 {
 #overlay_video h1{
 	font-size: 100px;
 	position: absolute;
-	top: 13.5%;
+	top: 40%;
 	left: 37.5%;
 	color: #fff;
+	opacity: 1;
 }
 
-video{
-	width: 1700px;
 
-	padding: 0;
-	margin: 0;
-}
 
 #imgevent{
 
@@ -691,12 +694,14 @@ video{
 }
 @media only screen and (max-width: 640px)
 {
-	video{
+	#svg_logo svg{
 		width: 500px;
 	}
 	#overlay_video h1
 	{
 		font-size: 32px;
+		position: absolute;
+		top: 30%;
 	}
 	.navimgid
 	{
@@ -772,19 +777,10 @@ left: 50%;z-index:5;">
 </div>
   
 </div>
-<div class="container-fluid">
-	<div class="row">
-		<div class="col-lg-12 col-sm-12 col-md-12"  style="padding: 0;margin:0">
-			<div id="container" >
-      <video autoplay muted loop
-         poster="video_cover.jpg" style="position: top:0;left: 0">
-        <source id='mp4' src="code.MKV" type='video/mp4'/>
-        
-        
-      </video>
-      
-    </div> <!-- End Container -->
-
+<div class="container-fluid" style="background-image: linear-gradient(to bottom right,#4DA0B0,#D39D38);background: url('https://cdn-images-1.medium.com/max/2000/1*2r_oDePvVb72jFuor4kOdg.jpeg') center center no-repeat;">
+	<div class="row" style="width: 100%;height: 800px;">
+		<div class="col-lg-12 col-sm-12 col-md-12"  style="padding: 0;margin:0;width: 100%;height: 100%;">
+			<div id="svg_logo"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M447.25 265.63L431.64 286.31C452.33 256.51 457.53 249.61 447.25 265.63C436.97 281.65 411.2 320.58 369.96 382.42L320 458.02" id="ba8p8dNpg"></path><path d="M320 455.05L308.66 440.55C203.44 309.19 133.29 221.61 98.22 177.82C96.98 176.28 152.35 120.55 207.8 134.63C263.24 148.71 307.76 223.02 337.82 240.08C368.14 257.3 406.32 263.01 452.37 257.23" id="ifDvsLRU3"></path><path d="M368.5 237.59C342.47 227.82 320.46 211.24 302.45 187.85C315.77 189.4 331.33 185.8 349.14 177.04C375.85 163.91 411.66 141.31 435.81 135.31C496.71 120.2 533.8 142.23 527.3 151.16C515.37 167.54 493.48 199.31 461.65 246.47C425.57 250.32 394.52 247.36 368.5 237.59Z" id="ceJ9RKFom"></path></defs><g><g><g><g><use xlink:href="#ba8p8dNpg" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#ifDvsLRU3" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#ceJ9RKFom" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g></g></g></svg></div>
     <div id="overlay_video"><h1>NOESIS</h1></div>
 		</div>
 
@@ -929,31 +925,6 @@ left: 50%;z-index:5;">
 
 </div>
 
-<script type="text/javascript">
-    window.sr=ScrollReveal();
-    
-    sr.reveal('#showcase1',{
-      duration:2000,
-      origin:'top',
-      distance:'300px'
-    });
-    sr.reveal('#showcase2',{
-      duration:2000,
-      origin:'right',
-      distance:'300px'
-    });
-   sr.reveal('#showcase3',{
-      duration:3000,
-      origin:'left',
-      distance:'300px'
-    });
-sr.reveal('#showcase4',{
-      duration:3000,
-      origin:'right',
-      distance:'300px'
-    });
-    
-  </script>
 
 </body>
 </html>
