@@ -11,7 +11,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.11/css-doodle.min.js"></script>
   <script src="https://unpkg.com/css-doodle@0.4.11/css-doodle.min.js"></script>
   <link rel="stylesheet" type="text/css" href="css/contact.css">
-  <link rel="stylesheet" type="text/css" href="css/webfont/styles.css">
+  <link rel="stylesheet" type="text/css" href="styles.css">
   
     <script type="text/javascript" src=""></script>
     <script type="text/javascript">
@@ -677,10 +677,10 @@ h1 {
 	margin: 0;
 }
 #overlay_video h1{
-	font-size: 100px;
+	font-size: 200px;
 	position: absolute;
-	top: 45%;
-	left: 37.5%;
+	top: 15%;
+	left: 30%;
 	color: #fff;
 	opacity: 1;
 }
@@ -697,13 +697,13 @@ h1 {
 @media only screen and (max-width: 640px)
 {
 	#svg_logo svg{
-		width: 300px;
+		width: 450px;
 	}
 	#overlay_video h1
 	{
 		font-size: 32px;
 		position: absolute;
-		top: 30%;
+		top: 70%;
 	}
 	.navimgid
 	{
@@ -720,7 +720,7 @@ h1 {
 	}
 	.overlay-container h1{
 		font-size: 24px;
-		position: absolute;top: 10%;
+		position: absolute;top: 30%;
 		left: 45%;
 	}
 	body{
@@ -759,6 +759,10 @@ h1 {
 		
 		width: 100%;
 	}
+	body
+	{
+		margin-top: -15px;
+	}
 }
 @media only screen and (max-width: 1300px)
 {
@@ -766,10 +770,39 @@ h1 {
 		width: 1400px;
 
 	}
+	#imgevent
+	{
+		
+		width: 100%;
+	}
+}
+@font-face{
+font-family: Rallifornia;
+  src: url('css/webfont/Rallifornia.woff');
+}
+h1{
+	font-family: Rallifornia;
+}
+#topdiv{
+	height: 800px;}
+	#navbar{
+	margin-left: 15px;
+
 }
 
 
+	@media only screen and (max-width: 640px)
+	{
+		#topdiv{
+	height: 600px;}
+	#navbar{
+		margin-left: 0px;
+	}
+	}
+
   </style>
+
+
 
 </head>
 <body>
@@ -793,9 +826,9 @@ left: 50%;z-index:5;">
 </div>
 <div class="container-fluid" style="">
 	<div class="row" style="">
-		<div class="col-lg-12 col-sm-12 col-md-12"  style="background-image: linear-gradient(to bottom right,#4DA0B0,#D39D38);background: url('https://cdn-images-1.medium.com/max/2000/1*2r_oDePvVb72jFuor4kOdg.jpeg') no-repeat;background-size: auto;">
-			<div id="svg_logo"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M447.25 265.63L431.64 286.31C452.33 256.51 457.53 249.61 447.25 265.63C436.97 281.65 411.2 320.58 369.96 382.42L320 458.02" id="ba8p8dNpg"></path><path d="M320 455.05L308.66 440.55C203.44 309.19 133.29 221.61 98.22 177.82C96.98 176.28 152.35 120.55 207.8 134.63C263.24 148.71 307.76 223.02 337.82 240.08C368.14 257.3 406.32 263.01 452.37 257.23" id="ifDvsLRU3"></path><path d="M368.5 237.59C342.47 227.82 320.46 211.24 302.45 187.85C315.77 189.4 331.33 185.8 349.14 177.04C375.85 163.91 411.66 141.31 435.81 135.31C496.71 120.2 533.8 142.23 527.3 151.16C515.37 167.54 493.48 199.31 461.65 246.47C425.57 250.32 394.52 247.36 368.5 237.59Z" id="ceJ9RKFom"></path></defs><g><g><g><g><use xlink:href="#ba8p8dNpg" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#ifDvsLRU3" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#ceJ9RKFom" opacity="1" fill-opacity="0" stroke="#000000" stroke-width="1" stroke-opacity="1"></use></g></g></g></g></svg></div>
-    <div id="overlay_video"><h1 style="font-family: 'Rallifornia' ">NOESIS</h1></div>
+		<div class="col-lg-12 col-sm-12 col-md-12" id="topdiv"  style="background-image: linear-gradient(to bottom right,#4DA0B0,#D39D38);background: url('https://cdn-images-1.medium.com/max/2000/1*2r_oDePvVb72jFuor4kOdg.jpeg') no-repeat;background-size: auto;">
+			<div id="svg_logo"><svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M447.25 265.63L431.64 286.31C452.33 256.51 457.53 249.61 447.25 265.63C436.97 281.65 411.2 320.58 369.96 382.42L320 458.02" id="ba8p8dNpg"></path><path d="M320 455.05L308.66 440.55C203.44 309.19 133.29 221.61 98.22 177.82C96.98 176.28 152.35 120.55 207.8 134.63C263.24 148.71 307.76 223.02 337.82 240.08C368.14 257.3 406.32 263.01 452.37 257.23" id="ifDvsLRU3"></path><path d="M368.5 237.59C342.47 227.82 320.46 211.24 302.45 187.85C315.77 189.4 331.33 185.8 349.14 177.04C375.85 163.91 411.66 141.31 435.81 135.31C496.71 120.2 533.8 142.23 527.3 151.16C515.37 167.54 493.48 199.31 461.65 246.47C425.57 250.32 394.52 247.36 368.5 237.59Z" id="ceJ9RKFom"></path></defs><g><g><g><g><use xlink:href="#ba8p8dNpg" opacity="1" fill-opacity="1" stroke="#000000" stroke-width="10" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#ifDvsLRU3" opacity="1" fill-opacity="1" stroke="#000000" stroke-width="10" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#ceJ9RKFom" opacity="1" fill-opacity="1" stroke="#000000" stroke-width="10" stroke-opacity="1"></use></g></g></g></g></svg></div>
+    <div id="overlay_video"><h1 >NOESIS</h1></div>
 		</div>
 
     
@@ -803,7 +836,7 @@ left: 50%;z-index:5;">
 </div>
   
 
-<nav class="navbar navbar-default "  data-spy="affix"   id="navbar" style="padding: 0;margin-top: 0;margin-bottom: 0;margin-left: 15px;">
+<nav class="navbar navbar-default "  data-spy="affix"   id="navbar" style="padding: 0;margin-top: 0;margin-bottom: 0;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
