@@ -9,13 +9,17 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
 	<style type="text/css">
-		
+		@font-face {
+      font-family: Futura;
+      src: local('Futura Std');
+    }
 		body{
 			
 			padding: 0;
 			margin-left: -15px; 
 			margin-right: -15px; 
 			overflow-x: hidden;
+			font-family: Futura;
 			
 		}
 		::-webkit-scrollbar {
@@ -64,13 +68,137 @@
   top: 0;
   width: 100%;
 }
+
+.navbar-nav > li > a
+{
+	padding-top:20px;
+	padding-bottom:20px
+}
+.navbar {min-height:64px;color: #000; }
+.navbar-default {
+    background-color: #000;
+    border-color: #000;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #15b04b;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #15b04b;
+    background-color: #000;
+}
+
+.counter-value {
+            padding: 8px 0;
+            line-height: 1.3em;
+            font-weight: 500;
+            display: inline;
+            color: #d8d8d8;
+        }
+        @keyframes cycle-design {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1434.9226;
+  }
+  0%, 20%, 80%, 100% {
+    stroke: #8dc63f;
+  }
+  30%, 70% {
+    stroke: #00b6de;
+  }
+}
+@keyframes think-color {
+  0%, 100% {
+    color: #8dc63f;
+  }
+  40%, 60% {
+    color: #eee;
+  }
+}
+@keyframes make-color {
+  0%, 20%, 80%, 100% {
+    color: #eee;
+  }
+  50% {
+    color: #00b6de;
+  }
+}
+
+.product-cycle {
+  width: 80vmin;
+  max-width: 600px;
+  height: calc(40vmin + 2.4rem);
+  position: relative;
+}
+.path {
+  width: 80vmin;
+  height: 40vmin;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #000;
+}
+.path path {
+  fill: transparent;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+.path.-animate {
+  stroke: #00b6de;
+  stroke-dasharray: 478.30753 956.61507;
+  stroke-dashoffset: 1434.9226;
+  animation: cycle-design 5000ms linear infinite;
+}
+.path.-bg {
+  stroke: #eee;
+}
+.header, .explain {
+  width: 40vmin;
+  position: absolute;
+  color: #eee;
+  text-align: center;
+}
+.header {
+  font-size: 5.71429vmin;
+  line-height: 40vmin;
+}
+.header.-think {
+  left: 0;
+  animation: think-color 5000ms linear infinite;
+}
+.header.-make {
+  left: 40vmin;
+  animation: make-color 5000ms linear infinite;
+}
+.explain {
+  width: 40vmin;
+  top: calc(40vmin + 1rem);
+  font-size: 32px;
+  text-align: center;
+}
+.explain.-think {
+  left: 0;
+  color: #8dc63f;
+}
+.explain.-make {
+  left: 40vmin;
+  color: #00b6de;
+}
+
 	</style>
 	<script type="text/javascript">
 		
 		$(window).scroll(function() {
 			var scroll = $(window).scrollTop();
 			$(".zoom").css({
-			backgroundSize: (100 + scroll/3)  + "%",
+			backgroundSize: (100 - scroll/40)  + "%",
 			top: -(scroll/10)  + "%",
 			    });
 			});
@@ -115,7 +243,7 @@
 <body>
 
 
-<nav class="navbar navbar-inverse navbar-fixed-top"  data-spy="affix"  data-offset-top="800" id="navbar" style="margin-top: 0;margin-bottom: 0;margin-left: 0px;">
+<nav class="navbar navbar-default navbar-fixed-top"  data-spy="affix"  data-offset-top="800" id="navbar" style="margin-top: 0;margin-bottom: 0;margin-left: 0px;">
 		  <div class="container-fluid">
 		    <div class="navbar-header">
 		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -134,58 +262,93 @@
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#contactid"> Contact</a></li>
 		      </ul>
-		      <ul class="nav navbar-nav navbar-center" style="position: absolute;left: 45%;">
+		      <ul class="nav navbar-nav navbar-center" style="position: absolute;left: 45%;top:-25px;">
 		        <li><a  href="#"><span class="navimgid"><img src="image.png" width="120px"></span></a></li>
 		       </ul>
 		    </div>
 		  </div>
 </nav>
 
-<div class="container-fluid zoom"  id ="top" >
+<div class="container-fluid zoom"  id ="top" style="background-attachment: fixed;">
 		
-	<div id="header" style="position: absolute;top: 45%;">CHEM-E-DEXTERITY</div>
+	<div id="header" style="position: absolute;top: 45%;"></div>
 	
 </div>
-<div class="container-fluid" style="height: 400px;background-color: #fff;">
-	Ever thought of making a mini-pump of your own? If yes, Noesis’19 brings to you a thrilling opportunity to make your own water pump! It’s a high time to design and construct your water pump and also to learn about the industrial applications and principles of various equipment . Along with that you will also be given a brief theoretical knowledge about the variables involved in the process and also about the transport phenomena by which will be helpful to understand how the mobility of extensive thermodynamic property cause changes.
+<div class="container-fluid" style="height: 400px;background-color: #fff;text-align: center;">
+	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;">
+		<h1 style="font-weight: bold;padding-bottom:15px; ">CHEM-E-DEXTERITY</h1>
+	<p style="font-size: 18px;color: gray">Ever thought of making a mini-pump of your own? If yes, Noesis’19 brings to you a thrilling opportunity to make your own water pump! It’s a high time to design and construct your water pump and also to learn about the industrial applications and principles of various equipment . Along with that you will also be given a brief theoretical knowledge about the variables involved in the process and also about the transport phenomena by which will be helpful to understand how the mobility of extensive thermodynamic property cause changes.</p>
+
+
+	</div>
+	
 </div>
-<div class="container-fluid" style="height: 400px;background-color: #000">
-	<p style="color: #fff">OBJECTIVE:
-Workshop on working principle and industrial applications of pumps and other transport equipment such as valves.
-</p>
+
+<div class="container-fluid" style="height: 400px;background-color: #000;text-align: center;">
+	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;">
+	
+	<p style="font-size: 18px;color: gray">Ever thought of making a mini-pump of your own? If yes, Noesis’19 brings to you a thrilling opportunity to make your own water pump! It’s a high time to design and construct your water pump and also to learn about the industrial applications and principles of various equipment . Along with that you will also be given a brief theoretical knowledge about the variables involved in the process and also about the transport phenomena by which will be helpful to understand how the mobility of extensive thermodynamic property cause changes.</p>
+
+
+	</div>
+	
 </div>
-<div class="container-fluid" style="height: 400px;background-color: #fff">
-	<p >AIM: 
-To make participants learn about the industrial applications of the equipments involved in the transport phenomena
-To make them aware of the underlying principles of various equipments 
-To make them familiar with the design aspects variables involved in the process 
-To illustrate them with real small scale working model and help them designing and understanding the same.
-</p>
+<div class="container-fluid" style="height: 400px;background-color: #fff;text-align: center;background-image: url(chem1.jpg);background-attachment: fixed;">
+	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;">
+		<h1 style="font-weight: bold;padding-bottom:15px; ">CHEM-E-DEXTERITY</h1>
+	<p style="font-size: 18px;color: #000">Ever thought of making a mini-pump of your own? If yes, Noesis’19 brings to you a thrilling opportunity to make your own water pump! It’s a high time to design and construct your water pump and also to learn about the industrial applications and principles of various equipment . Along with that you will also be given a brief theoretical knowledge about the variables involved in the process and also about the transport phenomena by which will be helpful to understand how the mobility of extensive thermodynamic property cause changes.</p>
+
+
+	</div>
+	
 </div>
-<div class="container-fluid" style="height: 400px;background-color: #000">
-	<p style="color: #fff">AIM: 
-To make participants learn about the industrial applications of the equipments involved in the transport phenomena
-To make them aware of the underlying principles of various equipments 
-To make them familiar with the design aspects variables involved in the process 
-To illustrate them with real small scale working model and help them designing and understanding the same.
-</p>
-</div>
-<div class="container-fluid" style="height: 300px;text-align: center;">
-  <div class="row" style="padding-top: 100px;">
-    <img src="v.png" alt="" height="30" width="90">
+<div class="container-fluid text-center" style="height: 500px;background-color: #000;text-align:center;">
+	<div class="row text-center" >
+		
+		<div class="col-lg-12 text-center" style="text-align: center;">
+<div class="product-cycle" style="position: absolute;left: 30%;margin-top: 75px">
+  <div class="path -bg">
+    <svg viewBox="0 0 477 241">
+      <path d="M120,7C56,7,6,58.5,6,121s50.5,114,114,114s107-50.5,118.5-114 S293,7,357,7s114,52.5,114,114s-51,114-114,114s-103-41.5-118.5-114S184,7,120,7z" />
+    </svg>
   </div>
-  <div class="row" style="padding-top: 25px;padding-bottom: 5px">
-                        
-                            <a style="padding: 10px" href="https://www.facebook.com/visionmanit/"><i class="fab fa-facebook"></i></a>
-                            <a style="padding: 10px" href="https://www.youtube.com/channel/UCM1dBAT20ulLHkofolWr3uA"><i class="fab fa-youtube"></i></a>
+  <div class="path -animate">	
+    <svg viewBox="0 0 477 241">
+      <path id="path-to-animate" d="M120,7C56,7,6,58.5,6,121s50.5,114,114,114s107-50.5,118.5-114 S293,7,357,7s114,52.5,114,114s-51,114-114,114s-103-41.5-118.5-114S184,7,120,7z" />
+    </svg>
+  </div>
+  
+  <h1 class="header -think">Practice</h1>
+  <h1 class="header -make">Achieve</h1>
+  
+  <h2 class="explain -think">Chem-E-Dextirity</h2>
+  <h2 class="explain -make">Vision</h2>
+</div>
+
+		</div>
+	</div>
+	
+
+</div>
+<div class="container-fluid" style="height: 50px;background-color: #fff;padding: 10px">
+  <div class="row" style="">
+     <div class="col-lg-3 text-left" style="padding-left: 150px">
+     	<a style="padding: 10px" href="https://www.facebook.com/visionmanit/"><i class="fab fa-facebook"></i></a>
+    <a style="padding: 10px" href="https://www.youtube.com/channel/UCM1dBAT20ulLHkofolWr3uA"><i class="fab fa-youtube"></i></a>
+     </div>                  
+   	<div class="col-lg-6 text-center" style="padding-top: ;">
+   		
+   		<p style="font-size: 16px;line-height: 15px;color: gray">VISION &copy; All RIGHTS RESERVED 2018</p>
+   	</div>
+    <div class="col-lg-3 text-right" style="padding-right: 150px">
+    	
+    	<img src="v.png" alt="" height="30" width="70">
+    </div>
+    
+    
+
                             
   </div>
-  <div class="row">
-    <div class="copyright">
-                        <p style="font-size: 10px;line-height: 15px">VISION &copy; All RIGHTS RESERVED 2018</p>
-                    </div>
-  </div>
-
 </div>
 </body>
 </html>
