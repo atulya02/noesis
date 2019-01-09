@@ -1,307 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>NOESIS</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.11/css-doodle.min.js"></script>
-  <script src="https://unpkg.com/css-doodle@0.4.11/css-doodle.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/contact.css">
-  <link rel="stylesheet" type="text/css" href="styles.css">
-  
-    <script type="text/javascript" src=""></script>
-    <script type="text/javascript">
+	<title>EVENT 1</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-    $(window).scroll(function() {
-      var scroll = $(window).scrollTop();
-      $(".zoom").css({
-      backgroundSize: (100 + scroll/3)  + "%",
-      top: -(scroll/10)  + "%",
-          });
-      });
-  </script>
-  <script type="text/javascript">
-
-    window.onscroll = function() {scrollFunction()};
-
-      function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-          document.getElementById("header1").style.width = "300px";
-          document.getElementById("header1").style.height = "300px";
-          document.getElementById("header1").style.opacity= ".5";
-          document.getElementById("button-header").style.opacity= ".5";
-
-        } else {
-          document.getElementById("header1").style.width = "600px";
-          document.getElementById("header1").style.height = "600px";
-          document.getElementById("header1").style.opacity= "1";
-          document.getElementById("button-header").style.opacity= "1";
-
-        }
-      }
-
-
-  </script>
-  <script type="text/javascript">
-    $(function() {
-  var $overlay = $('.overlay'),
-      $overlayTrigger = $('.overlay-trigger button'),
-      $overlayClose = $('.overlay-close'),
-      openClass = 'is-open';
-
-  $overlayTrigger.on('click', function() {
-    $('.overlay' + 10).addClass(openClass);
-    $overlayClose.addClass(openClass);
-  });
-
-  $overlayClose.on('click', function() {
-    $overlayClose.removeClass(openClass);
-    $overlay.removeClass(openClass);
-  });
-});
-  </script>
-
-  <script>
-      $(document).ready(function(){
-    $("a").on('click', function(event) {
-
-      if (this.hash !== "") {
-        event.preventDefault();
-        var hash = this.hash;
-        $('html, body').animate({
-          scrollTop: $(hash).offset().top
-        }, 800, function(){
-          window.location.hash = hash;
-        });
-      }
-    });
-  });
-  </script>
-
-  <script type="text/javascript">
-      (function ($) {
-    $(document).ready(function(){
-
-    // hide .navbar first
-    $(".navbar").hide();
-
-    // fade in .navbar
-    $(function () {
-      $(window).scroll(function () {
-              // set distance user needs to scroll before we fadeIn navbar
-        if ($(this).scrollTop() > 800) {
-          $('.navbar').fadeIn();
-        } else {
-          $('.navbar').fadeOut();
-        }
-      });
-
-
-    });
-
-  });
-    }(jQuery));
-    </script>
-    
-
-
-
-    <script type="text/javascript">
-          function Validation()
-      {
-          var a = document.form.phone.value;
-          if(isNaN(a))
-          {
-          alert("Enter a valid Mobile Number");
-          document.form.phone.focus();
-          return false;
-          }
-          if(a.length!=10)
-          {
-          alert("Enter a valid Mobile Number");
-          document.form.phone.select();
-          return false;
-          }
-          return true;
-      }
-
-      function validateEmail()
-      {
-              var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
-              var z=document.form.email1.value;
-              if (reg.test(z)==false)
-              {
-                  alert('Invalid Email Address');
-                  document.form.email1.focus();
-                  return false;
-              }
-
-              return true;
-      }
-
-      function checkvalue(val)
-      {
-
-          if(val==="Others")
-             document.getElementById('otheroption').style.display='block';
-          else
-             document.getElementById('otheroption').style.display='none';
-      }
-
-        </script>
-
-  <style type="text/css">
-
-    .container-fluid
-    {
-    	padding: 0;
-    	margin: 0;
-
-
+	<style type="text/css">
+		@font-face {
+      font-family: Futura;
+      src: local('Futura Std');
     }
-
-    .imageoverlay
-    {
-      position: absolute;
-      top:0;
-      bottom: 0;
-      padding: 0;
-      margin: 0;
-      background: rgb(0, 0, 0);
-      background: rgba(0, 0, 0, 0.3); /* Black see-through */
-      color: #f1f1f1;
-      width: 100%;
-      height: 100%;
-        
-      transition: .5s ease;
-      opacity: 0;
-      color: white;
-      font-size: 20px;
-      padding: 20px;
-      text-align: center;
-      overflow: hidden;
-
-    }
-    .row
-    {
-      margin: 0;
-      padding: 0;
-    }
-    #eventdetails :hover .imageoverlay{
-      opacity:1;
-      cursor: pointer;
-    }
-
-    #eventdetails :hover img{
-      transform: scale(1.15);
-      overflow: hidden;
-    }
-    .overlay-container img
-    {
-      overflow: hidden;
-      transition: 5s ease;
-      margin: 0;
-      padding: 0;
-    }
-    body{
-
-      padding: 0;
-      margin-left: -15px;
-      margin-right: -15px;
-      overflow-x: hidden;
-
-    }
-    .overlay-container{
-      overflow: hidden;
-      width: 100%;
-      height: 100%;
-
-    }
-    .overlay-container h1{
-      position: absolute;
-      top: 22.4%;
-      left: 34%;
-      font-size: 64px;
-    }
-    #eventdetails{
-      margin: 0;
-      padding: 0;
-    }
-
-    .zoom{
-      overflow: hidden;
-      padding-bottom: 55%;
-      background-attachment: fixed;
-      }
-    .zoom img{
-      position: fixed;
-      top: 0%;
-      left: 50%;
-      transform: translateX(-50%);
-      }
-    .zoom{
-      background-image:url(bg.jpg);
-      background-color: #000;
-      width: 100%;
-      height:100%;
-      background-position: center center;
-    }
-    #header {
-      color: #fff;
-      text-align: center; /* Centered text */
-      font-size: 64px;
-      transition: 0.5s;
-      text-align: center;
-      width: 100%;
-
-          }
-
-     #button-header
-     {
-      position: absolute;
-      top: 60%;
-      left: 46%;
-      transition: 0.5s;
-      text-align: center;
-     }
-
-        .affix {
-              top: 0px;
-              width: 100%;
-              transition: .5s;
-              z-index: 9999 ;
-            }
-
-    .affix + .container
-      {
-          padding:0px;
-      }
-    #navbar{
-      transition: .5s ease in;
-    }
-
-    .footer{
-      overflow: hidden;
-      padding-bottom: 55%;
-      }
-    .footer img{
-      position: fixed;
-      top: 0%;
-      left: 50%;
-      transform: translateX(-50%);
-      }
-    .footer{
-      background-color: #000;
-      background-attachment: fixed;
-      width: 100%;
-      height: 100%;
-      background-position: center center;
-    }
-    ::-webkit-scrollbar {
+		body{
+			
+			padding: 0;
+			margin-left: -15px; 
+			margin-right: -15px; 
+			overflow-x: hidden;
+			font-family: Futura;
+			
+		}
+		::-webkit-scrollbar {
             width: 5px;
         }
 
@@ -316,207 +37,44 @@
             background: black;
 
         }
-
-
-        /*.................Form............*/
-        #formcontainer
-        {
-          position: absolute;left: 25%;padding: 150px;
-        }
-        .boxreg
-    {
-      width: 450px;
-      padding: 20px;
-      background-color: #191919 opacity 1 ;
-      text-align: center;
-
-    }
-    .boxreg select
-    {
-      background-color: #000 ;
-      color: #fff;
-      width: 275px;
-      height: 50px;
-      text-align: center;
-    }
-    .boxreg h1
-    {
-      color: white;
-      text-transform: uppercase;
-      font-weight: 500;
-      font-size: 7em;
-    }
-    .boxreg input[type="text"],.boxreg input[type="password"],.boxreg select
-    {
-      border:0;
-      background: none;
-      display: block;
-      margin: 20px auto;
-      text-align: center;
-      border:2px solid #3498db;
-      padding: 10px 10px;
-      width: 200px;
-      outline: none;
-      color: white;
-
-      transition: .25s;
-    }
-    .boxreg input[type="text"]:focus,.boxreg input[type="password"]:focus,.boxreg select:focus
-    {
-      width: 280px;
-      border-color: #2ecc71;
-    }
-    .boxreg input[type="submit"]
-    {
-      border:0;
-      background: none;
-      display: block;
-      margin: 20px auto;
-      text-align: center;
-      border:2px solid #2ecc71;
-      padding: 10px 10px;
-      width: 150px;
-      outline: none;
-      color: white;
-      transition: .6s;
-      cursor: pointer;
-      overflow: hidden;
-    }
-    .boxreg input[type="submit"]:focus
-    {
-      outline: none;
-
-    }
-
-
-
-    .boxreg input[type="submit"]:hover
-    {
-      background:#2ecc71;
-    }
-
-    .containerreg
-    {
-      position: absolute;
-      top: 50%;
-      left: 45%;
-    }
-    @media only screen and (max-width: 450px)
-    {
-      .boxreg
-      {
-        width: 200px;
-        height: 600px;
-      }
-      .boxreg input[type="text"],.boxreg input[type="password"],.boxreg select
-    {
-      margin: 10px auto;
-      text-align: center;
-      border:2px solid #3498db;
-      padding: 5px 5px;
-      width: 400px;
-      outline: none;
-      color: white;
-
-    }
-      .containerreg
-    {
-      position: absolute;
-      top: 50%;
-      left: 30%;
-    }
-    }
-    @media only screen and (max-width: 640px)
-    {
-      .navimgid{
-        display: none;
-        position: absolute;
-        left: 1000%;
-      }
-      #formcontainer
-        {
-          position: absolute;padding-top: 80px;
-          padding-left: 25px;
-          padding-right: 40px;
-          padding-bottom: 25px;
-        }
-      .boxreg
-      {
-        width: 250px;
-        padding: 5px;
-        position: absolute;
-      left: 0;
-      }
-      .boxreg h1
-    {
-      color: white;
-      text-transform: uppercase;
-      font-weight: 300;
-      font-size: 4em;
-    }
-      .boxreg input[type="text"],.boxreg input[type="password"],.boxreg select
-    {
-      margin: 10px auto;
-      text-align: center;
-      border:2px solid #3498db;
-      padding: 2.5px 2.5px;
-      width: 175px;
-      outline: none;
-      color: white;
-
-
-    }
-    .boxreg input[type="text"]:focus,.boxreg input[type="password"]:focus,.boxreg select:focus
-    {
-      width: 250px;
-      border-color: #2ecc71;
-    }
-    .boxreg input[type="submit"]
-    {
-      border:0;
-      background: none;
-      display: block;
-      margin: 20px auto;
-      text-align: center;
-      border:2px solid #2ecc71;
-      padding: 10px 10px;
-      width: 150px;
-      outline: none;
-      color: white;
-
-      transition: .6s;
-      cursor: pointer;
-      overflow: hidden;
-
-    }
-
-
-    }
-    @media only screen and (max-width: 1390px)
-    {
-      .boxreg
-      {
-        width: 250px;
-        height: 600px;
-      }
-
-      .containerreg
-    {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-    }
-
-      #top{
-
-        width:100%;
-      }
-
-}
-h3{
-  color: #fff;
+		.zoom{
+			overflow: hidden;
+			padding-bottom: 55%;
+			background-attachment: fixed;
+			}
+		.zoom img{
+			position: fixed;
+			top: 0%;
+			left: 50%;
+			transform: translateX(-50%);
+			}
+		.zoom{
+			background-image:url(bg.jpg);
+			width: 100%;
+			height:100%;
+			background-position: center center;
+		}
+		#header {
+		  color: #fff;
+		  text-align: center; /* Centered text */
+		  font-size: 64px; 
+		  transition: 0.5s; 
+		  text-align: center;
+		  width: 100%;
+		  
+		  		}
+		  		.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
+.navbar-nav > li > a
+{
+	padding-top:20px;
+	padding-bottom:20px
+}
+.navbar {min-height:64px;color: #000; }
 .navbar-default {
     background-color: #000;
     border-color: #000;
@@ -535,461 +93,304 @@ h3{
     background-color: #000;
 }
 
+.counter-value {
+            padding: 8px 0;
+            line-height: 1.3em;
+            font-weight: 500;
+            display: inline;
+            color: #d8d8d8;
+        }
+        @keyframes cycle-design {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 1434.9226;
+  }
+  0%, 20%, 80%, 100% {
+    stroke: #8dc63f;
+  }
+  30%, 70% {
+    stroke: #00b6de;
+  }
+}
+@keyframes think-color {
+  0%, 100% {
+    color: #8dc63f;
+  }
+  40%, 60% {
+    color: #eee;
+  }
+}
+@keyframes make-color {
+  0%, 20%, 80%, 100% {
+    color: #eee;
+  }
+  50% {
+    color: #00b6de;
+  }
+}
 
-/*......overlay....*/
-.back {
+.product-cycle {
+  width: 80vmin;
+  max-width: 600px;
+  height: calc(40vmin + 2.4rem);
+  position: relative;
+}
+.path {
+  width: 80vmin;
+  height: 40vmin;
   position: absolute;
-  
-  z-index: 100;
-  color: #222;
-  text-decoration: none;
-  transition: color .3s;
-}
-.back:hover {
-  color: #aaa;
-}
-h1 {
-  padding: 2em 0;
-  font-size: 48px;
-  font-weight: 300;
-  text-align: center;
-}
-
-.overlay-trigger {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  max-width: 840px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-.overlay-trigger button {
-  display: block;
-  margin: 0;
-  padding: 1em 1em;
-  background: #000;
-  border:none;
-  color: #fff;
-  font-size: 15px;
-  text-align: center;
-  cursor: pointer;
-  transition: .2s ease-in-out;
-}
-.overlay-trigger button:hover {
-  background: transparent;
-  color: #15b04b;
-}
-.overlay-close {
-  position: fixed;
-  top: 80%;
-  left: 50%;
-  z-index: 10;
-  padding: 1em 2.5em;
-  background: aqua;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  color: #222;
-  font-size: 16px;
-  text-align: center;
-  cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transition: .2s ease-in-out;
-  transform: translate(-50%, -50%);
-}
-.overlay-close.is-open {
-  opacity: 1;
-  visibility: visible;
-}
-.overlay-close:hover {
-  background: transparent;
-  color: #fff;
-}
-
-
-.overlay10 {
-  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  z-index: 2;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: .6s linear .6s;
+  background-color: #000;
 }
-.overlay10 div::before,
-.overlay10 div::after {
-  position: fixed;
+.path path {
+  fill: transparent;
+  stroke-width: 10;
+  stroke-linecap: round;
+}
+.path.-animate {
+  stroke: #00b6de;
+  stroke-dasharray: 478.30753 956.61507;
+  stroke-dashoffset: 1434.9226;
+  animation: cycle-design 5000ms linear infinite;
+}
+.path.-bg {
+  stroke: #eee;
+}
+.header, .explain {
+  width: 25vmin;
+  position: absolute;
+
+  color: #eee;
+  text-align: center;
+}
+.header {
+  font-size: 5.71429vmin;
+  line-height: 40vmin;
+}
+.header.-think {
+	position: absolute;
+  left: 20%;
+  animation: think-color 5000ms linear infinite;
+}
+.header.-make {
+  left: 40vmin;
+  animation: make-color 5000ms linear infinite;
+}
+.explain {
+  width: 40vmin;
+  top: calc(40vmin + 1rem);
+  font-size: 32px;
+  text-align: center;
+}
+.explain.-think {
   left: 0;
-  content: '';
-  width: 100%;
-  height: calc(100% / 6);
-  background: rgba(0, 0, 0, .7);
-  transform: rotateX(-270deg);
-  transition: .3s linear;
+  color: #8dc63f;
 }
-.overlay10 div:nth-child(1)::before {
-  top: 0;
+.explain.-make {
+  left: 40vmin;
+  color: #00b6de;
 }
-.overlay10 div:nth-child(1)::after {
-  top: calc(100% / 6);
-  transition-delay: .1s;
-}
-.overlay10 div:nth-child(2)::before {
-  top: calc(100% / 6 * 2);
-  transition-delay: .2s;
-}
-.overlay10 div:nth-child(2)::after {
-  top: calc(100% / 6 * 3);
-  transition-delay: .3s;
-}
-.overlay10 div:nth-child(3)::before {
-  top: calc(100% / 6 * 4);
-  transition-delay: .4s;
-}
-.overlay10 div:nth-child(3)::after {
-  bottom: 0;
-  transition-delay: .5s;
-}
-.overlay10.is-open {
-  opacity: 1;
-  visibility: visible;
-  transition: .6s linear;
-}
-.overlay10.is-open div::before,
-.overlay10.is-open div::after {
-  transform: rotateX(0);
-}
-/*bg*video*/
-#overlay_video
-{
-	background-image: linear-gradient(to bottom right,#00C9FF,#BE5869);
-	opacity: .5;
-	width: 100%;
-	height: 900px;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	padding: 0;
-	margin: 0;
-}
-#overlay_video h1{
-	font-size: 200px;
-	position: absolute;
-	top: 0%;
-	left: 30%;
+
+#aim li{
+	font-size: 20px;
+	text-align: left;
 	color: #fff;
-	opacity: 1;
 }
 
-
-
-#imgevent{
-
-	width: 900px;
-}
-#contactsid{
-	height:400px;
-}
-@media only screen and (max-width: 640px)
-{
-	#svg_logo svg{
-		width: 300px;
-	}
-	#overlay_video h1
-	{
-		font-size: 32px;
-		position: absolute;
-		top: 70%;
-	}
-	.navimgid
-	{
-		display: none;
-	}
-	#imgevent
-	{
-		height:300px;
-		width: 100%;
-	}
-	#contactsid{
-		height:300px;
-
-	}
-	.overlay-container h1{
-		font-size: 24px;
-		position: absolute;top: 30%;
-		left: 45%;
-	}
-	body{
-
-      padding: 0;
-      margin-left: 0px;
-      margin-right: 0px;
-      overflow-x: hidden;
-      padding-top: 0;
-      margin-top: -5px;
-      margin-bottom: 0;
-      padding: 0;
-
-    }
-	
-
-}
-@media only screen and (max-width: 1100px)
-{
-	video{
-		width: 1000px;
-	}
-	#overlay_video h1
-	{
-		font-size: 54px;
-		position: absolute;
-		top: 25%;
-		left: 35%;
-	}
-	.navimgid
-	{
-		display: none;
-	}
-	#imgevent
-	{
+	</style>
+	<script type="text/javascript">
 		
-		width: 100%;
-	}
-	body
-	{
-		margin-top: -15px;
-	}
-}
-@media only screen and (max-width: 1300px)
-{
-	video{
-		width: 1400px;
-
-	}
-	#imgevent
-	{
+		$(window).scroll(function() {
+			var scroll = $(window).scrollTop();
+			$(".zoom").css({
+			backgroundSize: (100 - scroll/40)  + "%",
+			top: -(scroll/10)  + "%",
+			    });
+			});
+	</script>
+	<script type="text/javascript">
 		
-		width: 100%;
-	}
-}
-@font-face{
-font-family: Rallifornia;
-  src: url('css/webfont/Rallifornia.woff');
-}
-h1{
-	font-family: Rallifornia;
-}
-#topdiv{
-	height: 800px;}
-	#navbar{
-	margin-left: 15px;
+		window.onscroll = function() {scrollFunction()};
 
-}
+			function scrollFunction() {
+			  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+			    document.getElementById("header").style.fontSize = "30px";
+			    document.getElementById("header").style.opacity= ".5";
+			    document.getElementById("button-header").style.opacity= ".5";
+			    
+			  } else {
+			    document.getElementById("header").style.fontSize = "64px";
+			    document.getElementById("header").style.opacity= "1";
+			    document.getElementById("button-header").style.opacity= "1";
+			    
+			  }
+			}
 
+			
+	</script>
+	<script>
+      $(document).ready(function(){
+    $("a").on('click', function(event) {
 
-	@media only screen and (max-width: 640px)
-	{
-		#topdiv{
-	height: 600px;}
-	#navbar{
-		margin-left: 0px;
-	}
-	}
-  video{
-      position: relative;
-      width: 100%;
-      top: 0;
-      height: 100%;
-    }
-
-    @media only screen and (max-width: 640px){
-
-      video{
-        position: relative;
-        top: 0;
-        height:450px;
-        width: 100%;
-        
+      if (this.hash !== "") {
+        event.preventDefault();
+        var hash = this.hash;
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 800, function(){
+          window.location.hash = hash;
+        });
       }
-    }
-
-  </style>
-
-
-
+    });
+  });
+  </script>
 </head>
 <body>
-<button class="overlay-close">Close Overlay</button>
 
 
-<div class="overlay overlay10" >
-  <div>
-    <a href="#eventsid" class="button" style="position: absolute;top: 50%;
-left: 50%;z-index: 3;">CSE</a><br>
-  <a href="#eventsid" class="button">CSE</a>
-</div>
-<div style="position: absolute;top: 30%;left: 50%;z-index: 4;">
-    
-</div>
-<div style="position: absolute;top: 70%;
-left: 50%;z-index:5;">
+<nav class="navbar navbar-default navbar-fixed-top"  data-spy="affix"  data-offset-top="800" id="navbar" style="margin-top: 0;margin-bottom: 0;margin-left: 0px;">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>                        
+		      </button>
+		      <a class="navbar-brand" style="text-align: center;" href="index.html"><img src="vnew.png" width="80px" height="" ></a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		      <ul class="nav navbar-nav">
+		        <li class="active"><a href="index.html">HOME</a></li>
+		        <li><a href="index.html">EVENTS</a></li>
+		        <li><a href="index.html">REGISTRATION</a></li>
+		      </ul>
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="index.html"> Contact</a></li>
+		      </ul>
+		      
+		    </div>
+		  </div>
+</nav>
 
-</div>
-  
-</div>
-<div class="container-fluid" style="">
-	<div class="row" style="">
-    <video autoplay muted loop poster="video_cover.jpg">
-    <source src="abc.mp4" type="video/mp4">
-  </video>
-    <div id="overlay_video"><h1 >NOESIS</h1></div>
+<div class="container-fluid zoom"  id ="top" style="background-attachment: fixed;">
 		
+	<div id="header" style="position: absolute;top: 45%;"></div>
+	
+</div>
+<div class="container-fluid" style="height: 400px;background-color: #fff;text-align: center;">
+	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;">
+		<h1 style="font-weight: bold;padding-bottom:15px; ">CHEM-E-DEXTERITY</h1>
+	<p style="font-size: 18px;color: gray">Ever thought of making a mini-pump of your own? If yes, Noesis’19 brings to you a thrilling opportunity to make your own water pump! It’s a high time to design and construct your water pump and also to learn about the industrial applications and principles of various equipment . Along with that you will also be given a brief theoretical knowledge about the variables involved in the process and also about the transport phenomena by which will be helpful to understand how the mobility of extensive thermodynamic property cause changes.</p>
 
-    
+
+	</div>
+	
 </div>
+
+<div class="container-fluid" style="height: 400px;background-color: #000;text-align: center;">
+	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;">
+	<h1 style="font-weight: bold;padding-bottom:15px;color: #fff ">OBJECTIVE:</h1>
+	<p style="font-size: 18px;color: gray">Workshop on working principle and industrial applications of pumps and other transport
+equipment such as valves.</p>
+
+
+	</div>
+	
 </div>
+<div class="container-fluid" style="height: 500px;background-color: #fff;text-align: center;background-image: url(chem1.png);background-attachment: fixed;">
+	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;background-color: #000;opacity: .5" id="aim">
+		<h1 style="font-weight: bold;padding-bottom:15px;color: #fff ">AIM:</h1>
+	<ul>
+		<li>To make participants learn about the industrial applications of the equipments involved in the transport phenomena</li>
+		<li>To make them aware of the underlying principles of various equipments </li>
+		<li>To make them familiar with the design aspects variables involved in the process </li>
+		<li>To illustrate them with real small scale working model and help them designing and understanding the same.</li>
+	</ul>
+
+
+	</div>
+	
+</div>
+<div class="container-fluid text-center" style="height: 500px;background-color: #000;text-align:center;">
+	<div class="row text-center" >
+		
+		<div class="col-lg-12 text-center" style="text-align: center;">
+<div class="product-cycle" style="position: absolute;left: 30%;margin-top: 75px">
+  <div class="path -bg">
+    <svg viewBox="0 0 477 241">
+      <path d="M120,7C56,7,6,58.5,6,121s50.5,114,114,114s107-50.5,118.5-114 S293,7,357,7s114,52.5,114,114s-51,114-114,114s-103-41.5-118.5-114S184,7,120,7z" />
+    </svg>
+  </div>
+  <div class="path -animate">	
+    <svg viewBox="0 0 477 241" height="300" width="400">
+      <path id="path-to-animate" d="M120,7C56,7,6,58.5,6,121s50.5,114,114,114s107-50.5,118.5-114 S293,7,357,7s114,52.5,114,114s-51,114-114,114s-103-41.5-118.5-114S184,7,120,7z" />
+    </svg>
+  </div>
   
+  <h1 class="header -think">Practice</h1>
+  <h1 class="header -make">Achieve</h1>
+  
+  <h2 class="explain -think" style="font-size: 20px;position: absolute;left: 10%">Chem-E-Dextirity</h2>
+  <h2 class="explain -make" style="font-size: 20px">Vision</h2>
+</div>
 
-<nav class="navbar navbar-default "  data-spy="affix"   id="navbar" style="padding: 0;margin-top: 0;margin-bottom: 0;">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" style="text-align: center;" href="#top"><img src="v.png" width="80px" height=""></a>
-        </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">HOME</a></li>
-            <li><div class="overlay-trigger"><button>EVENTS</button></div></li>
-            
-            <li><a href="#abcd" ">REGISTRATION</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#contactid"> Contact</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-center" style="position: absolute;left: 45%;">
-            <li><a  href="#"><span class="navimgid"><img src="image.png" width="124px"></span></a></li>
-           </ul>
-        </div>
-      </div>
-    </nav>
+		</div>
+	</div>
+	
 
-<div class="container-fluid" id="eventsid" style="" >
-  <div class="row">
-    <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
-      <div class="overlay-container" id="showcase1">
-        <a href="event1.html"><img src="111.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h1>Event 1</h1></div></a>
-      </div>
+</div>
+<div class="container-fluid" style="height: 50px;background-color: #fff;padding: 10px">
+  <div class="row" style="">
+     <div class="col-lg-3 text-left" style="padding-left: 150px;">
+		     	<span style="padding-right: 20px"><a
+		href="http://www.facebook.com/NERISSON.FB" target="_blank">
+		<span
+		class="svg svg-icon-facebook svg-"><svg
+		version="1.1" id="svg2-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		width="13px" height="25px" viewBox="0 0 13 25" enable-background="new 0 0 13 25" xml:space="preserve">
+		<path
+		d="M8.667,8.691V6.398c0-1.122-0.383-2.053,1.303-2.053H13V0H8.977C4.674,0,3.25,2.042,3.25,5.547v3.144H0v4.345h3.25V25h5.417
+		V13.036h2.787l0.623-4.345H8.667z"/>
+		</svg><span
+		class="alt"></span></span>			</a></span>
+		<span style="padding-right: 20px">
+		<a
+		href="http://www.linkedin.com/in/jimmyrahe" target="_blank">
+		<span
+		class="svg svg-icon-linkedin svg-"><svg
+		version="1.1" id="svg7-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		width="23px" height="22px" viewBox="0 0 23 22" enable-background="new 0 0 23 22" xml:space="preserve">
+		<rect
+		x="0.132" y="6.658" width="4.711" height="15.342"/>
+		<path
+		d="M8.622,22h4.712v-8.846c0-0.446,0.03-0.883,0.151-1.197c0.334-0.882,1.115-1.783,2.412-1.783
+		c1.712,0,2.391,1.348,2.391,3.324V22H23v-9.069c0-4.52-2.331-6.618-5.42-6.618c-2.544,0-4.064,1.469-4.683,2.473h-0.091
+		l-0.223-2.128H8.491c0.071,1.378,0.131,2.979,0.131,4.895V22z"/>
+		<path
+		d="M2.452,4.773c1.581,0,2.543-1.064,2.543-2.392C4.965,1.034,4.033,0,2.513,0C0.993,0,0,1.034,0,2.381
+		C0,3.709,0.963,4.773,2.452,4.773z"/>
+		</svg><span
+		class="alt"></span></span>			</a></span>
+
+
+    <img src="https://img.icons8.com/ios/30/000000/youtube-play-filled.png" style="position: absolute;top: 0px;">
+     </div>                  
+   	<div class="col-lg-6 text-center" style="padding-top: ;">
+   		
+   		<p style="font-size: 16px;line-height: 15px;color: gray">VISION &copy; All RIGHTS RESERVED 2018</p>
+   	</div>
+    <div class="col-lg-3 text-right" style="padding-right: 150px">
+    	
+    	<img src="v.png" alt="" height="30" width="70">
     </div>
-    <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"   id="eventdetails">
-      <div class="overlay-container" id="showcase2">
-        <img src="112.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h1>Event 2</h1></div>
-      </div>
-    </div>
-  </div>
+    
+    
 
-  <div class="row">
-    <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
-      <div class="overlay-container" id="showcase3">
-        <img src="113.jpg" id="imgevent" >
-        <div class="imageoverlay"><h1>Event 3</h1></div>
-      </div>
-    </div>
-    <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12" id="eventdetails" >
-      <div class="overlay-container" id="showcase4">
-        <img src="114.jpg" id="imgevent" >
-        <div class="imageoverlay"><h1>Event 4</h1></div>
-      </div>
-    </div>
-  </div>
-
-  <div class="container-fluid" id="contactid" style="background-image: url('contact.jpg');">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 col-sm-12" style="padding:50px;">
-        <svg id="get-in-touch" class="child" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg"  id="svg_contact" width="250" height="250" viewBox="0 0 100.85 99.84">
-            <g id="headset">
-                <path class="cls-1" d="M31.69,77.64,22.81,80a6.64,6.64,0,0,1-6.65-6.64V60.88a6.64,6.64,0,0,1,6.65-6.64l8.88,2.34Z" transform="translate(-0.06 -0.08)"/>
-                <path class="cls-1" d="M69.39,77.64,78.27,80a6.64,6.64,0,0,0,6.65-6.64V60.88a6.64,6.64,0,0,0-6.65-6.64l-8.88,2.34Z" transform="translate(-0.06 -0.08)"/>
-                <rect class="cls-1" x="37.84" y="89.19" width="19.25" height="9.4" rx="3.83" ry="3.83"/>
-                <path class="cls-1" d="M74.8,43.23H69.88a3.71,3.71,0,0,1-3-1.58,20.1,20.1,0,0,0-32.78,0,3.67,3.67,0,0,1-3,1.57H26.16" transform="translate(-0.06 -0.08)"/>
-                <path class="cls-1" d="M76.28,78.08v-27a25.8,25.8,0,0,0-25.79-25.8h0a25.8,25.8,0,0,0-25.8,25.8v30A12.89,12.89,0,0,0,37.57,94h0" transform="translate(-0.06 -0.08)"/>
-            </g>
-            <g id="lines">
-                <line id="line1-1" class="cls-1" x1="6.06" y1="58.8" x2="9.6" y2="58.18"/>
-                <circle id="line1-2" class="cls-2" cx="1.31" cy="59.64" r="1.31"/>
-                <line id="line2-1" class="cls-1" x1="12.53" y1="44.3" x2="15.35" y2="44.8"/>
-                <line id="line2-2" class="cls-1" x1="1.38" y1="42.33" x2="7.02" y2="43.33"/>
-                <line id="line3-1" class="cls-1" x1="11.37" y1="28.43" x2="19.65" y2="33.21"/>
-                <circle id="line3-2" class="cls-2" cx="7.23" cy="26.04" r="1.31"/>
-                <line id="line4" class="cls-1" x1="18.37" y1="12.78" x2="27.58" y2="23.76"/>
-                <line id="line5-1" class="cls-1" x1="35" y1="8.61" x2="38.27" y2="17.58"/>
-                <circle id="line5-2" class="cls-2" cx="33.37" cy="4.12" r="1.31"/>
-                <line id="line6-1" class="cls-1" x1="50.42" y1="12.58" x2="50.42" y2="15.44"/>
-                <line id="line6-2" class="cls-1" x1="50.42" y1="1.25" x2="50.42" y2="6.98"/>
-                <line id="line7-1" class="cls-1" x1="62.58" y1="17.58" x2="65.84" y2="8.61"/>
-                <circle id="line7-2" class="cls-2" cx="67.48" cy="4.12" r="1.31"/>
-                <line id="line8" class="cls-1" x1="73.27" y1="23.76" x2="82.48" y2="12.78"/>
-                <line id="line9-1" class="cls-1" x1="81.2" y1="33.21" x2="89.51" y2="28.42"/>
-                <circle id="line9-2" class="cls-2" cx="93.61" cy="26.04" r="1.31"/>
-                <line id="line10-1" class="cls-1" x1="88.31" y1="44.3" x2="85.49" y2="44.8"/>
-                <line id="line10-2" class="cls-1" x1="99.47" y1="42.33" x2="93.82" y2="43.33"/>
-                <line id="line11-1" class="cls-1" x1="91.14" y1="58.16" x2="94.79" y2="58.8"/>
-                <circle id="line11-2" class="cls-2" cx="99.54" cy="59.64" r="1.31"/>
-            </g>
-        </svg>
-      </div>
-      <div class="col-lg-6 col-md-12 col-sm-12" style="padding:50px;">
-        <div class="row">
-          <h3><i class="fa fa-map-marker"></i> Address: </h5><Address style="color: #fff">Vision Room NTB,Maulana Azad
-                                National Institute of technology</Address>
-          
-        </div>
-        <div class="row">
-          <h3><i class="fa fa-envelope"></i> Email: </h5><address><a href="mailto:info@visionmanit.org"
-                                    style="color:#DC7633;">info@visionmanit.org</a></address>
-          
-        </div>
-        <div class="row">
-          <h3><i class="fa fa-phone"></i> Contact: </h5><address><a href="tel:+919455525935" style="color:aqua">+91-9455525935</a>,<a
-                                    href="tel:+918989859127" style="color:aqua">+91-8989859127</a></address>
-          
-        </div>
-
-      </div>  
-        
-
-      
-    </div>
-  </div>
-
-
-<div class="container-fluid" style="height: 300px;text-align: center;" >
-  <div class="row" style="padding-top: 100px;">
-    <img src="v.png" alt="" height="30" width="90">
-  </div>
-  <div class="row" style="padding-top: 25px;padding-bottom: 5px">
-                        
-                            <a style="padding: 10px" href="https://www.facebook.com/visionmanit/"><i class="fab fa-facebook"></i></a>
-                            <a style="padding: 10px" href="https://www.youtube.com/channel/UCM1dBAT20ulLHkofolWr3uA"><i class="fab fa-youtube"></i></a>
                             
   </div>
-  <div class="row">
-    <div class="copyright">
-                        <p style="font-size: 10px;line-height: 15px">VISION &copy; All RIGHTS RESERVED 2018</p>
-                    </div>
-  </div>
-
 </div>
-
-
 </body>
 </html>
