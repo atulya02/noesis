@@ -747,6 +747,7 @@ h1 {
 {
   video{
     width: 1000px;
+    height: 100%;
   }
   #overlay_video h1
   {
@@ -773,6 +774,7 @@ h1 {
 {
   video{
     width: 1400px;
+    height: 100%;
 
   }
   #imgevent
@@ -806,7 +808,7 @@ h1{
   }
   video{
       position: relative;
-      width: 100%;
+      
       top: 0;
       height: 100%;
     }
@@ -816,8 +818,8 @@ h1{
       video{
         position: relative;
         top: 0;
-        height:450px;
-        width: 100%;
+        height:100%;
+        
         
       }
     }
@@ -991,12 +993,22 @@ h1{
       left: 0;
       
     }
+    @media only screen and (max-width: 640px){
+
+      video{
+        position: relative;
+        top: 0;
+        height:600px;
+        
+        
+      }
+    }
 /*...........timeline........*/
 
 .timeline ul {
   background: #fff;
   padding: 50px 0;
-  background-image: url(contact.jpg);
+  background-image: url(chem1.jpg);
   
   margin: 0;
 }
@@ -1166,6 +1178,24 @@ time {
 #contacts-new-id3 p{
   position: absolute;
  left: 20%;
+}
+#contacts-new-id1 i{
+  position: absolute;
+  top:125px;
+  left: 37.5%;
+  color: #fff;
+}
+#contacts-new-id2 i{
+  position: absolute;
+  top:125px;
+  left: 37.5%;
+  color: #fff;
+}
+#contacts-new-id3 i{
+  position: absolute;
+  top:125px;
+  left: 37.5%;
+  color: #fff;
 }
 
 .lnr
@@ -1377,6 +1407,7 @@ left: 50%;z-index:5;">
     
   </div>
 </div>
+
     
     
 
@@ -1398,11 +1429,11 @@ left: 50%;z-index:5;">
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">HOME</a></li>
-            <li><a href="index.html">EVENTS</a></li>
+            <li><div class="overlay-trigger"><button>EVENTS</button></div></li>
             <li><a href="index.html">REGISTRATION</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html"> Contact</a></li>
+            <li><a href="#contactid"> Contact</a></li>
           </ul>
           
         </div>
@@ -1464,7 +1495,7 @@ left: 50%;z-index:5;">
 </div>
 
 
-<div class="container-fluid" style="margin: 0;padding: 0;background-attachment: fixed;">
+<div class="container-fluid" style="margin: 0;padding: 0;background-attachment: fixed;background-image: url(chem1.jpg);">
   <div class="row">
     <div class="col-lg-12">
       
@@ -1525,19 +1556,18 @@ left: 50%;z-index:5;">
     <div class="overlay-contact" style="background-color: #000;width: 100%;height: 100%;opacity: 0.8">
     <div class="row" style="" >
       <div class="col-lg-4" id="contacts-new-id1">
-        <img src="images/phone.png">
-        <svg class="lnr lnr-phone"><use xlink:href="#lnr-phone"></use></svg>
+        <i class="fas fa-phone fa-4x"></i>
         <h2 >CALL US</h2>
         <p>986513254125<br>5421021452512</p>
       </div>
       <div class="col-lg-4" id="contacts-new-id2">
-        <svg class="lnr lnr-select"><use xlink:href="#lnr-select"></use></svg>
+        <i class="fas fa-mail-bulk fa-4x"></i>
         <h2 >EMAIL US</h2>
         <p>info@visionmanit.org</p><br>
         
       </div>
       <div class="col-lg-4" id="contacts-new-id3">
-        <svg class="lnr lnr-map-marker"><use xlink:href="#lnr-map-marker"></use></svg>
+        <i class="fas fa-address-card fa-4x"></i>
         <h2 >ADDRESS</h2>
         <p>VISION ROOM,NTB,MANIT,BHOPAL,INDIA</p>
         
@@ -1553,9 +1583,9 @@ left: 50%;z-index:5;">
 <div class="container-fluid" style="height: 50px;background-color: #000;padding: 10px">
   <div class="row" style="">
      <div class="col-lg-3 text-left" style="padding-left: 150px;">
-      <span style="padding: 10px"><a href="#"><img src="icons/facebook.png" style=""></a></span>  
-      <span style="padding: 10px"><a href="#"><img src="icons/youtube.png" style=""></a></span>
-    <span style="padding: 10px"><a href="#"><img src="icons/linkedin.png" style=""></a></span>
+      <span style="padding: 10px"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></span>  
+      <span style="padding: 10px"><a href="#"><i class="fab fa-youtube fa-2x"></i></a></span>
+    <span style="padding: 10px"><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></span>
          
      </div>                  
     <div class="col-lg-6 text-center" style="padding-top: ;">
@@ -1600,9 +1630,9 @@ thumb.on('mousemove', function(e){
   //gets the y coords of the pointer
   var relativeY = (e.pageY - $(this).offset().top);
   //calculates the x rotation
-  var xRotation = ( relativeY - vCenter ) * 0.021;
+  var xRotation = ( relativeY - vCenter ) * 0.025;
   //calculates the y rotation
-  var yRotation = ( relativeX - hCenter ) * 0.021;
+  var yRotation = ( relativeX - hCenter ) * 0.025;
   //calculates the x-offset of the shine
   var xShine = ( relativeX * 100 ) / $(this).width();
   //calculates the y-offset of the shine
