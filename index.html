@@ -997,7 +997,7 @@ h1{
   background: #fff;
   padding: 50px 0;
   background-image: url(contact.jpg);
-  background-attachment: fixed;
+  
   margin: 0;
 }
 
@@ -1177,6 +1177,161 @@ time {
   top:125px;
   left: 35%;
 }
+
+
+/*-arrow--*/
+
+ .arrow {
+   opacity: 1;
+   position: absolute;
+   left: 22.5%;
+   top: 350px;
+   transform-origin: 50% 50%;
+   transform: translate3d(-50%, -50%, 0);
+}
+ .arrow-first {
+   animation: arrow-movement 2s ease-in-out infinite;
+}
+ .arrow-second {
+   animation: arrow-movement 2s 1s ease-in-out infinite;
+}
+ .arrow:before, .arrow:after {
+   background: #000;
+   content: '';
+   display: block;
+   height: 2px;
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 15px;
+}
+ .arrow:before {
+   transform: rotate(45deg) translateX(-23%);
+   transform-origin: top left;
+}
+ .arrow:after {
+   transform: rotate(-45deg) translateX(23%);
+   transform-origin: top right;
+}
+ @keyframes arrow-movement {
+   0% {
+     opacity: 0;
+     top: 45%;
+  }
+   70% {
+     opacity: 1;
+  }
+   100% {
+     opacity: 0;
+  }
+}
+ 
+ #innovation p{
+font-size: 20px;
+position: absolute;
+top: 200px;
+left: 17.5%;
+ }
+ #innovation h1{
+  padding-bottom: 50px;
+  font-family: Rallifornia;letter-spacing: 4px;font-size: 50px;
+  position: absolute;
+  left: 100px;
+ }
+
+
+ /*---button......*/
+
+
+ .button {
+   touch-callout: none;
+   user-select: none;
+   display: inline-block;
+   border: 0.2em solid;
+   position: relative;
+   cursor: pointer;
+   overflow: hidden;
+   opacity: 0.6;
+   color: #000;
+   position: absolute;top: 400px;
+   left: 19%;
+}
+ .button__text {
+   display: block;
+   padding: 1em 2em;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+ .button__text:before {
+   content: attr(title);
+}
+ .button__text--bis {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   transform: translateX(-1em);
+   opacity: 0;
+}
+ .button__mask {
+   display: block;
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background: black;
+   transform: translateX(-100%) rotate(45deg);
+   transition: all 0.3s;
+}
+ .button:hover {
+   opacity: 1;
+}
+ .button:hover .button__text {
+   animation: fx-text 0.3s ease-out;
+}
+ .button:hover .button__text--bis {
+   animation: fx-text-bis 0.3s ease-out;
+}
+ .button:hover .button__mask {
+   animation: fx-mask 0.3s ease-out;
+}
+ .button:active {
+   opacity: 1;
+   background: black;
+   color: inherit;
+}
+ @keyframes fx-mask {
+   0% {
+     transform: translateX(-100%) rotate(45deg);
+  }
+   100% {
+     transform: translateX(100%) rotate(45deg);
+  }
+}
+ @keyframes fx-text {
+   0% {
+     transform: translateX(0);
+     opacity: 1;
+  }
+   100% {
+     transform: translateX(1px);
+     opacity: 0;
+  }
+}
+ @keyframes fx-text-bis {
+   0% {
+     transform: translateX(-1em);
+     opacity: 0;
+  }
+   100% {
+     transform: translateX(0);
+     opacity: 1;
+  }
+}
+ 
   </style>
 
 
@@ -1204,7 +1359,7 @@ left: 50%;z-index:5;">
 </div>
   
 </div>
-<div class="container-fluid" style="height: 700px;background-color: #000;overflow: hidden;margin: 0">
+<div class="container-fluid" style="height: 700px;background-color: #000;overflow: hidden;margin: 0;overflow: hidden;">
   <div class="row" style="">
     <div class="containerhover">
   <div class="inner">
@@ -1213,7 +1368,7 @@ left: 50%;z-index:5;">
       
       <div class="player js-player">
         <video autoplay muted loop poster="video_cover.jpg">
-                        <source src="abc.mp4" type="video/mp4">
+                        <source src="abc1.MP4" type="video/mp4">
                       </video>
       </div>
       
@@ -1259,13 +1414,13 @@ left: 50%;z-index:5;">
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase1">
         <a href="event1.html"><img src="111.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h1>Event 1</h1></div></a>
+        <div class="imageoverlay"><h1>CSE</h1></div></a>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"   id="eventdetails">
       <div class="overlay-container" id="showcase2">
         <img src="112.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h1>Event 2</h1></div>
+        <div class="imageoverlay"><h1>ELECTRICAL/<br>ECE</h1></div>
       </div>
     </div>
   </div>
@@ -1274,21 +1429,34 @@ left: 50%;z-index:5;">
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase3">
         <img src="113.jpg" id="imgevent" >
-        <div class="imageoverlay"><h1>Event 3</h1></div>
+        <div class="imageoverlay"><h1>CIVIL</h1></div>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12" id="eventdetails" >
       <div class="overlay-container" id="showcase4">
         <img src="114.jpg" id="imgevent" >
-        <div class="imageoverlay"><h1>Event 4</h1></div>
+        <div class="imageoverlay"><h1>CHEMICAL</h1></div>
       </div>
     </div>
   </div>
 
-<div class="container-fluid" style="">
+<div class="container-fluid" style="" id="innovation">
   <div class="row">
-    <div class="col-lg-12" style="height: 500px;background-image: url(bulb.jpg);background-position:top;background-attachment: fixed;background-size: cover">
-      <h1 style="font-family: Rallifornia;letter-spacing: 4px">INNOVATION CHALLENGE</h1>
+    <div class="col-lg-12" style="height: 500px;background-image: url(bulb.jpg);background-position:left;background-attachment: fixed;background-size: cover">
+      <h1 style="">INNOVATION CHALLENGE</h1>
+      <p>Click here to register</p>
+      <div class="arrow arrow-first"></div>
+      <div class="arrow arrow-second"></div>
+      
+
+  <div class="button">
+    <span class="button__mask"></span>
+    <span class="button__text">REGISTER</span>
+    <span class="button__text button__text--bis">REGISTER</span>
+  </div>
+  
+  
+
     </div>
   </div>
   
@@ -1434,7 +1602,7 @@ thumb.on('mousemove', function(e){
   //calculates the x rotation
   var xRotation = ( relativeY - vCenter ) * 0.021;
   //calculates the y rotation
-  var yRotation = ( relativeX - hCenter ) * 0.012;
+  var yRotation = ( relativeX - hCenter ) * 0.021;
   //calculates the x-offset of the shine
   var xShine = ( relativeX * 100 ) / $(this).width();
   //calculates the y-offset of the shine
