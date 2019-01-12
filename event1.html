@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>EVENT 1</title>
+	<title>CHEM-E-DEXTIRITY</title>
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -13,6 +15,11 @@
       font-family: Futura;
       src: local('Futura Std');
     }
+
+    @font-face{
+font-family: Rallifornia;
+  src: url('css/webfont/Rallifornia.woff');
+}
     @import url('https://fonts.googleapis.com/css?family=PT+Serif');
 		body{
 			
@@ -21,6 +28,7 @@
 			margin-right: -15px; 
 			overflow-x: hidden;
 			font-family: 'PT Serif', serif;
+			background-color: #000;
 			
 		}
 		::-webkit-scrollbar {
@@ -195,15 +203,484 @@
   color: #00b6de;
 }
 
-#aim li{
+
+svg{
+	color: #fff;
+}
+/*.footer.*/
+#iconfooter{
+  padding-left: 150px;
+}
+#copyfooter p{
+
+
+  font-size: 16px;line-height: 15px;color: gray;padding-top: 7px;
+  margin-left: -25px; 
+
+}
+#logofooter{  
+  padding-right: 250px;
+ }
+
+ @media only screen and (max-width: 640px)
+ {
+  #footerdiv{
+    height: 150px;
+  }
+  #iconfooter{
+  padding-left: 0px;
+  text-align: center;
+  padding-bottom: 
+}
+
+body{
+  margin-left: 0;
+      margin-right: 0;
+}
+#copyfooter p{
+
+
+  font-size: 12px;line-height: 10px;color: gray;padding-top: 7px;
+
+}
+#logofooter{  
+  padding:12px;
+  text-align: center;
+
+ }
+ }
+ @media only screen and (max-width: 1200px)
+ {
+  #footerdiv{
+    height: 150px;
+  }
+  #iconfooter{
+  padding-left: 0px;
+  text-align: center;
+  padding-bottom: 
+}
+#copyfooter p{
+
+
+  font-size: 12px;line-height: 10px;color: gray;padding-top: 7px;
+
+}
+#logofooter{  
+  padding:12px;
+  text-align: center;
+
+ }
+ }
+
+
+
+ #intro1
+ {
+height: 400px;background-color: #fff;text-align: center;
+ }
+ #intro1_div
+ {
+ 	width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;
+ }
+ #intro1 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;
+ }
+ #intro1 p{
+ 	font-size: 18px;color: gray;
+ }
+
+
+ #intro2
+ {
+ 	height: 400px;background-color: #000;text-align: center;
+ }
+ #intro2_div
+ {
+ 	width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;
+ }
+ #intro2 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;color: #fff;
+ }
+ #intro2 p{
+ 	font-size: 18px;color: gray;
+ }
+ #intro3
+ {
+ 	height: 500px;background-color: #fff;text-align: center;background-image: url(chem1.jpg);background-attachment: fixed;
+ }
+ #intro3_div
+ {
+ 	width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;background-color: #000;opacity: .5
+ }
+ #intro3 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;color: #fff ;
+ }
+ #intro3_div li{
 	font-size: 20px;
 	text-align: left;
 	color: #fff;
 }
-svg{
+@media only screen and (max-width: 640px)
+{
+
+ #intro1_div
+ {
+ 	width: 100%;position: absolute;left:0;padding: 10px;margin-top: 10px;
+ }
+ #intro1 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;
+ }
+ #intro1 p{
+ 	font-size: 15px;color: gray;
+ }
+
+
+ #intro2
+ {
+ 	height: 400px;background-color: #000;text-align: center;
+ }
+ #intro2_div
+ {
+ 	width: 100%;position: absolute;left:0;padding: 10px;margin-top: 60px;
+ }
+ #intro2 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;color: #fff;
+ }
+ #intro2 p{
+ 	font-size: 18px;color: gray;
+ }
+ #intro3
+ {
+ 	height: 500px;background-color: #fff;text-align: center;background-image: url(chem1.jpg);background-attachment: fixed;
+ }
+ #intro3_div
+ {
+ 	width: 100%;position: absolute;left:0%;padding: 10px;margin-top: 60px;background-color: #000;opacity: .5
+ }
+ #intro3 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;color: #fff ;
+ }
+ #intro3_div li{
+	font-size: 15px;
+	text-align: left;
 	color: #fff;
 }
+#top{
+	height: 400px;
+}}
+@media only screen and (max-width: 420px)
+{
 
+ #intro1_div
+ {
+ 	width: 100%;position: absolute;left:0;padding: 10px;margin-top: 10px;
+ }
+ #intro1 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;font-size: 24px;
+ }
+ #intro1 p{
+ 	font-size: 10px;color: gray;
+ }
+
+
+ #intro2
+ {
+ 	height: 400px;background-color: #000;text-align: center;
+ }
+ #intro2_div
+ {
+ 	width: 100%;position: absolute;left:0;padding: 10px;margin-top: 60px;
+ }
+ #intro2 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;color: #fff;font-size: 24px;
+ }
+ #intro2 p{
+ 	font-size: 12px;color: gray;
+ }
+ #intro3
+ {
+ 	height: 500px;background-color: #fff;text-align: center;background-image: url(chem1.jpg);background-attachment: fixed;
+ }
+ #intro3_div
+ {
+ 	width: 100%;position: absolute;left:0%;padding: 10px;margin-top: 60px;background-color: #000;opacity: .5
+ }
+ #intro3 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;color: #fff ;
+ 	font-size: 24px;
+ }
+ #intro3_div li{
+	font-size: 12px;
+	text-align: left;
+	color: #fff;
+}
+#top{
+	height: 400px;
+}}
+@media only screen and (max-width: 1300px) and (min-width: 640px)
+{
+#intro1_div
+ {
+ 	width: 100%;position: absolute;left:0;padding: 10px;margin-top: 10px;
+ }
+ #intro1 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;
+ }
+ #intro1 p{
+ 	font-size: 20px;color: gray;
+ }
+
+
+ #intro2
+ {
+ 	height: 400px;background-color: #000;text-align: center;
+ }
+ #intro2_div
+ {
+ 	width: 100%;position: absolute;left:0;padding: 10px;margin-top: 60px;
+ }
+ #intro2 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;color: #fff;
+ }
+ #intro2 p{
+ 	font-size: 22px;color: gray;
+ }
+ #intro3
+ {
+ 	height: 500px;background-color: #fff;text-align: center;background-image: url(chem1.jpg);background-attachment: fixed;
+ }
+ #intro3_div
+ {
+ 	width: 100%;position: absolute;left:0%;padding: 10px;margin-top: 60px;background-color: #000;opacity: .5
+ }
+ #intro3 h1
+ {
+ 	font-weight: bold;padding-bottom:15px;color: #fff ;
+ }
+ #intro3_div li{
+	font-size: 24px;
+	text-align: left;
+	color: #fff;
+}
+#top{
+	height: 500px;
+}
+}
+}
+
+
+/*.....overlay.....*/
+.back {
+  position: absolute;
+  
+  z-index: 100;
+  color: #222;
+  text-decoration: none;
+  transition: color .3s;
+}
+.back:hover {
+  color: #aaa;
+}
+.overlay h1 {
+  padding: 2em 0;
+  font-size: 48px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.overlay-trigger {
+  max-width: 840px;
+  margin: 0 auto;
+  
+}
+.overlay-trigger button {
+  display: block;
+  margin: 0;
+  padding: 1.3em 1em;
+  background: #000;
+  border:none;
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: .2s ease-in-out;
+}
+.overlay-trigger button:hover {
+  background: transparent;
+  color: gray;
+}
+.overlay-close {
+  position: fixed;
+  top: 80%;
+  left: 50%;
+  z-index: 10;
+  padding: 1em 2.5em;
+  background: #000;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: .2s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+.overlay-close.is-open {
+  opacity: 1;
+  visibility: visible;
+}
+.overlay-close:hover {
+  background: transparent;
+  color: #fff;
+}
+
+
+.overlay10 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 4;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transition: .6s linear .6s;
+}
+.overlay10 div::before,
+.overlay10 div::after {
+  position: fixed;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: calc(100% / 6);
+  background: rgba(0, 0, 0, .8);
+  transform: rotateX(-270deg);
+  transition: .3s linear;
+}
+.overlay10 div:nth-child(1)::before {
+  top: 0;
+}
+.overlay10 div:nth-child(1)::after {
+  top: calc(100% / 6);
+  transition-delay: .1s;
+}
+.overlay10 div:nth-child(2)::before {
+  top: calc(100% / 6 * 2);
+  transition-delay: .2s;
+}
+.overlay10 div:nth-child(2)::after {
+  top: calc(100% / 6 * 3);
+  transition-delay: .3s;
+}
+.overlay10 div:nth-child(3)::before {
+  top: calc(100% / 6 * 4);
+  transition-delay: .4s;
+}
+.overlay10 div:nth-child(3)::after {
+  bottom: 0;
+  transition-delay: .5s;
+}
+.overlay10.is-open {
+  opacity: 1;
+  visibility: visible;
+  transition: .6s linear;
+}
+.overlay10.is-open div::before,
+.overlay10.is-open div::after {
+  transform: rotateX(0);
+}
+.overlay p{
+  font-size: 64px;
+  color: #fff;
+}
+.overlay a:hover{
+  color: gray;
+}
+
+#overlaycse a{
+position: absolute;top: 150px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlayece a{
+  position: absolute;top:250px;
+left: 35%;z-index: 5;text-decoration: none;
+ }
+  #overlaycivil a{position: absolute;top: 350px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlaychem a{
+  position: absolute;top: 450px;
+left: 40%;z-index: 5;text-decoration: none;
+ }
+ @media only screen and (max-width: 640px)
+ {
+  .overlay p{
+    font-size: 32px;
+  }
+  #overlaycse a{
+position: absolute;top: 100px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlayece a{
+  position: absolute;top:175px;
+left: 35%;z-index: 5;text-decoration: none;
+ }
+  #overlaycivil a{position: absolute;top: 250px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlaychem a{
+  position: absolute;top: 325px;
+left: 40%;z-index: 5;text-decoration: none;
+ }
+ #contactid
+ {
+  height: 600px;
+ }
+
+ }
+ @media only screen and (max-width: 1300px)
+ {
+  .overlay p{
+    font-size: 32px;
+  }
+  #overlaycse a{
+position: absolute;top: 100px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlayece a{
+  position: absolute;top:175px;
+left: 35%;z-index: 5;text-decoration: none;
+ }
+  #overlaycivil a{position: absolute;top: 250px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlaychem a{
+  position: absolute;top: 325px;
+left: 40%;z-index: 5;text-decoration: none;
+ }
+
+ }
+  @media only screen and (max-width: 1800px) and (min-width: 900px)
+  {
+    .overlay-close
+    {
+      position: fixed;top: 300px;
+      left: 80%;
+    }
+  }
 	</style>
 	<script type="text/javascript">
 		
@@ -253,7 +730,26 @@ svg{
   </script>
 </head>
 <body>
+<span class="overlay-close"><i class="fas fa-times"></i></span>
 
+
+<div class="overlay overlay10" style="color: #fff">
+  <div id="overlaycse">
+    <a href="event1.html"  style=""><p style="font-family: Rallifornia;">CSE</p></a>
+  
+
+</div>
+<div style="" id="overlayece">
+    <a href="event2.html" style=""><p style="font-family: Rallifornia;">ECE/ELECTRICAL</p></a>
+</div>
+<div style="" id="overlaycivil">
+<a href="event3.html"  style=""><p style="color: #fff;font-family: Rallifornia;">CIVIL</p></a>
+</div>
+<div style="" id="overlaychem">
+<a href="event4.html"  style=""><p style="color: #fff;font-family: Rallifornia;">CHEMICAL</p></a>
+</div>
+  
+</div>
 
 <nav class="navbar navbar-default navbar-fixed-top"  data-spy="affix"  data-offset-top="800" id="navbar" style="margin-top: 0;margin-bottom: 0;margin-left: 0px;">
 		  <div class="container-fluid">
@@ -268,11 +764,11 @@ svg{
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav">
 		        <li class="active"><a href="index.html">HOME</a></li>
-		        <li><a href="index.html">EVENTS</a></li>
+		        <li><span class="overlay-trigger"><button>EVENTS</button></span></li>
 		        <li><a href="index.html">REGISTRATION</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
-		        <li><a href="index.html"> Contact</a></li>
+		        <li style="padding-right: 5px"><a href="#contactid"> CONTACT</a></li>
 		      </ul>
 		      
 		    </div>
@@ -284,29 +780,29 @@ svg{
 	<div id="header" style="position: absolute;top: 45%;"></div>
 	
 </div>
-<div class="container-fluid" style="height: 400px;background-color: #fff;text-align: center;">
-	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;">
-		<h1 style="font-weight: bold;padding-bottom:15px; ">CHEM-E-DEXTERITY</h1>
-	<p style="font-size: 18px;color: gray">Ever thought of making a mini-pump of your own? If yes, Noesis’19 brings to you a thrilling opportunity to make your own water pump! It’s a high time to design and construct your water pump and also to learn about the industrial applications and principles of various equipment . Along with that you will also be given a brief theoretical knowledge about the variables involved in the process and also about the transport phenomena by which will be helpful to understand how the mobility of extensive thermodynamic property cause changes.</p>
+<div class="container-fluid" style="" id="intro1">
+	<div style="" id="intro1_div">
+		<h1 style=" ">CHEM-E-DEXTERITY</h1>
+	<p style="">Ever thought of making a mini-pump of your own? If yes, Noesis’19 brings to you a thrilling opportunity to make your own water pump! It’s a high time to design and construct your water pump and also to learn about the industrial applications and principles of various equipment . Along with that you will also be given a brief theoretical knowledge about the variables involved in the process and also about the transport phenomena by which will be helpful to understand how the mobility of extensive thermodynamic property cause changes.</p>
 
 
 	</div>
 	
 </div>
 
-<div class="container-fluid" style="height: 400px;background-color: #000;text-align: center;">
-	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;">
-	<h1 style="font-weight: bold;padding-bottom:15px;color: #fff ">OBJECTIVE:</h1>
-	<p style="font-size: 18px;color: gray">Workshop on working principle and industrial applications of pumps and other transport
+<div class="container-fluid" style="" id="intro2">
+	<div style="" id="intro2_div">
+	<h1 style=" ">OBJECTIVE</h1>
+	<p style="">Workshop on working principle and industrial applications of pumps and other transport
 equipment such as valves.</p>
 
 
 	</div>
 	
 </div>
-<div class="container-fluid" style="height: 500px;background-color: #fff;text-align: center;background-image: url(chem1.jpg);background-attachment: fixed;">
-	<div style="width: 40%;position: absolute;left:30%;padding: 10px;margin-top: 60px;background-color: #000;opacity: .5" id="aim">
-		<h1 style="font-weight: bold;padding-bottom:15px;color: #fff ">AIM:</h1>
+<div class="container-fluid" style="" id="intro3">
+	<div style="" id="intro3_div">
+		<h1 style="">AIM</h1>
 	<ul>
 		<li>To make participants learn about the industrial applications of the equipments involved in the transport phenomena</li>
 		<li>To make them aware of the underlying principles of various equipments </li>
@@ -319,21 +815,21 @@ equipment such as valves.</p>
 	
 </div>
 
-<div class="container-fluid" style="height: 50px;background-color: #000;padding: 10px">
+<div class="container-fluid" style="height: 50px;background-color: #000;padding: 10px" id="footerdiv">
   <div class="row" style="">
-     <div class="col-lg-3 text-left" style="padding-left: 150px;">
-     	<span style="padding: 10px"><a href="#"><img src="icons/facebook.png" style=""></a></span>	
-    	<span style="padding: 10px"><a href="#"><img src="icons/youtube.png" style=""></a></span>
-		<span style="padding: 10px"><a href="#"><img src="icons/linkedin.png" style=""></a></span>
-		     
+     <div class="col-lg-3 col-md 12 col-sm-12 text-left" id="iconfooter" style="">
+      <span style="padding: 10px"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></span>  
+      <span style="padding: 10px"><a href="#"><i class="fab fa-youtube fa-2x"></i></a></span>
+    <span style="padding: 10px"><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></span>
+         
      </div>                  
-   	<div class="col-lg-6 text-center" style="padding-top: ;">
-   		
-   		<p style="font-size: 16px;line-height: 15px;color: gray;padding-top: 7px">VISION &copy; All RIGHTS RESERVED 2018</p>
-   	</div>
-    <div class="col-lg-3 text-right" style="padding-right: 150px">
-    	
-    	<img src="vnew.png" alt="" height="30" width="70">
+    <div class="col-lg-6 col-md 12 col-sm-12 text-center" id="copyfooter" style="padding-top: ;">
+      
+      <p style="">VISION &copy; All RIGHTS RESERVED 2018</p>
+    </div>
+    <div class="col-lg-3 col-md-12 col-sm-12 text-right" id="logofooter" style="">
+      
+      <img src="vnew.png" alt="" height="30" width="70">
     </div>
     
     
@@ -341,5 +837,23 @@ equipment such as valves.</p>
                             
   </div>
 </div>
+<script type="text/javascript">
+    $(function() {
+  var $overlay = $('.overlay'),
+      $overlayTrigger = $('.overlay-trigger button'),
+      $overlayClose = $('.overlay-close'),
+      openClass = 'is-open';
+
+  $overlayTrigger.on('click', function() {
+    $('.overlay' + 10).addClass(openClass);
+    $overlayClose.addClass(openClass);
+  });
+
+  $overlayClose.on('click', function() {
+    $overlayClose.removeClass(openClass);
+    $overlay.removeClass(openClass);
+  });
+});
+  </script>
 </body>
 </html>
