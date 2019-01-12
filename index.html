@@ -211,6 +211,7 @@
       margin: 0;
       padding: 0;
     }
+    @import url('https://fonts.googleapis.com/css?family=Montserrat');
     body{
 
       padding: 0;
@@ -566,17 +567,14 @@ h1 {
 }
 
 .overlay-trigger {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   max-width: 840px;
   margin: 0 auto;
-  padding: 0 20px;
+  
 }
 .overlay-trigger button {
   display: block;
   margin: 0;
-  padding: 1em 1em;
+  padding: 1.3em 1em;
   background: #000;
   border:none;
   color: #fff;
@@ -587,7 +585,7 @@ h1 {
 }
 .overlay-trigger button:hover {
   background: transparent;
-  color: #15b04b;
+  color: gray;
 }
 .overlay-close {
   position: fixed;
@@ -595,10 +593,10 @@ h1 {
   left: 50%;
   z-index: 10;
   padding: 1em 2.5em;
-  background: aqua;
+  background: #000;
   border: 1px solid #fff;
   border-radius: 4px;
-  color: #222;
+  color: #fff;
   font-size: 16px;
   text-align: center;
   cursor: pointer;
@@ -622,7 +620,7 @@ h1 {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 4;
   height: 100%;
   opacity: 0;
   visibility: hidden;
@@ -635,7 +633,7 @@ h1 {
   content: '';
   width: 100%;
   height: calc(100% / 6);
-  background: rgba(0, 0, 0, .7);
+  background: rgba(0, 0, 0, .8);
   transform: rotateX(-270deg);
   transition: .3s linear;
 }
@@ -1361,8 +1359,93 @@ left: 17.5%;
      opacity: 1;
   }
 }
+#innovation{
+
+  background-image: url(bulb.jpg);background-position:left;background-attachment: fixed;background-size: cover;
+}
+@media only screen and (max-width: 640px)
+{
+  #innovation h1{
+    font-size: 32px;
+    position: absolute;
+    left: 10%;
+  }
+  #innovation p{
+
+  }
+  #innovation{
+    background-position:center;
+  }
+  .arrow{
+    position: absolute;
+    left: 30%;
+  }
+  #contactid h2{
+  color: #fff;
  
+ font-size: 16px;
+}
+#contacts-new-id1 h2{
+  text-align: right;
+}
+#contacts-new-id2{
+  text-align: center;
+}
+#contacts-new-id3{
+  text-align: left;
+}
+#contactid p{
+  color: #fff;
+ 
+ 
+ font-size: 14px;
+}
+#contacts-new-id1 p{
+ 
+  position: absolute;
+ left: 50%;
+}
+#contacts-new-id2 p{
+  position: absolute;
+ left: 50%;
+}
+#contacts-new-id3 p{
+  position: absolute;
+ left: 50%;
+}
+#contacts-new-id1 i{
+  position: absolute;
+  top:20px;
+  left: 37.5%;
+  color: #fff;
+}
+#contacts-new-id2 i{
+  position: absolute;
+  top:50px;
+  left: 37.5%;
+  color: #fff;
+}
+#contacts-new-id3 i{
+  position: absolute;
+  top:100px;
+  left: 37.5%;
+  color: #fff;
+}
+#navbarcontainer {
+  width: 100%;
+}
+}
+.overlay p{
+  font-size: 64px;
+  color: #fff;
+}
+.overlay a:hover{
+  color: gray;
+}
   </style>
+
+
+
 
 
 
@@ -1371,21 +1454,27 @@ left: 17.5%;
 
 </head>
 <body>
-<span class="overlay-close"><svg class="lnr lnr-cross"><use xlink:href="#lnr-cross"></use></svg></span>
+<span class="overlay-close"><i class="fas fa-times"></i></span>
 
 
-<div class="overlay overlay10" >
+<div class="overlay overlay10" style="color: #fff">
   <div>
-    <a href="#eventsid" class="button" style="position: absolute;top: 50%;
-left: 50%;z-index: 3;">CSE</a><br>
-  <a href="#eventsid" class="button">CSE</a>
-</div>
-<div style="position: absolute;top: 30%;left: 50%;z-index: 4;">
-    
-</div>
-<div style="position: absolute;top: 70%;
-left: 50%;z-index:5;">
+    <a href="event1.html"  style="position: absolute;top: 150px;
+left: 45%;z-index: 5;text-decoration: none;"><p style="font-family: Rallifornia;">CSE</p></a>
+  
 
+</div>
+<div style="">
+    <a href="event2.html" style="position: absolute;top:250px;
+left: 35%;z-index: 5;text-decoration: none;"><p style="font-family: Rallifornia;">ECE/ELECTRICAL</p></a>
+</div>
+<div style="">
+<a href="event3.html"  style="position: absolute;top: 350px;
+left: 45%;z-index: 5;text-decoration: none;"><p style="color: #fff;font-family: Rallifornia;">CIVIL</p></a>
+</div>
+<div style="">
+<a href="event4.html"  style="position: absolute;top: 450px;
+left: 40%;z-index: 5;text-decoration: none;"><p style="color: #fff;font-family: Rallifornia;">CHEMICAL</p></a>
 </div>
   
 </div>
@@ -1417,7 +1506,7 @@ left: 50%;z-index:5;">
   
 
 <nav class="navbar navbar-default navbar-fixed-top"  data-spy="affix"  data-offset-top="800" id="navbar" style="margin-top: 0;margin-bottom: 0;margin-left: 0px;">
-      <div class="container-fluid">
+      <div class="container-fluid" id="navbarcontainer">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
             <span class="icon-bar"></span>
@@ -1429,7 +1518,7 @@ left: 50%;z-index:5;">
         <div class="collapse navbar-collapse" id="myNavbar">
           <ul class="nav navbar-nav">
             <li class="active"><a href="index.html">HOME</a></li>
-            <li><div class="overlay-trigger"><button>EVENTS</button></div></li>
+            <li><span class="overlay-trigger"><button>EVENTS</button></span></li>
             <li><a href="index.html">REGISTRATION</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
@@ -1445,13 +1534,13 @@ left: 50%;z-index:5;">
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase1">
         <a href="event1.html"><img src="111.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h1>CSE</h1></div></a>
+        <div class="imageoverlay"><h1 style="font-family: 'Montserrat', sans-serif;">CSE</h1></div></a>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"   id="eventdetails">
       <div class="overlay-container" id="showcase2">
         <img src="112.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h1>ELECTRICAL/<br>ECE</h1></div>
+        <div class="imageoverlay"><h1 style="font-family: 'Montserrat', sans-serif;">ELECTRICAL/<br>ECE</h1></div>
       </div>
     </div>
   </div>
@@ -1460,20 +1549,20 @@ left: 50%;z-index:5;">
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase3">
         <img src="113.jpg" id="imgevent" >
-        <div class="imageoverlay"><h1>CIVIL</h1></div>
+        <div class="imageoverlay"><h1 style="font-family: 'Montserrat', sans-serif;">CIVIL</h1></div>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12" id="eventdetails" >
       <div class="overlay-container" id="showcase4">
         <img src="114.jpg" id="imgevent" >
-        <div class="imageoverlay"><h1>CHEMICAL</h1></div>
+        <div class="imageoverlay"><h1 style="font-family: 'Montserrat', sans-serif;">CHEMICAL</h1></div>
       </div>
     </div>
   </div>
 
 <div class="container-fluid" style="" id="innovation">
   <div class="row">
-    <div class="col-lg-12" style="height: 500px;background-image: url(bulb.jpg);background-position:left;background-attachment: fixed;background-size: cover">
+    <div class="col-lg-12" style="height: 500px;">
       <h1 style="">INNOVATION CHALLENGE</h1>
       <p>Click here to register</p>
       <div class="arrow arrow-first"></div>
@@ -1555,18 +1644,18 @@ left: 50%;z-index:5;">
   <div class="container-fluid" style="background-image: url(contactnew.jpg);background-attachment: fixed;height: 400px" id="contactid">
     <div class="overlay-contact" style="background-color: #000;width: 100%;height: 100%;opacity: 0.8">
     <div class="row" style="" >
-      <div class="col-lg-4" id="contacts-new-id1">
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" id="contacts-new-id1">
         <i class="fas fa-phone fa-4x"></i>
         <h2 >CALL US</h2>
         <p>986513254125<br>5421021452512</p>
       </div>
-      <div class="col-lg-4" id="contacts-new-id2">
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" id="contacts-new-id2">
         <i class="fas fa-mail-bulk fa-4x"></i>
         <h2 >EMAIL US</h2>
         <p>info@visionmanit.org</p><br>
         
       </div>
-      <div class="col-lg-4" id="contacts-new-id3">
+      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" id="contacts-new-id3">
         <i class="fas fa-address-card fa-4x"></i>
         <h2 >ADDRESS</h2>
         <p>VISION ROOM,NTB,MANIT,BHOPAL,INDIA</p>
@@ -1582,17 +1671,17 @@ left: 50%;z-index:5;">
 
 <div class="container-fluid" style="height: 50px;background-color: #000;padding: 10px">
   <div class="row" style="">
-     <div class="col-lg-3 text-left" style="padding-left: 150px;">
+     <div class="col-lg-3 col-md 12 col-sm-12 text-left" style="padding-left: 150px;">
       <span style="padding: 10px"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></span>  
       <span style="padding: 10px"><a href="#"><i class="fab fa-youtube fa-2x"></i></a></span>
     <span style="padding: 10px"><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></span>
          
      </div>                  
-    <div class="col-lg-6 text-center" style="padding-top: ;">
+    <div class="col-lg-6 col-md 12 col-sm-12 text-center" style="padding-top: ;">
       
       <p style="font-size: 16px;line-height: 15px;color: gray;padding-top: 7px">VISION &copy; All RIGHTS RESERVED 2018</p>
     </div>
-    <div class="col-lg-3 text-right" style="padding-right: 150px">
+    <div class="col-lg-3 col-md-12 col-sm-12 text-right" style="padding-right: 150px">
       
       <img src="vnew.png" alt="" height="30" width="70">
     </div>
@@ -1630,9 +1719,9 @@ thumb.on('mousemove', function(e){
   //gets the y coords of the pointer
   var relativeY = (e.pageY - $(this).offset().top);
   //calculates the x rotation
-  var xRotation = ( relativeY - vCenter ) * 0.025;
+  var xRotation = ( relativeY - vCenter ) * 0.021;
   //calculates the y rotation
-  var yRotation = ( relativeX - hCenter ) * 0.025;
+  var yRotation = ( relativeX - hCenter ) * 0.021;
   //calculates the x-offset of the shine
   var xShine = ( relativeX * 100 ) / $(this).width();
   //calculates the y-offset of the shine
@@ -1714,6 +1803,7 @@ setTimeout(function(){
 </script>
 <script type="text/javascript">
     window.sr=ScrollReveal();
+    window.sr = new scrollReveal({ mobile: false })
     sr.reveal('#contacts-new-id1',{
       duration:2000,
       origin:'bottom',
