@@ -213,7 +213,7 @@
     }
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
     body{
-
+      background-color: #000;
       padding: 0;
       margin-left: -15px;
       margin-right: -15px;
@@ -1386,13 +1386,13 @@ left: 17.5%;
  font-size: 16px;
 }
 #contacts-new-id1 h2{
-  text-align: right;
-}
-#contacts-new-id2{
   text-align: center;
 }
-#contacts-new-id3{
-  text-align: left;
+#contacts-new-id2 h2{
+  text-align: center;
+}
+#contacts-new-id3 h2{
+  text-align: center;
 }
 #contactid p{
   color: #fff;
@@ -1400,34 +1400,40 @@ left: 17.5%;
  
  font-size: 14px;
 }
+#contacts-new-id1 i{
+  width: 50px;
+  height: 50px;
+}
 #contacts-new-id1 p{
  
   position: absolute;
- left: 50%;
+ left: 20%;
+ font-size: 12px;
 }
 #contacts-new-id2 p{
   position: absolute;
- left: 50%;
+ left: 20%;
+ font-size: 12px;
 }
 #contacts-new-id3 p{
   position: absolute;
- left: 50%;
+ left: 0%;
+ font-size: 12px;
 }
 #contacts-new-id1 i{
   position: absolute;
-  top:20px;
-  left: 37.5%;
+  top:50px;
+  
   color: #fff;
 }
 #contacts-new-id2 i{
   position: absolute;
   top:50px;
-  left: 37.5%;
   color: #fff;
 }
 #contacts-new-id3 i{
   position: absolute;
-  top:100px;
+  top:50px;
   left: 37.5%;
   color: #fff;
 }
@@ -1442,39 +1448,154 @@ left: 17.5%;
 .overlay a:hover{
   color: gray;
 }
+
+
+#iconfooter{
+  padding-left: 150px;
+}
+#copyfooter p{
+
+
+  font-size: 16px;line-height: 15px;color: gray;padding-top: 7px;
+
+}
+#logofooter{  
+  padding-right: 150px;
+ }
+
+ @media only screen and (max-width: 640px)
+ {
+  #footerdiv{
+    height: 150px;
+  }
+  #iconfooter{
+  padding-left: 0px;
+  text-align: center;
+  padding-bottom: 
+}
+#copyfooter p{
+
+
+  font-size: 12px;line-height: 10px;color: gray;padding-top: 7px;
+
+}
+#logofooter{  
+  padding:12px;
+  text-align: center;
+
+ }
+ }
+ @media only screen and (max-width: 1200px)
+ {
+  #footerdiv{
+    height: 150px;
+  }
+  #iconfooter{
+  padding-left: 0px;
+  text-align: center;
+  padding-bottom: 
+}
+#copyfooter p{
+
+
+  font-size: 12px;line-height: 10px;color: gray;padding-top: 7px;
+
+}
+#logofooter{  
+  padding:12px;
+  text-align: center;
+
+ }
+ }
+
+
+ #overlaycse a{
+position: absolute;top: 150px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlayece a{
+  position: absolute;top:250px;
+left: 35%;z-index: 5;text-decoration: none;
+ }
+  #overlaycivil a{position: absolute;top: 350px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlaychem a{
+  position: absolute;top: 450px;
+left: 40%;z-index: 5;text-decoration: none;
+ }
+ @media only screen and (max-width: 640px)
+ {
+  .overlay p{
+    font-size: 32px;
+  }
+  #overlaycse a{
+position: absolute;top: 100px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlayece a{
+  position: absolute;top:175px;
+left: 35%;z-index: 5;text-decoration: none;
+ }
+  #overlaycivil a{position: absolute;top: 250px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlaychem a{
+  position: absolute;top: 325px;
+left: 40%;z-index: 5;text-decoration: none;
+ }
+
+ }
+ @media only screen and (max-width: 1300px)
+ {
+  .overlay p{
+    font-size: 32px;
+  }
+  #overlaycse a{
+position: absolute;top: 100px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlayece a{
+  position: absolute;top:175px;
+left: 35%;z-index: 5;text-decoration: none;
+ }
+  #overlaycivil a{position: absolute;top: 250px;
+left: 45%;z-index: 5;text-decoration: none;
+ }
+  #overlaychem a{
+  position: absolute;top: 325px;
+left: 40%;z-index: 5;text-decoration: none;
+ }
+
+ }
+  @media only screen and (max-width: 1800px) and (min-width: 900px)
+  {
+    .overlay-close
+    {
+      position: fixed;top: 300px;
+      left: 80%;
+    }
+  }
   </style>
-
-
-
-
-
-
-
-
-
 </head>
 <body>
 <span class="overlay-close"><i class="fas fa-times"></i></span>
 
 
 <div class="overlay overlay10" style="color: #fff">
-  <div>
-    <a href="event1.html"  style="position: absolute;top: 150px;
-left: 45%;z-index: 5;text-decoration: none;"><p style="font-family: Rallifornia;">CSE</p></a>
+  <div id="overlaycse">
+    <a href="event1.html"  style=""><p style="font-family: Rallifornia;">CSE</p></a>
   
 
 </div>
-<div style="">
-    <a href="event2.html" style="position: absolute;top:250px;
-left: 35%;z-index: 5;text-decoration: none;"><p style="font-family: Rallifornia;">ECE/ELECTRICAL</p></a>
+<div style="" id="overlayece">
+    <a href="event2.html" style=""><p style="font-family: Rallifornia;">ECE/ELECTRICAL</p></a>
 </div>
-<div style="">
-<a href="event3.html"  style="position: absolute;top: 350px;
-left: 45%;z-index: 5;text-decoration: none;"><p style="color: #fff;font-family: Rallifornia;">CIVIL</p></a>
+<div style="" id="overlaycivil">
+<a href="event3.html"  style=""><p style="color: #fff;font-family: Rallifornia;">CIVIL</p></a>
 </div>
-<div style="">
-<a href="event4.html"  style="position: absolute;top: 450px;
-left: 40%;z-index: 5;text-decoration: none;"><p style="color: #fff;font-family: Rallifornia;">CHEMICAL</p></a>
+<div style="" id="overlaychem">
+<a href="event4.html"  style=""><p style="color: #fff;font-family: Rallifornia;">CHEMICAL</p></a>
 </div>
   
 </div>
@@ -1644,21 +1765,21 @@ left: 40%;z-index: 5;text-decoration: none;"><p style="color: #fff;font-family: 
   <div class="container-fluid" style="background-image: url(contactnew.jpg);background-attachment: fixed;height: 400px" id="contactid">
     <div class="overlay-contact" style="background-color: #000;width: 100%;height: 100%;opacity: 0.8">
     <div class="row" style="" >
-      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" id="contacts-new-id1">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="contacts-new-id1">
         <i class="fas fa-phone fa-4x"></i>
         <h2 >CALL US</h2>
         <p>986513254125<br>5421021452512</p>
       </div>
-      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" id="contacts-new-id2">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="contacts-new-id2">
         <i class="fas fa-mail-bulk fa-4x"></i>
         <h2 >EMAIL US</h2>
         <p>info@visionmanit.org</p><br>
         
       </div>
-      <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" id="contacts-new-id3">
+      <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4" id="contacts-new-id3">
         <i class="fas fa-address-card fa-4x"></i>
         <h2 >ADDRESS</h2>
-        <p>VISION ROOM,NTB,MANIT,BHOPAL,INDIA</p>
+        <p><span style="text-align: center;">VISION ROOM,</span><br>NTB,MANIT,BHOPAL,INDIA</p>
         
       </div>
       
@@ -1669,19 +1790,19 @@ left: 40%;z-index: 5;text-decoration: none;"><p style="color: #fff;font-family: 
 </div>
   </div>
 
-<div class="container-fluid" style="height: 50px;background-color: #000;padding: 10px">
+<div class="container-fluid" style="height: 50px;background-color: #000;padding: 10px" id="footerdiv">
   <div class="row" style="">
-     <div class="col-lg-3 col-md 12 col-sm-12 text-left" style="padding-left: 150px;">
+     <div class="col-lg-3 col-md 12 col-sm-12 text-left" id="iconfooter" style="">
       <span style="padding: 10px"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></span>  
       <span style="padding: 10px"><a href="#"><i class="fab fa-youtube fa-2x"></i></a></span>
     <span style="padding: 10px"><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></span>
          
      </div>                  
-    <div class="col-lg-6 col-md 12 col-sm-12 text-center" style="padding-top: ;">
+    <div class="col-lg-6 col-md 12 col-sm-12 text-center" id="copyfooter" style="padding-top: ;">
       
-      <p style="font-size: 16px;line-height: 15px;color: gray;padding-top: 7px">VISION &copy; All RIGHTS RESERVED 2018</p>
+      <p style="">VISION &copy; All RIGHTS RESERVED 2018</p>
     </div>
-    <div class="col-lg-3 col-md-12 col-sm-12 text-right" style="padding-right: 150px">
+    <div class="col-lg-3 col-md-12 col-sm-12 text-right" id="logofooter" style="">
       
       <img src="vnew.png" alt="" height="30" width="70">
     </div>
@@ -1803,7 +1924,7 @@ setTimeout(function(){
 </script>
 <script type="text/javascript">
     window.sr=ScrollReveal();
-    window.sr = new scrollReveal({ mobile: false })
+   
     sr.reveal('#contacts-new-id1',{
       duration:2000,
       origin:'bottom',
