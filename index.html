@@ -202,7 +202,7 @@
 
     #eventdetails :hover img{
       transform: scale(1.15);
-      overflow: hidden;
+      
     }
     .overlay-container img
     {
@@ -211,7 +211,7 @@
       margin: 0;
       padding: 0;
       background-color: #89D4D0;
-      background-position: left;
+      
     }
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
     body{
@@ -244,7 +244,7 @@
       padding:25px;
     }
     #eventdetails{
-      margin: 0;
+      margin-left: 0;
       padding: 0;
     }
 
@@ -1078,7 +1078,7 @@ h1{
   bottom: 0;
   width: 400px;
   padding: 15px;
-  background: #000;
+  background: #293039;
   color: #fff;
 }
 
@@ -1808,17 +1808,15 @@ left: 40%;z-index: 5;text-decoration: none;
   <div class="row">
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails" >
       <div class="overlay-container" id="showcase1" >
-        <a href="event4.html" ><img src="pyfi.png"  id="imgevent" style="display: block;
-  margin-left: auto;
-  margin-right: auto;">
+        <a href="event4.html" ><img src="pyfi.png"  id="imgevent" style="max-width: 100%;
+  height: auto;">
         <div class="imageoverlay" ><h2 style="font-family: FuturaBold;">COMPUTER<br>SCIENCE</h1><p>Almost all the major topics of python will be Covered in the whole session and in the next session, students are introduced to a new technology of version control system, GIT/GITHUB.</p></div></a>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"   id="eventdetails">
       <div class="overlay-container" id="showcase2">
-        <a href="event2.html"><img src="matlab.png"  id="imgevent"  style="display: block;
-  margin-left: auto;
-  margin-right: auto;">
+        <a href="event2.html"><img src="matlab.png"  id="imgevent"  style="max-width: 100%;
+  height: auto;">
         <div class="imageoverlay"><h2 style="font-family: FuturaBold;">ELECTRICAL<br>ECE</h1><p>Vision, brings to you a
 session to acquaint you with it and its application in one of the hot topics of today i.e. Digital
 Image Processing.</p></div>
@@ -1835,17 +1833,15 @@ Image Processing.</p></div>
   <div class="row">
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase3">
-        <a href="event3.html"><img src="civil.png" id="imgevent" style="display: block;
-  margin-left: auto;
-  margin-right: auto;">
+        <a href="event3.html"><img src="civil.png" id="imgevent" style="max-width: 100%;
+  height: auto;">
         <div class="imageoverlay"><h2 style="font-family: FuturaBold;">CIVIL</h1><p>Learn how a bridge is constructed</p></div></a>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12" id="eventdetails" >
       <div class="overlay-container" id="showcase4">
-        <a href="event1.html"><img src="chemical.png" id="imgevent" style="display: block;
-  margin-left: auto;
-  margin-right: auto;">
+        <a href="event1.html"><img src="chemical.png" id="imgevent" style="max-width: 100%;
+  height: auto;">
         <div class="imageoverlay"><h2 style="font-family: FuturaBold;">CHEMICAL</h1><p>Chemical Engineering is more than what meets the eye. Fluid Mechanics is one of the main
 pillars on which it rests and what helps these fast paced fluids to move? Pumps.</p></div></a>
       </div>
@@ -2084,7 +2080,7 @@ setTimeout(function(){
 </script>
 
 <script type="text/javascript">
-    window.sr=ScrollReveal();
+    window.sr=ScrollReveal({ mobile: false });
    
     sr.reveal('#contacts-new-id1',{
       duration:2000,
