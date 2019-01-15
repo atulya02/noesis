@@ -19,11 +19,11 @@
   
     <script type="text/javascript" src=""></script>
     <script type="text/javascript">
-
+    
     $(window).scroll(function() {
       var scroll = $(window).scrollTop();
       $(".zoom").css({
-      backgroundSize: (100 + scroll/3)  + "%",
+      backgroundSize: (100 - scroll/40)  + "%",
       top: -(scroll/10)  + "%",
           });
       });
@@ -257,8 +257,7 @@
       transform: translateX(-50%);
       }
     .zoom{
-      background-image:url(bg.jpg);
-      background-color: #000;
+      background-image:url(abcd.jpg);
       width: 100%;
       height:100%;
       background-position: center center;
@@ -1712,30 +1711,10 @@ left: 40%;z-index: 5;text-decoration: none;
 </div>
   
 </div>
-<div class="container-fluid" style="height: 700px;background-color: #000;overflow: hidden;margin: 0;overflow: hidden;">
-  <div class="row" style="">
-    <div class="containerhover">
-  <div class="inner">
+<div class="container-fluid zoom"  id ="top" style="background-attachment: fixed;">
     
-    <div class="thumb js-thumb">
-      
-      <div class="player js-player">
-        <video autoplay muted loop poster="video_cover.jpg">
-                        <source src="abc1.MP4" type="video/mp4">
-                      </video>
-      </div>
-      
-      
-    </div>
-    
-  </div>
-</div>
-
-    
-    
-
-    
-</div>
+  <h1 id="header" style=""></h1>
+  
 </div>
   
 
@@ -1767,13 +1746,13 @@ left: 40%;z-index: 5;text-decoration: none;
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase1">
         <a href="event4.html"><img src="111.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h2 style="font-family: 'Montserrat', sans-serif;">COMPUTER<br>SCIENCE</h1><p>Learn Python,Git and participate in codegolf.</p></div></a>
+        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">COMPUTER<br>SCIENCE</h1><p>Learn Python,Git and participate in codegolf.</p></div></a>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"   id="eventdetails">
       <div class="overlay-container" id="showcase2">
         <a href="event2.html"><img src="112.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h2 style="font-family: 'Montserrat', sans-serif;">ELECTRICAL<br>ECE</h1><p>Learn DIP and MATLAB.</p></div>
+        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">ELECTRICAL<br>ECE</h1><p>Learn DIP and MATLAB.</p></div>
         <div id="eventmobilediv" style="width: 100%;position: absolute;top: 0;left: 0;
           height: 100px;">
             ELECTRICAL/ECE
@@ -1788,13 +1767,13 @@ left: 40%;z-index: 5;text-decoration: none;
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
       <div class="overlay-container" id="showcase3">
         <a href="event3.html"><img src="113.jpg" id="imgevent" >
-        <div class="imageoverlay"><h2 style="font-family: 'Montserrat', sans-serif;">CIVIL</h1><p>Learn how a bridge is constructed</p></div></a>
+        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">CIVIL</h1><p>Learn how a bridge is constructed</p></div></a>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12" id="eventdetails" >
       <div class="overlay-container" id="showcase4">
         <a href="event1.html"><img src="114.jpg" id="imgevent" >
-        <div class="imageoverlay"><h2 style="font-family: 'Montserrat', sans-serif;">CHEMICAL</h1><p>blah blah blah</p></div></a>
+        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">CHEMICAL</h1><p>blah blah blah</p></div></a>
       </div>
     </div>
   </div>
@@ -1907,9 +1886,9 @@ left: 40%;z-index: 5;text-decoration: none;
 <div class="container-fluid" style="height: 50px;background-color: #000;padding: 10px" id="footerdiv">
   <div class="row" style="">
      <div class="col-lg-3 col-md 12 col-sm-12 text-left" id="iconfooter" style="">
-      <span style="padding: 10px"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></span>  
-      <span style="padding: 10px"><a href="#"><i class="fab fa-youtube fa-2x"></i></a></span>
-    <span style="padding: 10px"><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></span>
+      <span style="padding: 10px;color: white"><a href="#"><i class="fab fa-facebook-f fa-2x"></i></a></span>  
+      <span style="padding: 10px;color: white"><a href="#"><i class="fab fa-youtube fa-2x"></i></a></span>
+    <span style="padding: 10px;color: white"><a href="#"><i class="fab fa-linkedin-in fa-2x"></i></a></span>
          
      </div>                  
     <div class="col-lg-6 col-md 12 col-sm-12 text-center" id="copyfooter" style="padding-top: ;">
@@ -1927,8 +1906,8 @@ left: 40%;z-index: 5;text-decoration: none;
   </div>
 </div>
 
-<div style="position: fixed;bottom: 5px;right: 5px;width: 50px;height: 50px;">
-  <a href="reg.html" style="text-decoration: none;display: inline-block;"><i class="fas fa-user-edit fa-2x"></i></a>
+<div style="position: fixed;bottom: 25px;right: 40px;width: 50px;height: 50px;">
+  <a href="reg.html" style="text-decoration: none;display: inline-block;color: gray;text-align: center;"><i class="fas fa-user-edit fa-2x"></i>REGISTER</a>
 </div>
 <script type="text/javascript">
   //Sets Variables
@@ -2040,6 +2019,7 @@ setTimeout(function(){
 
 })();
 </script>
+
 <script type="text/javascript">
     window.sr=ScrollReveal();
    
