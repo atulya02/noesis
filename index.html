@@ -210,6 +210,8 @@
       transition: 5s ease;
       margin: 0;
       padding: 0;
+      background-color: #89D4D0;
+      background-position: left;
     }
     @import url('https://fonts.googleapis.com/css?family=Montserrat');
     body{
@@ -237,8 +239,9 @@
     .overlay-container p{
       position: absolute;
       top: 70%;
-      left: 20%;
+      left: 0%;
       font-size: 24px;
+      padding:25px;
     }
     #eventdetails{
       margin: 0;
@@ -444,6 +447,17 @@
     }
     @media only screen and (max-width: 640px)
     {
+    	.overlay-container p{
+      position: absolute;
+      top: 60%;
+      left: 0%;
+      font-size: 12px;
+      padding:25px;
+    }
+    .overlay-container h2{
+    	position: absolute;
+    	left: 0;
+    }
     	.zoom{
       background-image:url(abcd1.jpg);
       height: 60vh;
@@ -720,6 +734,7 @@ h1 {
 #imgevent{
 
   width: 900px;
+  height: 600px;
 }
 
 @media only screen and (max-width: 640px)
@@ -748,12 +763,7 @@ h1 {
     position: absolute;top: 30%;
     left: 45%;
   }
-  .overlay-container p{
-      position: absolute;
-      top: 70%;
-      left: 20%;
-      font-size: 16px;
-    }
+  
   body{
 
       padding: 0;
@@ -1787,16 +1797,18 @@ left: 40%;z-index: 5;text-decoration: none;
 
 <div class="container-fluid" id="eventsid" style="" >
   <div class="row">
-    <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails">
-      <div class="overlay-container" id="showcase1">
-        <a href="event4.html"><img src="111.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">COMPUTER<br>SCIENCE</h1><p>Learn Python,Git and participate in codegolf.</p></div></a>
+    <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"  id="eventdetails" >
+      <div class="overlay-container" id="showcase1" >
+        <a href="event4.html" ><img src="111.jpg"  id="imgevent" >
+        <div class="imageoverlay" ><h2 style="font-family: Rallifornia;">COMPUTER<br>SCIENCE</h1><p>Learn Python,Git and participate in codegolf.</p></div></a>
       </div>
     </div>
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12"   id="eventdetails">
       <div class="overlay-container" id="showcase2">
         <a href="event2.html"><img src="112.jpg"  id="imgevent" >
-        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">ELECTRICAL<br>ECE</h1><p>Learn DIP and MATLAB.</p></div>
+        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">ELECTRICAL<br>ECE</h1><p>Vision, brings to you a
+session to acquaint you with it and its application in one of the hot topics of today i.e. Digital
+Image Processing.</p></div>
         <div id="eventmobilediv" style="width: 100%;position: absolute;top: 0;left: 0;
           height: 100px;">
             ELECTRICAL/ECE
@@ -1817,7 +1829,8 @@ left: 40%;z-index: 5;text-decoration: none;
     <div class="col-lg-6 col-xs-12 col-md-12 col-sm-12" id="eventdetails" >
       <div class="overlay-container" id="showcase4">
         <a href="event1.html"><img src="114.jpg" id="imgevent" >
-        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">CHEMICAL</h1><p>blah blah blah</p></div></a>
+        <div class="imageoverlay"><h2 style="font-family: Rallifornia;">CHEMICAL</h1><p>Chemical Engineering is more than what meets the eye. Fluid Mechanics is one of the main
+pillars on which it rests and what helps these fast paced fluids to move? Pumps.</p></div></a>
       </div>
     </div>
   </div>
@@ -1854,38 +1867,27 @@ left: 40%;z-index: 5;text-decoration: none;
   <ul>
     <li>
       <div>
-        <time>15 January'19</time> REGISTRATION BEGINS!!
+        <time>15 January'19</time> CONTEST BEGINS!!
       </div>
     </li>
     <li>
       <div>
-        <time>20 January'19</time> IDEA SUBMISSION
+        <time>1 February'19</time> REGISTRATION CLOSES
       </div>
     </li>
     <li>
       <div>
-        <time>31 January'19</time> ENDS
+        <time>5 February'19</time> Stage I Results
       </div>
     </li>
     <li>
       <div>
-        <time>5 February'19</time> REGISTRATION BEGINS!!
+        <time>10 February'19</time> Stage II
       </div>
     </li>
     <li>
       <div>
-        <time>7 February'19</time> 3 days to go!!
-      </div>
-    </li>
-    
-    <li>
-      <div>
-        <time>9 February'19</time> WORKSHOP-DAY1
-      </div>
-    </li>
-    <li>
-      <div>
-        <time>10 February'19</time> WORKSHOP-DAY2
+        <time>10 February'19</time> Stage III
       </div>
     </li>
     
