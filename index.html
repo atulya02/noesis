@@ -250,27 +250,16 @@
       padding-bottom: 55%;
       background-attachment: fixed;
       }
-    .zoom img{
-      position: fixed;
-      top: 0%;
-      left: 50%;
-      transform: translateX(-50%);
-      }
+    
     .zoom{
       background-image:url(abcd.jpg);
       width: 100%;
       height:100%;
-      background-position: center center;
+      background-position: 50% 50%;
+  
+   background-size: cover;
     }
-    #header {
-      color: #fff;
-      text-align: center; /* Centered text */
-      font-size: 64px;
-      transition: 0.5s;
-      text-align: center;
-      width: 100%;
-
-          }
+    
 
      #button-header
      {
@@ -438,8 +427,36 @@
       left: 30%;
     }
     }
+    @media only screen and (max-width: 480px)
+    {
+    	.zoom{
+      background-image:url(abcd2.jpg);
+      height: 50vh;
+      width: 100vw;
+      background-position: 50% 0%;
+  
+   background-size: cover;
+    }
+    .zoom {
+    background-attachment: scroll;
+     
+   }
+    }
     @media only screen and (max-width: 640px)
     {
+    	.zoom{
+      background-image:url(abcd1.jpg);
+      height: 60vh;
+      width: 100vw;
+      background-position: 50% 0%;
+  
+   background-size: cover;
+    }
+    .zoom {
+    background-attachment: scroll;
+     
+   }
+
       .navimgid{
         display: none;
         position: absolute;
@@ -1647,12 +1664,39 @@ left: 40%;z-index: 5;text-decoration: none;
  }
 
  }
+ @media only screen and (max-width: 1300px)
+ {
+ .zoom{
+      background-image:url(abcd1.jpg);
+      height: 60vh;
+      width: 100vw;
+      background-position: 50% 0%;
+  
+   background-size: cover;
+    }
+    .zoom {
+    background-attachment: scroll;
+     
+   }	
+ }
   @media only screen and (max-width: 900px)
   {
     #contactid
  {
   height: 600px;
  }
+ .zoom{
+      background-image:url(abcd1.jpg);
+      height: 55vh;
+      width: 100vw;
+      background-position: 50% 0%;
+  
+   background-size: cover;
+    }
+    .zoom {
+    background-attachment: scroll;
+     
+   }
   }
  @media only screen and (max-width: 1300px)
  {
@@ -1713,7 +1757,7 @@ left: 40%;z-index: 5;text-decoration: none;
 </div>
 <div class="container-fluid zoom"  id ="top" style="background-attachment: fixed;">
     
-  <h1 id="header" style=""></h1>
+  
   
 </div>
   
