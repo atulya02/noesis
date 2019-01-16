@@ -1060,7 +1060,8 @@ time {
 		opacity: 1
 	}
 }
-@media only screen and (max-width: 640px) {
+
+@media only screen and (max-width: 460px) {
 	.arrow {
 		position: absolute;
 		left: 30%
@@ -1111,6 +1112,76 @@ time {
 	#contacts-new-id3 p {
 		position: absolute;
 		left: 15%;
+		font-size: 9px;
+	}
+	#contacts-new-id1 i {
+		position: absolute;
+		top: 50px;
+		color: #000
+	}
+	#contacts-new-id2 i {
+		position: absolute;
+		top: 120px;
+		color: #000
+	}
+	#contacts-new-id3 i {
+		position: absolute;
+		top: 150px;
+		left: 37.5%;
+		color: #000
+	}
+}
+@media only screen and (max-width: 640px) {
+	.arrow {
+		position: absolute;
+		left: 30%
+	}
+	#contactid h2 {
+		color: #fff;
+		font-size: 16px
+	}
+	#contacts-new-id1 h2 {
+		text-align: center;
+		position: absolute;
+		top: 110px
+	}
+	#contacts-new-id2 h2 {
+		text-align: center;
+		position: absolute;
+		top: 190px
+	}
+	#contacts-new-id3 h2 {
+		text-align: center
+	}
+	#contactid p {
+		color: #fff;
+		font-family: Futura;
+		top: 250px;
+		font-size: 8px
+	}
+	#contactid p {
+		color: #fff;
+		font-size: 14px
+	}
+	#contacts-new-id1 i {
+		width: 50px;
+		height: 50px
+	}
+	#contacts-new-id1 p {
+		position: absolute;
+		top: 150px;
+		left: 25%;
+		font-size: 9px;
+	}
+	#contacts-new-id2 p {
+		position: absolute;
+		left: 27%;
+		font-size: 9px;
+		top: 230px
+	}
+	#contacts-new-id3 p {
+		position: absolute;
+		left: 25%;
 		font-size: 9px;
 	}
 	#contacts-new-id1 i {
