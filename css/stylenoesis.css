@@ -862,7 +862,7 @@ time {
 #contactid {
 	background-color: #edf0f2;
 	background-attachment: fixed;
-	height: 400px;
+	height: 450px;
 	font-family: Edo;
 	letter-spacing: 3px
 }
@@ -1275,10 +1275,10 @@ time {
 	padding-left: 30px
 }
 #iconfooter a {
-	color: gray
+	color: #000;
 }
 #iconfooter a:hover {
-	color: #edf0f2
+	 color: #54ffe1;
 }
 #copyfooter p {
 	font-size: 16px;
@@ -1487,13 +1487,17 @@ time {
 }
 
 #sponser img{
-	width: 350px;
-	height: 150px;
+margin-top: 50px;
+	width: 250px;
+	height: 120px;
+	
+
 }
 @media only screen and (max-width: 640px)
 {
 	#sponser img{
 	width: 50%;
 	height: 100px;
+	margin-top: 0px;
 }
 }
