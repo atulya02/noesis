@@ -904,19 +904,19 @@ time {
 	position: absolute;
 	top: 125px;
 	left: 37.5%;
-	color: #000
+	color: #fff
 }
 #contacts-new-id2 i {
 	position: absolute;
 	top: 125px;
 	left: 37.5%;
-	color: #000
+	color: #fff
 }
 #contacts-new-id3 i {
 	position: absolute;
 	top: 125px;
 	left: 37.5%;
-	color: #000
+	color: #fff
 }
 .lnr {
 	fill: #fff;
@@ -1117,18 +1117,18 @@ time {
 	#contacts-new-id1 i {
 		position: absolute;
 		top: 50px;
-		color: #000
+		color: #fff
 	}
 	#contacts-new-id2 i {
 		position: absolute;
 		top: 120px;
-		color: #000
+		color: #fff
 	}
 	#contacts-new-id3 i {
 		position: absolute;
 		top: 150px;
 		left: 37.5%;
-		color: #000
+		color: #fff
 	}
 }
 @media only screen and (max-width: 640px) {
@@ -1187,18 +1187,18 @@ time {
 	#contacts-new-id1 i {
 		position: absolute;
 		top: 50px;
-		color: #000
+		color: #fff
 	}
 	#contacts-new-id2 i {
 		position: absolute;
 		top: 120px;
-		color: #000
+		color: #fff
 	}
 	#contacts-new-id3 i {
 		position: absolute;
 		top: 150px;
 		left: 37.5%;
-		color: #000
+		color: #fff
 	}
 }
 @media screen only (max-width: 800px) {
@@ -1247,18 +1247,18 @@ time {
 	#contacts-new-id1 i {
 		position: absolute;
 		top: 50px;
-		color: #000
+		color: #fff
 	}
 	#contacts-new-id2 i {
 		position: absolute;
 		top: 120px;
-		color: #000
+		color: #fff
 	}
 	#contacts-new-id3 i {
 		position: absolute;
 		top: 150px;
 		left: 37.5%;
-		color: #000
+		color: #fff
 	}
 	#contactid {
 		height: 600px
