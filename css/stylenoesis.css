@@ -1482,11 +1482,9 @@ time {
 }
 
 
-#sponsers{
-	height: 400px;
-}
 
-#sponser img{
+
+#sponser1 img{
 margin-top: 50px;
 	width: 250px;
 	height: 120px;
@@ -1495,9 +1493,25 @@ margin-top: 50px;
 }
 @media only screen and (max-width: 640px)
 {
-	#sponser img{
+	#sponser1 img{
 	width: 50%;
 	height: 100px;
 	margin-top: 0px;
+}
+}
+#sponser2 img{
+margin-top: 50px;
+	width: 200px;
+	height: 200px;
+	
+
+}
+@media only screen and (max-width: 640px)
+{
+	#sponser1 img{
+	width: 50%;
+	height: 100px;
+	margin-top: 0px;
+	padding-top: 25px;
 }
 }
