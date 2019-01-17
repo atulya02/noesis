@@ -345,7 +345,7 @@ body{
 
  #intro1
  {
-height: 400px;background-color: #fff;text-align: center;
+height: 500px;background-color: #fff;text-align: center;
  }
  #intro1_div
  {
@@ -912,6 +912,107 @@ time {
   background-position: center center
 }
 
+/*-----*/
+.button {
+  touch-callout: none;
+  user-select: none;
+  display: inline-block;
+  border: 0.2em solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #000;
+  position: relative;
+  top: 400px;
+  left: 0%
+}
+.button__text {
+  display: block;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: bold
+}
+.button__text:before {
+  content: attr(title)
+}
+.button__text--bis {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-1em);
+  opacity: 0
+}
+.button__mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s
+}
+.button:hover {
+  opacity: 1
+}
+.button:hover .button__text {
+  animation: fx-text 0.3s ease-out
+}
+.button:hover .button__text--bis {
+  animation: fx-text-bis 0.3s ease-out
+}
+.button:hover .button__mask {
+  animation: fx-mask 0.3s ease-out
+}
+.button:active {
+  opacity: 1;
+  background: black;
+  color: #54ffe1
+}
+@keyframes fx-mask {
+  0% {
+    transform: translateX(-100%) rotate(45deg)
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg)
+  }
+}
+@keyframes fx-text {
+  0% {
+    transform: translateX(0);
+    opacity: 1
+  }
+  100% {
+    transform: translateX(1px);
+    opacity: 0
+  }
+}
+@keyframes fx-text-bis {
+  0% {
+    transform: translateX(-1em);
+    opacity: 0
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1
+  }
+}
+ @media only screen and (max-width: 640px)
+ {
+  .button{
+    position: relative;
+    top: 350px;
+    left: 0%;
+  }
+  .button__text{
+    padding: 5px 10px;
+  }
+ }
   </style>
   <script type="text/javascript">
     
@@ -947,18 +1048,18 @@ time {
 
 <div class="overlay overlay10" style="color: #fff">
   <div id="overlaycse">
-    <a href="event1.html"  style=""><p style="font-family: Rallifornia;">CSE</p></a>
+    <a href="pyfi.html"  style=""><p style="font-family: Rallifornia;">CSE</p></a>
   
 
 </div>
 <div style="" id="overlayece">
-    <a href="event2.html" style=""><p style="font-family: Rallifornia;">ECE/ELECTRICAL</p></a>
+    <a href="matlab.html" style=""><p style="font-family: Rallifornia;">ECE/ELECTRICAL</p></a>
 </div>
 <div style="" id="overlaycivil">
-<a href="event3.html"  style=""><p style="color: #fff;font-family: Rallifornia;">CIVIL</p></a>
+<a href="civil.html"  style=""><p style="color: #fff;font-family: Rallifornia;">CIVIL</p></a>
 </div>
 <div style="" id="overlaychem">
-<a href="event4.html"  style=""><p style="color: #fff;font-family: Rallifornia;">CHEMICAL</p></a>
+<a href="chemical.html"  style=""><p style="color: #fff;font-family: Rallifornia;">CHEMICAL</p></a>
 </div>
   
 </div>
@@ -999,6 +1100,11 @@ time {
   <p style="">If you ever wanted to bring your ideas into reality, here’s the launch pad that you have been waiting for! So, with an intent to develop technology solutions to society's leading challenges, Team Vision invites all the gleaming minds across the country to come up with inventive ideas and solution by proposing its first of a kind hackathon event, HackIN.This hackathon brings together the talented and diverse minds from all backgrounds under same roof to tackle the world’s most demanding issues.Put your thinking hats on and get a chance to build solutions to create impact and influence on the lives of citizens. </p>
 
 
+  </div>
+  <div class="button">
+    <span class="button__mask"></span>
+    <span class="button__text">PROBLEM STATEMENT</span>
+    <span class="button__text button__text--bis">PROBLEM STATEMENT</span>
   </div>
   
 </div>
