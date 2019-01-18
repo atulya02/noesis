@@ -64,7 +64,7 @@ body {
 	top: 70%;
 	left: 0%;
 	font-size: 24px;
-	padding: 25px
+	padding-left:25px
 }
 #eventdetails {
 	margin-left: 0;
@@ -147,7 +147,7 @@ body {
 		top: 60%;
 		left: 0%;
 		font-size: 12px;
-		padding: 25px
+		padding: 2px
 	}
 	.overlay-container h2 {
 		position: absolute;
@@ -1366,4 +1366,3 @@ time {
 			 color: inherit;
 		}
 		 
-	 
