@@ -952,7 +952,7 @@ time {
 			#contacts-new-id1 p{
 				position: absolute;
 				top: 140px;
-				left: 18%;
+				left: 29%;
 			}
 			#contacts-new-id2 i {
 				position: absolute;
@@ -968,7 +968,7 @@ time {
 			#contacts-new-id2 p{
 				position: absolute;
 				top: 230px;
-				left: 28%;
+				left: 34%;
 			}
 			#contacts-new-id3 i {
 				position: absolute;
@@ -984,7 +984,7 @@ time {
 			#contacts-new-id3 p{
 				position: absolute;
 				top: 300px;
-				left: 25%;
+				left: 29%;
 			}
 		}
 		@media only screen and (max-width: 300px)
