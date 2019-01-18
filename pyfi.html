@@ -42,11 +42,11 @@ font-family: Rallifornia;
     body{
       font-family: Futura;
       padding: 0;
-      margin-left: -15px; 
-      margin-right: -15px; 
+       
       overflow-x: hidden;
       font-family: Futura;
       background-color:   #89D4D0;
+      box-sizing: border-box;
       
     }
     ::-webkit-scrollbar {
@@ -295,8 +295,8 @@ svg{
   padding-bottom: 
 }
 body{
-  margin-left: 0;
-      margin-right: 0;
+  margin-left: -5px;
+      margin-right: 0px;
 }
 #copyfooter p{
   font-size: 12px;line-height: 10px;color: gray;padding-top: 7px;
@@ -324,7 +324,7 @@ body{
  }
  #intro1
  {
-height: 400px;background-color: #fff;text-align: center;
+height: 500px;background-color: #fff;text-align: center;box-sizing: border-box;width: 100%;
  }
  #intro1_div
  {
@@ -482,6 +482,10 @@ height: 400px;background-color: #fff;text-align: center;
 }}
 @media only screen and (max-width: 1300px) and (min-width: 640px)
 {
+
+	.navbar{
+		margin-right: -24px;
+	}
   #header {
       color: #fff;
       text-align: center; /* Centered text */
@@ -870,6 +874,106 @@ time {
   height: 100%;
   background-position: center center
 }
+.button {
+  touch-callout: none;
+  user-select: none;
+  display: inline-block;
+  border: 0.2em solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #000;
+  position: relative;
+  top: 400px;
+  left: 0%
+}
+.button__text {
+  display: block;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: bold
+}
+.button__text:before {
+  content: attr(title)
+}
+.button__text--bis {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-1em);
+  opacity: 0
+}
+.button__mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s
+}
+.button:hover {
+  opacity: 1
+}
+.button:hover .button__text {
+  animation: fx-text 0.3s ease-out
+}
+.button:hover .button__text--bis {
+  animation: fx-text-bis 0.3s ease-out
+}
+.button:hover .button__mask {
+  animation: fx-mask 0.3s ease-out
+}
+.button:active {
+  opacity: 1;
+  background: black;
+  color: #54ffe1
+}
+@keyframes fx-mask {
+  0% {
+    transform: translateX(-100%) rotate(45deg)
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg)
+  }
+}
+@keyframes fx-text {
+  0% {
+    transform: translateX(0);
+    opacity: 1
+  }
+  100% {
+    transform: translateX(1px);
+    opacity: 0
+  }
+}
+@keyframes fx-text-bis {
+  0% {
+    transform: translateX(-1em);
+    opacity: 0
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1
+  }
+}
+ @media only screen and (max-width: 640px)
+ {
+  .button{
+    position: relative;
+    top: 350px;
+    left: 0%;
+  }
+  .button__text{
+    padding: 5px 10px;
+  }
+ }
   </style>
   <script type="text/javascript">
     
@@ -920,7 +1024,7 @@ time {
   
 </div>
 
-<nav class="navbar navbar-default navbar-fixed-top"  data-spy="affix"  data-offset-top="800" id="navbar" style="margin-top: 0;margin-bottom: 0;margin-left: 0px;">
+<nav class="navbar navbar-default navbar-fixed-top"  data-spy="affix"  data-offset-top="800" id="navbar" style="box-sizing: border-box;margin-top: 0;margin-bottom: 0;">
       <div class="container-fluid">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -955,6 +1059,11 @@ time {
 
 
   </div>
+  <div class="button">
+    <span class="button__mask"></span>
+    <span class="button__text">KNOW MORE</span>
+    <span class="button__text button__text--bis">KNOW MORE</span>
+  </div>
   
 </div>
 
@@ -964,29 +1073,15 @@ time {
       
       <section class="timeline">
   <ul>
+    
     <li>
       <div>
-        <time style="color:  #89D4D0">15 January'19</time> CONTEST BEGINS!!
+        <time style="color:  #89D4D0">9 February'19</time>WORKSHOP DAY-I
       </div>
     </li>
     <li>
       <div>
-        <time style="color:  #89D4D0">1 February'19</time> REGISTRATION CLOSES
-      </div>
-    </li>
-    <li>
-      <div>
-        <time style="color:  #89D4D0">5 February'19</time> Stage I Results
-      </div>
-    </li>
-    <li>
-      <div>
-        <time style="color:  #89D4D0">10 February'19</time> Stage II
-      </div>
-    </li>
-    <li>
-      <div>
-        <time style="color:  #89D4D0">10 February'19</time> Stage III
+        <time style="color:  #89D4D0">10 February'19</time>WORKSHOP DAY-II
       </div>
     </li>
     
