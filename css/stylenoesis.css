@@ -1089,12 +1089,12 @@ time {
 				background-color: #fff;
 				opacity: 1
 			}
-			#logofooter img
+			#logofooter
 			{
-				display: none;
+				visibility: hidden;
 			}
 			#footerdiv {
-				height: 150px
+				height:50px
 			}
 			#iconfooter {
 				padding-left: 0px;
@@ -1112,13 +1112,12 @@ time {
 				padding-top: 7px
 			}
 			#logofooter {
-				padding: 2px;
-				text-align: center
+				visibility: hidden;
 			}
 		}
 		@media only screen and (max-width: 1200px) {
 			#footerdiv {
-				height: 150px
+				height: 50px
 			}
 			#iconfooter {
 				padding-left: 0px;
@@ -1132,8 +1131,7 @@ time {
 				padding-top: 7px
 			}
 			#logofooter {
-				padding: 12px;
-				text-align: center
+				visibility: hidden;
 			}
 		}
 		#eventmobilediv {
