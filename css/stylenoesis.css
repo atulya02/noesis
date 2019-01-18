@@ -213,6 +213,10 @@ h3 {
 	color: #54ffe1;
 	background-color: #293039
 }
+.navbar-nav li.active > a {
+	background-color: #293039;
+	color: #54ffe1;
+}
 .back {
 	position: absolute;
 	z-index: 100;
