@@ -914,6 +914,106 @@ time {
   background-position: center center
 }
 
+.button {
+  touch-callout: none;
+  user-select: none;
+  display: inline-block;
+  border: 0.2em solid;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  opacity: 0.6;
+  color: #000;
+  position: relative;
+  top: 400px;
+  left: 0%
+}
+.button__text {
+  display: block;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  font-weight: bold
+}
+.button__text:before {
+  content: attr(title)
+}
+.button__text--bis {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(-1em);
+  opacity: 0
+}
+.button__mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: black;
+  transform: translateX(-100%) rotate(45deg);
+  transition: all 0.3s
+}
+.button:hover {
+  opacity: 1
+}
+.button:hover .button__text {
+  animation: fx-text 0.3s ease-out
+}
+.button:hover .button__text--bis {
+  animation: fx-text-bis 0.3s ease-out
+}
+.button:hover .button__mask {
+  animation: fx-mask 0.3s ease-out
+}
+.button:active {
+  opacity: 1;
+  background: black;
+  color: #54ffe1
+}
+@keyframes fx-mask {
+  0% {
+    transform: translateX(-100%) rotate(45deg)
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg)
+  }
+}
+@keyframes fx-text {
+  0% {
+    transform: translateX(0);
+    opacity: 1
+  }
+  100% {
+    transform: translateX(1px);
+    opacity: 0
+  }
+}
+@keyframes fx-text-bis {
+  0% {
+    transform: translateX(-1em);
+    opacity: 0
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1
+  }
+}
+ @media only screen and (max-width: 640px)
+ {
+  .button{
+    position: relative;
+    top: 350px;
+    left: 0%;
+  }
+  .button__text{
+    padding: 5px 10px;
+  }
+ }
   </style>
   <script type="text/javascript">
     
@@ -979,7 +1079,7 @@ time {
           
           <ul class="nav navbar-nav navbar-right">
             <li class="active"><a href="index.html">HOME</a></li>
-            <li><span class="overlay-trigger"><button>EVENTS</button></span></li>
+            <!--<li><span class="overlay-trigger"><button>EVENTS</button></span></li>-->
             <li><a href="index.html">REGISTRATION</a></li>
             <li style="padding-right: 5px"><a href="#contactid"> CONTACT</a></li>
           </ul>
@@ -1005,6 +1105,11 @@ prepare you to dive into "Computer Vision" the next level of Digital Image Proce
 
 
   </div>
+  <div class="button">
+    <span class="button__mask"></span>
+    <span class="button__text">KNOW MORE</span>
+    <span class="button__text button__text--bis">KNOW MORE</span>
+  </div>
   
 </div>
 
@@ -1014,29 +1119,15 @@ prepare you to dive into "Computer Vision" the next level of Digital Image Proce
       
       <section class="timeline">
   <ul>
+    
     <li>
       <div>
-        <time style="color:#D74329">15 January'19</time> CONTEST BEGINS!!
+        <time style="color: #D74329">10 February'19</time>WORKSHOP DAY-I
       </div>
     </li>
     <li>
       <div>
-        <time style="color: #D74329">1 February'19</time> REGISTRATION CLOSES
-      </div>
-    </li>
-    <li>
-      <div>
-        <time style="color: #D74329">5 February'19</time> Stage I Results
-      </div>
-    </li>
-    <li>
-      <div>
-        <time style="color: #D74329">10 February'19</time> Stage II
-      </div>
-    </li>
-    <li>
-      <div>
-        <time style="color: #D74329">10 February'19</time> Stage III
+        <time style="color: #D74329">10 February'19</time>WORKSHOP DAY-II
       </div>
     </li>
     
