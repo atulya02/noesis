@@ -18,7 +18,7 @@
 	color: white;
 	font-size: 20px;
 	padding: 20px;
-	text-align: center;
+	text-align: left;
 	overflow: hidden
 }
 .row {
@@ -643,7 +643,7 @@ time {
 }
 @media screen and (max-width: 900px) {
 	.timeline ul li div {
-		width: 260px
+		width: 260px;
 	}
 	.timeline ul li:nth-child(even) div {
 		left: -289px
@@ -655,7 +655,8 @@ time {
 
 	}
 	.timeline ul li div {
-		width: calc(100vw - 120px)
+		width: calc(100vw - 120px);
+		border: 0.5px solid #54ffe1;
 	}
 	.timeline ul li:nth-child(even) div {
 		left: 45px
@@ -665,6 +666,7 @@ time {
 		border-width: 8px 16px 8px 0;
 		border-color: transparent #fff transparent transparent
 	}
+
 }
 		#contactid {
 			background-color: #edf0f2;
@@ -793,7 +795,7 @@ time {
 				font-size: 10px;
 			}
 		}
-		@media only screen and (min-width: 600px) and (max-width: 750px)
+		@media only screen and (min-width: 640px) and (max-width: 750px)
 		{
 			#contactsid{
 				height: 750px;
@@ -817,7 +819,7 @@ time {
 			#contacts-new-id1 p{
 				position: absolute;
 				top: 210px;
-				left: 5%;
+				left: 6%;
 				font-size: 8px;
 			}
 			#contacts-new-id2 i {
@@ -886,13 +888,13 @@ time {
 			#contacts-new-id1 p{
 				position: absolute;
 				top: 140px;
-				left: 27%;
+				left: 30%;
 			}
 			#contacts-new-id2 i {
 				position: absolute;
 				top: 150px;
 				left: 45%;
-				color: #fff
+				color: #fff;
 			}
 			#contacts-new-id2 h2{
 				position: absolute;
