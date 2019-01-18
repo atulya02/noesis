@@ -985,7 +985,7 @@ time {
 				left: 25%;
 			}
 		}
-		@media only screen and (max-width: 250px)
+		@media only screen and (max-width: 300px)
 		{
 			#contactid{
 				height: 700px;
@@ -1364,7 +1364,4 @@ time {
 			 color: inherit;
 		}
 		 
-#sponsorheading h2{
-	font-size: 100px;
-	letter-spacing: 4px;
-}		 
+	 
