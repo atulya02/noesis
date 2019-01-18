@@ -38,6 +38,7 @@ font-family: Edo;
 font-family: Rallifornia;
   src: url('css/webfont/Rallifornia.woff');
 }
+body, html { overflow-x:hidden; }
     @import url('https://fonts.googleapis.com/css?family=PT+Serif');
     body{
       font-family: Futura;
@@ -163,107 +164,7 @@ font-family: Rallifornia;
    color: #54ffe1;
   background-color: #293039;
 }
-.counter-value {
-            padding: 8px 0;
-            line-height: 1.3em;
-            font-weight: 500;
-            display: inline;
-            color: #d8d8d8;
-        }
-        @keyframes cycle-design {
-  0% {
-    stroke-dashoffset: 0;
-  }
-  100% {
-    stroke-dashoffset: 1434.9226;
-  }
-  0%, 20%, 80%, 100% {
-    stroke: #8dc63f;
-  }
-  30%, 70% {
-    stroke: #00b6de;
-  }
-}
-@keyframes think-color {
-  0%, 100% {
-    color: #8dc63f;
-  }
-  40%, 60% {
-    color: #eee;
-  }
-}
-@keyframes make-color {
-  0%, 20%, 80%, 100% {
-    color: #eee;
-  }
-  50% {
-    color: #00b6de;
-  }
-}
-.product-cycle {
-  width: 80vmin;
-  max-width: 600px;
-  height: calc(40vmin + 2.4rem);
-  position: relative;
-}
-.path {
-  width: 80vmin;
-  height: 40vmin;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #000;
-}
-.path path {
-  fill: transparent;
-  stroke-width: 10;
-  stroke-linecap: round;
-}
-.path.-animate {
-  stroke: #00b6de;
-  stroke-dasharray: 478.30753 956.61507;
-  stroke-dashoffset: 1434.9226;
-  animation: cycle-design 5000ms linear infinite;
-}
-.path.-bg {
-  stroke: #eee;
-}
-.header, .explain {
-  width: 25vmin;
-  position: absolute;
-  color: #eee;
-  text-align: center;
-}
-.header {
-  font-size: 5.71429vmin;
-  line-height: 40vmin;
-}
-.header.-think {
-  position: absolute;
-  left: 20%;
-  animation: think-color 5000ms linear infinite;
-}
-.header.-make {
-  left: 40vmin;
-  animation: make-color 5000ms linear infinite;
-}
-.explain {
-  width: 40vmin;
-  top: calc(40vmin + 1rem);
-  font-size: 32px;
-  text-align: center;
-}
-.explain.-think {
-  left: 0;
-  color: #8dc63f;
-}
-.explain.-make {
-  left: 40vmin;
-  color: #00b6de;
-}
-svg{
-  color: #fff;
-}
+
 /*.footer.*/
 #iconfooter {
   padding-left: 30px
@@ -398,11 +299,11 @@ height: 500px;background-color: #fff;text-align: center;box-sizing: border-box;w
  }
  #intro2
  {
-  height: 400px;background-color: #000;text-align: center;
+  height: 400px;background-color: #000;text-align: center;margin: 0;padding: 0;
  }
  #intro2_div
  {
-  width: 100%;position: absolute;left:0;padding: 10px;margin-top: 60px;
+  width: 100%;position: absolute;left:0;padding: 0px;margin-top: 60px;
  }
  #intro2 h1
  {
@@ -435,14 +336,14 @@ height: 500px;background-color: #fff;text-align: center;box-sizing: border-box;w
 {
  #intro1_div
  {
-  width: 100%;position: absolute;left:0;padding: 10px;margin-top: 10px;
+  width: 100%;padding: 10px;margin-top: 10px;
  }
  #intro1 h1
  {
   font-weight: bold;padding-bottom:15px;font-size: 24px;
  }
  #intro1 p{
-  font-size: 15px;color: gray;
+  font-size: 12px;color: gray;
  }
  #intro2
  {
@@ -450,7 +351,7 @@ height: 500px;background-color: #fff;text-align: center;box-sizing: border-box;w
  }
  #intro2_div
  {
-  width: 100%;position: absolute;left:0;padding: 10px;margin-top: 60px;
+  width: 100%;position: absolute;left:0;padding: 0px;margin-top: 60px;
  }
  #intro2 h1
  {
