@@ -14,7 +14,12 @@
   
   <script src="https://unpkg.com/scrollreveal"></script>
   <script src="https://unpkg.com/scrollreveal@4"></script>
-  
+  <script type="text/javascript">
+    $( '.navbar-nav a' ).on( 'click', function () {
+  $( '.navbar-nav' ).find( 'li.active' ).removeClass( 'active' );
+  $( this ).parent( 'li' ).addClass( 'active' );
+});
+  </script>
      <style type="text/css">
      	h4{
      		font-size: 64px;
@@ -215,10 +220,10 @@
 		</div>
 		<div class="collapse navbar-collapse" id="myNavbar">
 			<ul class="nav navbar-nav navbar-right" style="padding-right: 20px">
-				<li class="active"><a href="index.html">HOME</a>
+				<li ><a href="index.html">HOME</a>
 				</li>
-				<li><span class="overlay-trigger"><button>EVENTS</button></span>
-				</li>
+				<!--<li><span class="overlay-trigger"><button>EVENTS</button></span>
+				</li>-->
 				<li><a href="#open-modal">REGISTRATION</a>
 				</li>
 				<li style="padding-right: 5px"><a href="#contactid"> CONTACT</a>
