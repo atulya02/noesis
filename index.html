@@ -279,11 +279,49 @@ Image Processing.</p></div>
     
 
   </div>
-  
+  </div>
+<div class="container" >
+    
+      <h2 class="title">FAQs</h2>
+      
+      <button class="accordion">How can I register for events?</button>
+      <div class="panel">
+        <p>You have to register for NOESIS 5.0 through our website, individual registrations of all events will be done later.
+</p>
+      </div>
+      
+      
+      <button class="accordion">Do I need to pay for each individual events?</button>
+      <div class="panel">
+        <p>NO, You only need to pay once for NOESIS 5.0</p>
+      </div>
+      
+      
+      <button class="accordion">Do I require a laptop for PiFy?</button>
+      <div class="panel">
+        <p>Laptop is optional for Python workshop. But it is mandatory for Code Golf.</p>
+      </div>
+      
+      <button class="accordion">Can I attend any event of NOESIS after registration?</button>
+      <div class="panel">
+        <p>Yes, you can.</p>
+      </div>
+      
+      <button class="accordion">Are there any pre-requisites?</button>
+      <div class="panel">
+        <p>NO, Anyone having a knack of programming can attend the event.</p>
+      </div>
+      
+            <button class="accordion">What would be the venue and timings of event?</button>
+      <div class="panel">
+        <p>Venue of the event will be NTB. Timing will be informed at our facebook page.</p>
+      </div>
+      
+   
+    
+    </div>
 
 
-
-</div>
   <div class="container-fluid"  style="background-color: #fff;height: 650px;" >
     <div class="row">
       <div class="col-lg-12" style="text-align: center;" ><h4  style="font-family: Edo;">OUR SPONSORS</h4></div>
@@ -415,7 +453,24 @@ Image Processing.</p></div>
     });
     
   </script>
+<script type="text/javascript">
+  var acc = document.getElementsByClassName("accordion");
+var i;
 
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    
+    
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
 
 </body>
 
