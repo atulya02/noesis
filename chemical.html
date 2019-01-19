@@ -118,9 +118,7 @@ font-family: Rallifornia;
   }
 }
 @media only screen and (max-width: 900px) {
-  #contactid {
-    height: 600px
-  }
+  
   .zoom {
     background-image: url(images/2new.png);
     height: 55vh;
@@ -749,10 +747,7 @@ left: 45%;z-index: 5;text-decoration: none;
   position: absolute;top: 325px;
 left: 40%;z-index: 5;text-decoration: none;
  }
- #contactid
- {
-  height: 600px;
- }
+ 
 
  }
  @media only screen and (max-width: 1300px)
@@ -1080,10 +1075,10 @@ time {
         <div class="collapse navbar-collapse" id="myNavbar">
           
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">HOME</a></li>
+            <li ><a data-toggle="collapse" data-target=".navbar-collapse.in" href="index.html">HOME</a></li>
              <!--<li><span class="overlay-trigger"><button>EVENTS</button></span></li>-->
-            <li><a href="index.html">REGISTRATION</a></li>
-            <li style="padding-right: 5px"><a href="#contactid"> CONTACT</a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="https://goo.gl/forms/n0I61ahDFGEU4ptx2" target="_blank">REGISTRATION</a>
+            <li style="padding-right: 5px"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contactid"> CONTACT</a></li>
           </ul>
           
         </div>
@@ -1108,12 +1103,13 @@ And maybe build one model to make it fun to learn!</p>
 
 
   </div>
+  <a href="https://goo.gl/MH7ZxY">
   <div class="button">
     <span class="button__mask"></span>
     <span class="button__text">KNOW MORE</span>
     <span class="button__text button__text--bis">KNOW MORE</span>
   </div>
-  
+  </a>
 </div>
 
 <div class="container-fluid" style="margin: 0;padding: 0;background-attachment: fixed;background-image: url(images/bgimagetime.jpg);font-family: Edo;letter-spacing: 3px ">
@@ -1149,7 +1145,7 @@ And maybe build one model to make it fun to learn!</p>
 <div class="container-fluid" style="" id="intro3" style="z-index: 2;">
   <div style="" id="intro3_div">
     <h1 style="font-family: Edo;letter-spacing: 4px ">CONTACT</h1>
-  <ul  style="font-family: Futura;list-style-type: none;color: #000;text-align: center;">
+  <ul  id="contactid" style="font-family: Futura;list-style-type: none;color: #000;text-align: center;">
     <li>VISHWAJEET : 8085487633</li>
     <li>KULDEEP: 7648814068</li>
   </ul>
@@ -1173,7 +1169,7 @@ And maybe build one model to make it fun to learn!</p>
       </div>
     </div>
 
-    <script type="text/javascript">
+   <!-- <script type="text/javascript">
     $(function() {
   var $overlay = $('.overlay'),
       $overlayTrigger = $('.overlay-trigger button'),
@@ -1190,7 +1186,7 @@ And maybe build one model to make it fun to learn!</p>
     $overlay.removeClass(openClass);
   });
 });
-  </script>
+  </script>-->
   <script type="text/javascript">
     (function() {
 
@@ -1199,8 +1195,6 @@ And maybe build one model to make it fun to learn!</p>
   // define variables
   var items = document.querySelectorAll(".timeline li");
 
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
