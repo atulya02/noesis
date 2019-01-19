@@ -113,9 +113,7 @@ font-family: Rallifornia;
   }
 }
 @media only screen and (max-width: 900px) {
-  #contactid {
-    height: 600px
-  }
+  
   .zoom {
     background-image: url(images/5new.png);
     height: 55vh;
@@ -614,10 +612,7 @@ left: 45%;z-index: 5;text-decoration: none;
   position: absolute;top: 325px;
 left: 40%;z-index: 5;text-decoration: none;
  }
- #contactid
- {
-  height: 600px;
- }
+ 
  }
  @media only screen and (max-width: 1300px)
  {
@@ -939,10 +934,10 @@ time {
         <div class="collapse navbar-collapse" id="myNavbar">
           
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">HOME</a></li>
+            <li ><a data-toggle="collapse" data-target=".navbar-collapse.in" href="index.html">HOME</a></li>
              <!--<li><span class="overlay-trigger"><button>EVENTS</button></span></li>-->
-            <li><a href="index.html">REGISTRATION</a></li>
-            <li style="padding-right: 5px"><a href="#contactid"> CONTACT</a></li>
+            <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="https://goo.gl/forms/n0I61ahDFGEU4ptx2" target="_blank">REGISTRATION</a>
+            <li style="padding-right: 5px"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contactid"> CONTACT</a></li>
           </ul>
           
         </div>
@@ -961,12 +956,13 @@ time {
 
 
   </div>
+  <a href="https://goo.gl/K18j3h">
   <div class="button">
     <span class="button__mask"></span>
     <span class="button__text">KNOW MORE</span>
     <span class="button__text button__text--bis">KNOW MORE</span>
   </div>
-  
+  </a>
 </div>
 
 <div class="container-fluid" style="margin: 0;padding: 0;background-attachment: fixed;background-image: url(images/bgimagetime.jpg);font-family: Edo;letter-spacing: 3px ">
@@ -986,6 +982,11 @@ time {
         <time style="color:  #89D4D0">10 February'19</time>WORKSHOP DAY-II
       </div>
     </li>
+    <li>
+      <div>
+        <time style="color:  #89D4D0">10 February'19</time>COMPETITION(CODE-GOLF)
+      </div>
+    </li>
     
   </ul>
 </section>
@@ -1002,7 +1003,7 @@ time {
 <div class="container-fluid" style="" id="intro3" style="z-index: 2">
   <div style="" id="intro3_div">
     <h1 style="font-family: Edo;letter-spacing: 4px;color: #000">CONTACT US</h1>
-  <ul style="list-style-type: none;text-align: center;">
+  <ul id="contactid"  style="list-style-type: none;text-align: center;">
     <li>ISHAAN DWIVEDI : 9479565110</li>
     <li>NAYAN SINGHAI : 9425403751</li>
   </ul>
@@ -1025,7 +1026,7 @@ time {
         </div>
       </div>
     </div>
-<script type="text/javascript">
+<!--<script type="text/javascript">
     $(function() {
   var $overlay = $('.overlay'),
       $overlayTrigger = $('.overlay-trigger button'),
@@ -1040,14 +1041,13 @@ time {
     $overlay.removeClass(openClass);
   });
 });
-  </script>
+  </script>-->
   <script type="text/javascript">
     (function() {
   'use strict';
   // define variables
   var items = document.querySelectorAll(".timeline li");
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
