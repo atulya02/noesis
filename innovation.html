@@ -1073,13 +1073,13 @@ time {
           </button>
           <a class="navbar-brand" style="text-align: center;" href="index.html"><img src="images/vnew.png" width="80px" height="" ></a>
         </div>
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse" >
           
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">HOME</a></li>
+          <ul class="nav navbar-nav navbar-right" style="padding-right: 20px">
+            <li ><a data-toggle="collapse" data-target=".navbar-collapse.in" href="index.html">HOME</a></li>
              <!--<li><span class="overlay-trigger"><button>EVENTS</button></span></li>-->
-            <li><a href="index.html">REGISTRATION</a></li>
-            <li style="padding-right: 5px"><a href="#contactid"> CONTACT</a></li>
+           <li><a data-toggle="collapse" data-target=".navbar-collapse.in" href="https://goo.gl/forms/n0I61ahDFGEU4ptx2" target="_blank">REGISTRATION</a>
+            <li style="padding-right: 5px"><a data-toggle="collapse" data-target=".navbar-collapse.in" href="#contactid"> CONTACT</a></li>
           </ul>
           
         </div>
@@ -1098,11 +1098,13 @@ time {
 
 
   </div>
+  <a href="https://goo.gl/fP4cvC">
   <div class="button">
     <span class="button__mask"></span>
     <span class="button__text">PROBLEM STATEMENT</span>
     <span class="button__text button__text--bis">PROBLEM STATEMENT</span>
   </div>
+</a>
 </div>
 
 <div class="container-fluid" style="margin: 0;padding: 0;background-attachment: fixed;background-image: url(images/bgimagetime.jpg);font-family: Edo;letter-spacing: 3px ">
@@ -1177,7 +1179,7 @@ time {
       </div>
     </div>
 
-    <script type="text/javascript">
+   <!-- <script type="text/javascript">
     $(function() {
   var $overlay = $('.overlay'),
       $overlayTrigger = $('.overlay-trigger button'),
@@ -1194,17 +1196,16 @@ time {
     $overlay.removeClass(openClass);
   });
 });
-  </script>
+  </script>-->
   <script type="text/javascript">
     (function() {
 
   'use strict';
 
-  // define variables
+
   var items = document.querySelectorAll(".timeline li");
 
-  // check if an element is in viewport
-  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+
   function isElementInViewport(el) {
     var rect = el.getBoundingClientRect();
     return (
